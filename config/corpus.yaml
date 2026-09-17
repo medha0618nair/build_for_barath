@@ -1,0 +1,96 @@
+# Corpus shape, offender behaviour and timing.
+#
+# SWEEP        one of the three planned sweeps varies this; change nothing
+#              else and keep the seed.
+# PROVISIONAL  replaced by a measurement later in the order of work.
+
+n_cases: 10000                  # 40–50k for the final run
+
+# Five years so long series and relocation dormancy fit without truncation
+# eating the tail of the length distribution.
+date_range:
+  start: "2021-01-01"
+  end: "2025-12-31"
+
+geography:
+  same_district_rate: 0.7       # a crime stays in the offender's current base district
+
+# Within-crime implications (applied after sampling, to serial and
+# background alike; the affected fields are excluded from validator 1):
+#   exit_mode copies approach_mode with this probability (burglary, ATM);
+#   vehicle theft exits in the stolen vehicle's class;
+#   snatching approach/exit follow vehicle_used;
+#   ATM gas_cutting implies the gas_cutter tool.
+exit_same_as_approach: 0.8
+
+# SWEEP. Share of cases committed by serial offenders; the rest are
+# background one-offs at style s = 0. 0.16 matches spec §4.4's
+# 400 offenders × 4 cases in a 10k corpus.
+serial_case_fraction: 0.16
+
+# SWEEP 0.2 → 0.9. `value` is the target m — the probability a second crime
+# by the same offender repeats a value — at `reference_frequency`.
+# Solved internally: alpha = (1 - value) / (value - reference_frequency).
+# Small alpha = high repetition. reference_frequency must stay below the
+# sweep floor or the low end has no solution.
+#   value 0.2 → alpha 8.0    0.5 → 1.25    0.9 → 0.125
+#   (spec §4.3's alpha 7.05 is value ≈ 0.21 on this scale)
+repeat_rate:
+  value: 0.50
+  reference_frequency: 0.10
+
+style:
+  axes: [stealth, planned, group]
+  sd: 1.0
+
+# Chosen by `python -m linkage.generate.tau --n-cases 45000`; rule, per-seed
+# numbers and the two discarded sweeps are in config/tau_selection.json.
+# Smallest grid τ where truth MI is significant and survives recording on all
+# three seeds. Cost: expected serial-crime drift up to +229%
+# (ATM explosive). The manifest reports realised drift.
+tau: 0.75
+
+# Length = minimum + NegBin(mean = extra_mean, r = extra_dispersion).
+# Smaller r = heavier tail; Poisson is r → ∞. A series of 0 or 1 crimes is
+# not a series, hence the minimum.
+series_length:
+  minimum: 2
+  extra_mean: 2.0
+  extra_dispersion: 1.0
+
+# Days between consecutive crimes in a series: mixture of exponentials.
+# Offending is bursty; a single exponential spreads too evenly.
+gap_days:
+  - {weight: 0.7, mean: 20}
+  - {weight: 0.3, mean: 120}
+
+relocation:
+  probability: 0.35             # share of serial offenders who move
+  dormancy_days: [90, 365]      # uniform; inserted at the relocation index
+  destination: neighbour        # drawn from states.yaml `neighbours`
+
+# FIR occurrence window width, lognormal {median, sigma} in hours. Burglary
+# width follows occupancy: occupants notice within hours, a locked vacant
+# house can sit for weeks.
+occurrence_window_hours:
+  by_occupancy:
+    occupied:         {median: 2,   sigma: 0.6}
+    temporarily_away: {median: 10,  sigma: 0.7}
+    vacant_extended:  {median: 240, sigma: 0.8}
+    closed_overnight: {median: 12,  sigma: 0.3}
+    closed_extended:  {median: 60,  sigma: 0.5}
+  by_crime_type:
+    VEHICLE_THEFT: {median: 8,   sigma: 0.8}
+    SNATCHING:     {median: 0.1, sigma: 0.5}
+    ATM_TAMPERING: {median: 18,  sigma: 0.9}
+
+registration_delay_hours: {median: 18, sigma: 1.0}
+
+time_band:
+  hours:                        # [start, end) on the 24h clock; night wraps midnight
+    night: [22, 4]
+    early_morning: [4, 7]
+    day: [7, 22]
+  # A window wider than this cannot be placed in one band: UNKNOWABLE,
+  # which the scorer must treat differently from missing.
+  unknowable_above_hours: 12

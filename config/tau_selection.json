@@ -1,0 +1,241 @@
+{
+  "generated_at": "2026-09-17T13:49:59+00:00",
+  "rule": "smallest tau > 0 on the grid at which validator 2 (truth MI above all permutation nulls) and validator 3 (recorded MI above all nulls, >= 50% of truth excess kept) pass on every seed",
+  "n_cases": 45000,
+  "seeds": [
+    7,
+    11,
+    23
+  ],
+  "chosen_tau": 0.75,
+  "history": [
+    "Sweep 1 (discarded): MI validators pooled every crime of a series. A series shares one theta, so rows were not independent and the row-level permutation null was invalid: tau = 0 showed ~1.5 bits of 'excess' MI. Fixed by using one crime per offender per crime type.",
+    "Sweep 2 (discarded for power): at the 10k dev size the corrected test was underpowered \u2014 excess-kept ratios ranged from -7.1 to 3.9 and only the grid edge (1.5) passed. Tau is chosen for the 45k final corpus, so the sweep runs at that size. The rule itself is unchanged."
+  ],
+  "grid": [
+    {
+      "tau": 0.0,
+      "all_pass": false,
+      "expected_max_drift": -0.0,
+      "expected_max_drift_value": "BURGLARY_RESIDENTIAL.counter_forensic.none",
+      "seeds": [
+        {
+          "seed": 7,
+          "truth_mi_pass": false,
+          "recorded_mi_pass": false,
+          "truth_excess_bits": 0.0578,
+          "recorded_excess_bits": 0.087,
+          "excess_kept": 1.505
+        },
+        {
+          "seed": 11,
+          "truth_mi_pass": false,
+          "recorded_mi_pass": false,
+          "truth_excess_bits": 0.0661,
+          "recorded_excess_bits": 0.1407,
+          "excess_kept": 2.128
+        },
+        {
+          "seed": 23,
+          "truth_mi_pass": false,
+          "recorded_mi_pass": false,
+          "truth_excess_bits": -0.0183,
+          "recorded_excess_bits": -0.1011,
+          "excess_kept": 0.0
+        }
+      ]
+    },
+    {
+      "tau": 0.25,
+      "all_pass": false,
+      "expected_max_drift": 0.255,
+      "expected_max_drift_value": "ATM_TAMPERING.attack_method.explosive",
+      "seeds": [
+        {
+          "seed": 7,
+          "truth_mi_pass": false,
+          "recorded_mi_pass": false,
+          "truth_excess_bits": 0.0051,
+          "recorded_excess_bits": 0.1898,
+          "excess_kept": 37.214
+        },
+        {
+          "seed": 11,
+          "truth_mi_pass": false,
+          "recorded_mi_pass": false,
+          "truth_excess_bits": 0.0813,
+          "recorded_excess_bits": 0.1669,
+          "excess_kept": 2.053
+        },
+        {
+          "seed": 23,
+          "truth_mi_pass": false,
+          "recorded_mi_pass": false,
+          "truth_excess_bits": 0.019,
+          "recorded_excess_bits": 0.0608,
+          "excess_kept": 3.2
+        }
+      ]
+    },
+    {
+      "tau": 0.5,
+      "all_pass": false,
+      "expected_max_drift": 1.063,
+      "expected_max_drift_value": "ATM_TAMPERING.attack_method.explosive",
+      "seeds": [
+        {
+          "seed": 7,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": false,
+          "truth_excess_bits": 0.3051,
+          "recorded_excess_bits": 0.1697,
+          "excess_kept": 0.556
+        },
+        {
+          "seed": 11,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": false,
+          "truth_excess_bits": 0.4061,
+          "recorded_excess_bits": 0.2841,
+          "excess_kept": 0.699
+        },
+        {
+          "seed": 23,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": false,
+          "truth_excess_bits": 0.2941,
+          "recorded_excess_bits": -0.1986,
+          "excess_kept": -0.675
+        }
+      ]
+    },
+    {
+      "tau": 0.75,
+      "all_pass": true,
+      "expected_max_drift": 2.293,
+      "expected_max_drift_value": "ATM_TAMPERING.attack_method.explosive",
+      "seeds": [
+        {
+          "seed": 7,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 0.8972,
+          "recorded_excess_bits": 0.6519,
+          "excess_kept": 0.727
+        },
+        {
+          "seed": 11,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 0.9232,
+          "recorded_excess_bits": 1.1177,
+          "excess_kept": 1.211
+        },
+        {
+          "seed": 23,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 0.7886,
+          "recorded_excess_bits": 0.6575,
+          "excess_kept": 0.834
+        }
+      ]
+    },
+    {
+      "tau": 1.0,
+      "all_pass": true,
+      "expected_max_drift": 3.624,
+      "expected_max_drift_value": "ATM_TAMPERING.attack_method.explosive",
+      "seeds": [
+        {
+          "seed": 7,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 1.7698,
+          "recorded_excess_bits": 1.0972,
+          "excess_kept": 0.62
+        },
+        {
+          "seed": 11,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 2.0692,
+          "recorded_excess_bits": 1.4413,
+          "excess_kept": 0.697
+        },
+        {
+          "seed": 23,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 1.8421,
+          "recorded_excess_bits": 1.2404,
+          "excess_kept": 0.673
+        }
+      ]
+    },
+    {
+      "tau": 1.25,
+      "all_pass": true,
+      "expected_max_drift": 4.845,
+      "expected_max_drift_value": "ATM_TAMPERING.attack_method.explosive",
+      "seeds": [
+        {
+          "seed": 7,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 2.8168,
+          "recorded_excess_bits": 1.781,
+          "excess_kept": 0.632
+        },
+        {
+          "seed": 11,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 2.5663,
+          "recorded_excess_bits": 1.7384,
+          "excess_kept": 0.677
+        },
+        {
+          "seed": 23,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 3.0269,
+          "recorded_excess_bits": 1.9075,
+          "excess_kept": 0.63
+        }
+      ]
+    },
+    {
+      "tau": 1.5,
+      "all_pass": true,
+      "expected_max_drift": 5.885,
+      "expected_max_drift_value": "ATM_TAMPERING.attack_method.explosive",
+      "seeds": [
+        {
+          "seed": 7,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 4.1735,
+          "recorded_excess_bits": 2.7111,
+          "excess_kept": 0.65
+        },
+        {
+          "seed": 11,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 2.9697,
+          "recorded_excess_bits": 2.0438,
+          "excess_kept": 0.688
+        },
+        {
+          "seed": 23,
+          "truth_mi_pass": true,
+          "recorded_mi_pass": true,
+          "truth_excess_bits": 3.9674,
+          "recorded_excess_bits": 2.7252,
+          "excess_kept": 0.687
+        }
+      ]
+    }
+  ]
+}

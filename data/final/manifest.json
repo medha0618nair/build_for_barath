@@ -1,0 +1,4067 @@
+{
+  "generated_at": "2026-09-17T13:50:38+00:00",
+  "synthetic": true,
+  "command": "python -m linkage.generate --seed 7 --n-cases 45000 --out data/final/",
+  "seed": 7,
+  "corruption_seed": 7,
+  "overrides": {
+    "n_cases": 45000
+  },
+  "versions": {
+    "python": "3.12.5",
+    "numpy": "1.26.4",
+    "pandas": "2.1.3"
+  },
+  "derived": {
+    "alpha": 1.25,
+    "repeat_rate": 0.5,
+    "tau": 0.75
+  },
+  "counts": {
+    "cases": 45000,
+    "serial_cases": 7204,
+    "serial_offenders": 1809,
+    "relocated_offenders": 628,
+    "feed_rows": {
+      "MH": 15620,
+      "MP": 10779,
+      "KA": 9839,
+      "TG": 8295
+    }
+  },
+  "pairs": {
+    "ingested_cases": 44533,
+    "dropped_out_of_scope": 467,
+    "true_pairs_all": 15810,
+    "prior_bits_all_property": -15.937,
+    "same_type": {
+      "BURGLARY_RESIDENTIAL": {
+        "cases": 13057,
+        "true_pairs": 2456,
+        "prior_bits": -15.083
+      },
+      "BURGLARY_COMMERCIAL": {
+        "cases": 4541,
+        "true_pairs": 939,
+        "prior_bits": -13.422
+      },
+      "VEHICLE_THEFT": {
+        "cases": 15483,
+        "true_pairs": 3499,
+        "prior_bits": -15.064
+      },
+      "SNATCHING": {
+        "cases": 8007,
+        "true_pairs": 1713,
+        "prior_bits": -14.192
+      },
+      "ATM_TAMPERING": {
+        "cases": 3445,
+        "true_pairs": 1296,
+        "prior_bits": -12.16
+      }
+    },
+    "cross_type": {
+      "true_pairs": 5907,
+      "prior_bits": -16.931
+    },
+    "cross_state_true_pairs": 2768
+  },
+  "marginal_drift_largest": [
+    {
+      "value": "ATM_TAMPERING.attack_method.explosive",
+      "config": 0.05,
+      "realised": 0.0642,
+      "relative_drift": 0.284
+    },
+    {
+      "value": "BURGLARY_COMMERCIAL.tools.gas_cutter",
+      "config": 0.08,
+      "realised": 0.0989,
+      "relative_drift": 0.236
+    },
+    {
+      "value": "VEHICLE_THEFT.ignition_method.key_left",
+      "config": 0.1,
+      "realised": 0.1193,
+      "relative_drift": 0.193
+    },
+    {
+      "value": "SNATCHING.group_size_est.4+",
+      "config": 0.03,
+      "realised": 0.0358,
+      "relative_drift": 0.193
+    },
+    {
+      "value": "BURGLARY_COMMERCIAL.property_taken.vehicle",
+      "config": 0.02,
+      "realised": 0.0238,
+      "relative_drift": 0.19
+    },
+    {
+      "value": "SNATCHING.tools.cutter",
+      "config": 0.02,
+      "realised": 0.0163,
+      "relative_drift": -0.185
+    },
+    {
+      "value": "BURGLARY_RESIDENTIAL.entry_point.wall_breach",
+      "config": 0.04,
+      "realised": 0.0473,
+      "relative_drift": 0.183
+    },
+    {
+      "value": "BURGLARY_COMMERCIAL.entry_method.duplicate_key",
+      "config": 0.08,
+      "realised": 0.094,
+      "relative_drift": 0.175
+    },
+    {
+      "value": "SNATCHING.counter_forensic.gloves",
+      "config": 0.03,
+      "realised": 0.0248,
+      "relative_drift": -0.173
+    },
+    {
+      "value": "SNATCHING.target_selection.insider_info",
+      "config": 0.02,
+      "realised": 0.0168,
+      "relative_drift": -0.16
+    },
+    {
+      "value": "ATM_TAMPERING.property_taken.electronics",
+      "config": 0.02,
+      "realised": 0.0232,
+      "relative_drift": 0.16
+    },
+    {
+      "value": "ATM_TAMPERING.alarm_defeated.defeated",
+      "config": 0.3,
+      "realised": 0.3454,
+      "relative_drift": 0.151
+    },
+    {
+      "value": "SNATCHING.counter_forensic.cctv_disabled",
+      "config": 0.02,
+      "realised": 0.0171,
+      "relative_drift": -0.145
+    },
+    {
+      "value": "ATM_TAMPERING.time_band.day",
+      "config": 0.1,
+      "realised": 0.0859,
+      "relative_drift": -0.141
+    },
+    {
+      "value": "BURGLARY_COMMERCIAL.entry_point.wall_breach",
+      "config": 0.1,
+      "realised": 0.1125,
+      "relative_drift": 0.125
+    }
+  ],
+  "realised_marginals": {
+    "crime_type": {
+      "BURGLARY_RESIDENTIAL": {
+        "config": 0.3,
+        "realised": 0.2902,
+        "serial_only": 0.2569
+      },
+      "BURGLARY_COMMERCIAL": {
+        "config": 0.1,
+        "realised": 0.1009,
+        "serial_only": 0.0981
+      },
+      "VEHICLE_THEFT": {
+        "config": 0.35,
+        "realised": 0.3441,
+        "serial_only": 0.3257
+      },
+      "SNATCHING": {
+        "config": 0.18,
+        "realised": 0.1883,
+        "serial_only": 0.2084
+      },
+      "ATM_TAMPERING": {
+        "config": 0.07,
+        "realised": 0.0766,
+        "serial_only": 0.1109
+      }
+    },
+    "BURGLARY_RESIDENTIAL": {
+      "time_band": {
+        "night": {
+          "config": 0.52,
+          "realised": 0.5167,
+          "serial_only": 0.5024
+        },
+        "early_morning": {
+          "config": 0.18,
+          "realised": 0.1799,
+          "serial_only": 0.1783
+        },
+        "day": {
+          "config": 0.3,
+          "realised": 0.3034,
+          "serial_only": 0.3193
+        }
+      },
+      "group_size_est": {
+        "1": {
+          "config": 0.34,
+          "realised": 0.343,
+          "serial_only": 0.3571
+        },
+        "2-3": {
+          "config": 0.48,
+          "realised": 0.4757,
+          "serial_only": 0.4554
+        },
+        "4+": {
+          "config": 0.18,
+          "realised": 0.1813,
+          "serial_only": 0.1875
+        }
+      },
+      "tools": {
+        "crowbar": {
+          "config": 0.3,
+          "realised": 0.3122,
+          "serial_only": 0.3474
+        },
+        "cutter": {
+          "config": 0.16,
+          "realised": 0.1588,
+          "serial_only": 0.1632
+        },
+        "screwdriver": {
+          "config": 0.35,
+          "realised": 0.3396,
+          "serial_only": 0.315
+        },
+        "gas_cutter": {
+          "config": 0.02,
+          "realised": 0.0223,
+          "serial_only": 0.0405
+        }
+      },
+      "counter_forensic": {
+        "none": {
+          "config": 0.8,
+          "realised": 0.801,
+          "serial_only": 0.7898
+        },
+        "gloves": {
+          "config": 0.1,
+          "realised": 0.0981,
+          "serial_only": 0.1151
+        },
+        "face_covered": {
+          "config": 0.07,
+          "realised": 0.0699,
+          "serial_only": 0.0589
+        },
+        "cctv_disabled": {
+          "config": 0.03,
+          "realised": 0.0309,
+          "serial_only": 0.0362
+        }
+      },
+      "target_selection": {
+        "opportunistic": {
+          "config": 0.55,
+          "realised": 0.5399,
+          "serial_only": 0.49
+        },
+        "scouted": {
+          "config": 0.37,
+          "realised": 0.3787,
+          "serial_only": 0.4122
+        },
+        "insider_info": {
+          "config": 0.08,
+          "realised": 0.0814,
+          "serial_only": 0.0978
+        }
+      },
+      "property_taken": {
+        "gold": {
+          "config": 0.61,
+          "realised": 0.6117,
+          "serial_only": 0.6197
+        },
+        "cash": {
+          "config": 0.54,
+          "realised": 0.5354,
+          "serial_only": 0.5505
+        },
+        "electronics": {
+          "config": 0.35,
+          "realised": 0.3461,
+          "serial_only": 0.3479
+        },
+        "documents": {
+          "config": 0.08,
+          "realised": 0.0817,
+          "serial_only": 0.0837
+        },
+        "vehicle": {
+          "config": 0.04,
+          "realised": 0.0397,
+          "serial_only": 0.0378
+        }
+      },
+      "approach_mode": {
+        "on_foot": {
+          "config": 0.4,
+          "realised": 0.4005,
+          "serial_only": 0.4117
+        },
+        "two_wheeler": {
+          "config": 0.45,
+          "realised": 0.446,
+          "serial_only": 0.4046
+        },
+        "four_wheeler": {
+          "config": 0.15,
+          "realised": 0.1536,
+          "serial_only": 0.1837
+        }
+      },
+      "exit_mode": {
+        "on_foot": {
+          "config": 0.35,
+          "realised": 0.3907,
+          "serial_only": 0.3944
+        },
+        "two_wheeler": {
+          "config": 0.48,
+          "realised": 0.453,
+          "serial_only": 0.4165
+        },
+        "four_wheeler": {
+          "config": 0.17,
+          "realised": 0.1562,
+          "serial_only": 0.1891
+        }
+      },
+      "entry_point": {
+        "door": {
+          "config": 0.55,
+          "realised": 0.5408,
+          "serial_only": 0.5219
+        },
+        "window": {
+          "config": 0.25,
+          "realised": 0.2501,
+          "serial_only": 0.2237
+        },
+        "balcony": {
+          "config": 0.1,
+          "realised": 0.0992,
+          "serial_only": 0.1037
+        },
+        "roof": {
+          "config": 0.06,
+          "realised": 0.0627,
+          "serial_only": 0.0621
+        },
+        "wall_breach": {
+          "config": 0.04,
+          "realised": 0.0473,
+          "serial_only": 0.0886
+        }
+      },
+      "entry_method": {
+        "lock_broken": {
+          "config": 0.45,
+          "realised": 0.4393,
+          "serial_only": 0.3901
+        },
+        "forced_open": {
+          "config": 0.25,
+          "realised": 0.2596,
+          "serial_only": 0.269
+        },
+        "grill_cut": {
+          "config": 0.1,
+          "realised": 0.0981,
+          "serial_only": 0.0908
+        },
+        "no_force": {
+          "config": 0.12,
+          "realised": 0.1173,
+          "serial_only": 0.1226
+        },
+        "duplicate_key": {
+          "config": 0.08,
+          "realised": 0.0857,
+          "serial_only": 0.1275
+        }
+      },
+      "premise": {
+        "independent_house": {
+          "config": 0.42,
+          "realised": 0.4194,
+          "serial_only": 0.4052
+        },
+        "apartment": {
+          "config": 0.4,
+          "realised": 0.3928,
+          "serial_only": 0.3825
+        },
+        "row_house": {
+          "config": 0.12,
+          "realised": 0.1291,
+          "serial_only": 0.1426
+        },
+        "mixed_use": {
+          "config": 0.06,
+          "realised": 0.0587,
+          "serial_only": 0.0697
+        }
+      },
+      "occupancy": {
+        "occupied": {
+          "config": 0.22,
+          "realised": 0.224,
+          "serial_only": 0.2388
+        },
+        "temporarily_away": {
+          "config": 0.58,
+          "realised": 0.5798,
+          "serial_only": 0.544
+        },
+        "vacant_extended": {
+          "config": 0.2,
+          "realised": 0.1961,
+          "serial_only": 0.2172
+        }
+      },
+      "search_pattern": {
+        "selective": {
+          "config": 0.28,
+          "realised": 0.2719,
+          "serial_only": 0.2528
+        },
+        "ransacked": {
+          "config": 0.57,
+          "realised": 0.5723,
+          "serial_only": 0.5543
+        },
+        "targeted": {
+          "config": 0.15,
+          "realised": 0.1559,
+          "serial_only": 0.1929
+        }
+      }
+    },
+    "BURGLARY_COMMERCIAL": {
+      "time_band": {
+        "night": {
+          "config": 0.7,
+          "realised": 0.6946,
+          "serial_only": 0.6803
+        },
+        "early_morning": {
+          "config": 0.2,
+          "realised": 0.1991,
+          "serial_only": 0.1924
+        },
+        "day": {
+          "config": 0.1,
+          "realised": 0.1064,
+          "serial_only": 0.1273
+        }
+      },
+      "group_size_est": {
+        "1": {
+          "config": 0.25,
+          "realised": 0.2429,
+          "serial_only": 0.2164
+        },
+        "2-3": {
+          "config": 0.5,
+          "realised": 0.4975,
+          "serial_only": 0.4356
+        },
+        "4+": {
+          "config": 0.25,
+          "realised": 0.2596,
+          "serial_only": 0.3479
+        }
+      },
+      "tools": {
+        "crowbar": {
+          "config": 0.4,
+          "realised": 0.3922,
+          "serial_only": 0.4356
+        },
+        "cutter": {
+          "config": 0.35,
+          "realised": 0.3435,
+          "serial_only": 0.3748
+        },
+        "screwdriver": {
+          "config": 0.2,
+          "realised": 0.2048,
+          "serial_only": 0.2093
+        },
+        "gas_cutter": {
+          "config": 0.08,
+          "realised": 0.0989,
+          "serial_only": 0.2207
+        }
+      },
+      "counter_forensic": {
+        "none": {
+          "config": 0.65,
+          "realised": 0.6391,
+          "serial_only": 0.5827
+        },
+        "gloves": {
+          "config": 0.12,
+          "realised": 0.124,
+          "serial_only": 0.1287
+        },
+        "face_covered": {
+          "config": 0.13,
+          "realised": 0.1374,
+          "serial_only": 0.1782
+        },
+        "cctv_disabled": {
+          "config": 0.1,
+          "realised": 0.0995,
+          "serial_only": 0.1103
+        }
+      },
+      "target_selection": {
+        "opportunistic": {
+          "config": 0.4,
+          "realised": 0.3966,
+          "serial_only": 0.3593
+        },
+        "scouted": {
+          "config": 0.48,
+          "realised": 0.471,
+          "serial_only": 0.4752
+        },
+        "insider_info": {
+          "config": 0.12,
+          "realised": 0.1323,
+          "serial_only": 0.1655
+        }
+      },
+      "property_taken": {
+        "gold": {
+          "config": 0.15,
+          "realised": 0.1497,
+          "serial_only": 0.1697
+        },
+        "cash": {
+          "config": 0.6,
+          "realised": 0.6021,
+          "serial_only": 0.5926
+        },
+        "electronics": {
+          "config": 0.4,
+          "realised": 0.4004,
+          "serial_only": 0.396
+        },
+        "documents": {
+          "config": 0.1,
+          "realised": 0.1017,
+          "serial_only": 0.0905
+        },
+        "vehicle": {
+          "config": 0.02,
+          "realised": 0.0238,
+          "serial_only": 0.0325
+        }
+      },
+      "approach_mode": {
+        "on_foot": {
+          "config": 0.25,
+          "realised": 0.2455,
+          "serial_only": 0.2051
+        },
+        "two_wheeler": {
+          "config": 0.4,
+          "realised": 0.3896,
+          "serial_only": 0.3536
+        },
+        "four_wheeler": {
+          "config": 0.35,
+          "realised": 0.3649,
+          "serial_only": 0.4413
+        }
+      },
+      "exit_mode": {
+        "on_foot": {
+          "config": 0.2,
+          "realised": 0.2348,
+          "serial_only": 0.1938
+        },
+        "two_wheeler": {
+          "config": 0.4,
+          "realised": 0.3865,
+          "serial_only": 0.3536
+        },
+        "four_wheeler": {
+          "config": 0.4,
+          "realised": 0.3788,
+          "serial_only": 0.4526
+        }
+      },
+      "entry_point": {
+        "door": {
+          "config": 0.3,
+          "realised": 0.301,
+          "serial_only": 0.2857
+        },
+        "shutter": {
+          "config": 0.4,
+          "realised": 0.3856,
+          "serial_only": 0.3819
+        },
+        "window": {
+          "config": 0.1,
+          "realised": 0.0971,
+          "serial_only": 0.082
+        },
+        "roof": {
+          "config": 0.1,
+          "realised": 0.1037,
+          "serial_only": 0.1146
+        },
+        "wall_breach": {
+          "config": 0.1,
+          "realised": 0.1125,
+          "serial_only": 0.1358
+        }
+      },
+      "entry_method": {
+        "lock_broken": {
+          "config": 0.5,
+          "realised": 0.4854,
+          "serial_only": 0.3847
+        },
+        "forced_open": {
+          "config": 0.25,
+          "realised": 0.2449,
+          "serial_only": 0.2645
+        },
+        "grill_cut": {
+          "config": 0.1,
+          "realised": 0.1042,
+          "serial_only": 0.1174
+        },
+        "no_force": {
+          "config": 0.07,
+          "realised": 0.0716,
+          "serial_only": 0.0849
+        },
+        "duplicate_key": {
+          "config": 0.08,
+          "realised": 0.094,
+          "serial_only": 0.1485
+        }
+      },
+      "premise": {
+        "shop": {
+          "config": 0.55,
+          "realised": 0.5296,
+          "serial_only": 0.4144
+        },
+        "office": {
+          "config": 0.15,
+          "realised": 0.1482,
+          "serial_only": 0.1556
+        },
+        "warehouse": {
+          "config": 0.2,
+          "realised": 0.2237,
+          "serial_only": 0.3564
+        },
+        "mixed_use": {
+          "config": 0.1,
+          "realised": 0.0984,
+          "serial_only": 0.0736
+        }
+      },
+      "occupancy": {
+        "closed_overnight": {
+          "config": 0.8,
+          "realised": 0.7906,
+          "serial_only": 0.7115
+        },
+        "closed_extended": {
+          "config": 0.2,
+          "realised": 0.2094,
+          "serial_only": 0.2885
+        }
+      },
+      "search_pattern": {
+        "selective": {
+          "config": 0.35,
+          "realised": 0.3495,
+          "serial_only": 0.3975
+        },
+        "ransacked": {
+          "config": 0.45,
+          "realised": 0.4358,
+          "serial_only": 0.3239
+        },
+        "targeted": {
+          "config": 0.2,
+          "realised": 0.2147,
+          "serial_only": 0.2786
+        }
+      }
+    },
+    "VEHICLE_THEFT": {
+      "time_band": {
+        "night": {
+          "config": 0.45,
+          "realised": 0.4519,
+          "serial_only": 0.4753
+        },
+        "early_morning": {
+          "config": 0.15,
+          "realised": 0.1496,
+          "serial_only": 0.1309
+        },
+        "day": {
+          "config": 0.4,
+          "realised": 0.3986,
+          "serial_only": 0.3939
+        }
+      },
+      "group_size_est": {
+        "1": {
+          "config": 0.55,
+          "realised": 0.5608,
+          "serial_only": 0.607
+        },
+        "2-3": {
+          "config": 0.4,
+          "realised": 0.3901,
+          "serial_only": 0.3402
+        },
+        "4+": {
+          "config": 0.05,
+          "realised": 0.0491,
+          "serial_only": 0.0529
+        }
+      },
+      "tools": {
+        "crowbar": {
+          "config": 0.03,
+          "realised": 0.0308,
+          "serial_only": 0.0239
+        },
+        "cutter": {
+          "config": 0.1,
+          "realised": 0.1006,
+          "serial_only": 0.0968
+        },
+        "screwdriver": {
+          "config": 0.35,
+          "realised": 0.345,
+          "serial_only": 0.3559
+        },
+        "gas_cutter": {
+          "config": 0.01,
+          "realised": 0.0107,
+          "serial_only": 0.0128
+        }
+      },
+      "counter_forensic": {
+        "none": {
+          "config": 0.85,
+          "realised": 0.8483,
+          "serial_only": 0.8525
+        },
+        "gloves": {
+          "config": 0.05,
+          "realised": 0.053,
+          "serial_only": 0.0537
+        },
+        "face_covered": {
+          "config": 0.07,
+          "realised": 0.0694,
+          "serial_only": 0.0614
+        },
+        "cctv_disabled": {
+          "config": 0.03,
+          "realised": 0.0293,
+          "serial_only": 0.0324
+        }
+      },
+      "target_selection": {
+        "opportunistic": {
+          "config": 0.7,
+          "realised": 0.7035,
+          "serial_only": 0.7242
+        },
+        "scouted": {
+          "config": 0.25,
+          "realised": 0.245,
+          "serial_only": 0.2255
+        },
+        "insider_info": {
+          "config": 0.05,
+          "realised": 0.0514,
+          "serial_only": 0.0503
+        }
+      },
+      "property_taken": {
+        "gold": {
+          "config": 0.0,
+          "realised": 0.0,
+          "serial_only": 0.0
+        },
+        "cash": {
+          "config": 0.02,
+          "realised": 0.0198,
+          "serial_only": 0.0209
+        },
+        "electronics": {
+          "config": 0.03,
+          "realised": 0.0289,
+          "serial_only": 0.0311
+        },
+        "documents": {
+          "config": 0.15,
+          "realised": 0.1519,
+          "serial_only": 0.1569
+        },
+        "vehicle": {
+          "config": 1.0,
+          "realised": 1.0,
+          "serial_only": 1.0
+        }
+      },
+      "approach_mode": {
+        "on_foot": {
+          "config": 0.6,
+          "realised": 0.6045,
+          "serial_only": 0.6257
+        },
+        "two_wheeler": {
+          "config": 0.35,
+          "realised": 0.3462,
+          "serial_only": 0.3278
+        },
+        "four_wheeler": {
+          "config": 0.05,
+          "realised": 0.0493,
+          "serial_only": 0.0465
+        }
+      },
+      "exit_mode": {
+        "on_foot": {
+          "config": 0.0,
+          "realised": 0.0,
+          "serial_only": 0.0
+        },
+        "two_wheeler": {
+          "config": 0.75,
+          "realised": 0.7546,
+          "serial_only": 0.772
+        },
+        "four_wheeler": {
+          "config": 0.25,
+          "realised": 0.2454,
+          "serial_only": 0.228
+        }
+      },
+      "vehicle_class": {
+        "motorcycle": {
+          "config": 0.5,
+          "realised": 0.5062,
+          "serial_only": 0.4919
+        },
+        "scooter": {
+          "config": 0.25,
+          "realised": 0.2483,
+          "serial_only": 0.2801
+        },
+        "car": {
+          "config": 0.18,
+          "realised": 0.1755,
+          "serial_only": 0.1564
+        },
+        "commercial": {
+          "config": 0.07,
+          "realised": 0.0699,
+          "serial_only": 0.0716
+        }
+      },
+      "ignition_method": {
+        "duplicate_key": {
+          "config": 0.3,
+          "realised": 0.3039,
+          "serial_only": 0.3312
+        },
+        "direct_wiring": {
+          "config": 0.25,
+          "realised": 0.2353,
+          "serial_only": 0.1795
+        },
+        "handle_lock_broken": {
+          "config": 0.25,
+          "realised": 0.2421,
+          "serial_only": 0.208
+        },
+        "key_left": {
+          "config": 0.1,
+          "realised": 0.1193,
+          "serial_only": 0.2042
+        },
+        "towed_or_lifted": {
+          "config": 0.1,
+          "realised": 0.0995,
+          "serial_only": 0.0772
+        }
+      },
+      "location_type": {
+        "residential_parking": {
+          "config": 0.35,
+          "realised": 0.3432,
+          "serial_only": 0.3333
+        },
+        "street": {
+          "config": 0.3,
+          "realised": 0.2993,
+          "serial_only": 0.2928
+        },
+        "market": {
+          "config": 0.15,
+          "realised": 0.1564,
+          "serial_only": 0.1871
+        },
+        "public_parking": {
+          "config": 0.12,
+          "realised": 0.1205,
+          "serial_only": 0.11
+        },
+        "transit_hub": {
+          "config": 0.08,
+          "realised": 0.0805,
+          "serial_only": 0.0767
+        }
+      }
+    },
+    "SNATCHING": {
+      "time_band": {
+        "night": {
+          "config": 0.15,
+          "realised": 0.1355,
+          "serial_only": 0.1153
+        },
+        "early_morning": {
+          "config": 0.35,
+          "realised": 0.3341,
+          "serial_only": 0.2925
+        },
+        "day": {
+          "config": 0.5,
+          "realised": 0.5304,
+          "serial_only": 0.5923
+        }
+      },
+      "group_size_est": {
+        "1": {
+          "config": 0.25,
+          "realised": 0.2535,
+          "serial_only": 0.2678
+        },
+        "2-3": {
+          "config": 0.72,
+          "realised": 0.7108,
+          "serial_only": 0.6775
+        },
+        "4+": {
+          "config": 0.03,
+          "realised": 0.0358,
+          "serial_only": 0.0546
+        }
+      },
+      "tools": {
+        "crowbar": {
+          "config": 0.0,
+          "realised": 0.0,
+          "serial_only": 0.0
+        },
+        "cutter": {
+          "config": 0.02,
+          "realised": 0.0163,
+          "serial_only": 0.0187
+        },
+        "screwdriver": {
+          "config": 0.0,
+          "realised": 0.0,
+          "serial_only": 0.0
+        },
+        "gas_cutter": {
+          "config": 0.0,
+          "realised": 0.0,
+          "serial_only": 0.0
+        }
+      },
+      "counter_forensic": {
+        "none": {
+          "config": 0.55,
+          "realised": 0.559,
+          "serial_only": 0.6103
+        },
+        "gloves": {
+          "config": 0.03,
+          "realised": 0.0248,
+          "serial_only": 0.0187
+        },
+        "face_covered": {
+          "config": 0.4,
+          "realised": 0.3991,
+          "serial_only": 0.3591
+        },
+        "cctv_disabled": {
+          "config": 0.02,
+          "realised": 0.0171,
+          "serial_only": 0.012
+        }
+      },
+      "target_selection": {
+        "opportunistic": {
+          "config": 0.75,
+          "realised": 0.7567,
+          "serial_only": 0.7928
+        },
+        "scouted": {
+          "config": 0.23,
+          "realised": 0.2266,
+          "serial_only": 0.1939
+        },
+        "insider_info": {
+          "config": 0.02,
+          "realised": 0.0168,
+          "serial_only": 0.0133
+        }
+      },
+      "property_taken": {
+        "gold": {
+          "config": 0.85,
+          "realised": 0.8488,
+          "serial_only": 0.8408
+        },
+        "cash": {
+          "config": 0.1,
+          "realised": 0.0923,
+          "serial_only": 0.0839
+        },
+        "electronics": {
+          "config": 0.2,
+          "realised": 0.2136,
+          "serial_only": 0.2432
+        },
+        "documents": {
+          "config": 0.03,
+          "realised": 0.0273,
+          "serial_only": 0.0247
+        },
+        "vehicle": {
+          "config": 0.0,
+          "realised": 0.0,
+          "serial_only": 0.0
+        }
+      },
+      "approach_mode": {
+        "on_foot": {
+          "config": 0.12,
+          "realised": 0.1145,
+          "serial_only": 0.0999
+        },
+        "two_wheeler": {
+          "config": 0.85,
+          "realised": 0.8855,
+          "serial_only": 0.9001
+        },
+        "four_wheeler": {
+          "config": 0.03,
+          "realised": 0.0,
+          "serial_only": 0.0
+        }
+      },
+      "exit_mode": {
+        "on_foot": {
+          "config": 0.1,
+          "realised": 0.1145,
+          "serial_only": 0.0999
+        },
+        "two_wheeler": {
+          "config": 0.87,
+          "realised": 0.8855,
+          "serial_only": 0.9001
+        },
+        "four_wheeler": {
+          "config": 0.03,
+          "realised": 0.0,
+          "serial_only": 0.0
+        }
+      },
+      "vehicle_used": {
+        "motorcycle": {
+          "config": 0.65,
+          "realised": 0.6606,
+          "serial_only": 0.6815
+        },
+        "scooter": {
+          "config": 0.23,
+          "realised": 0.2249,
+          "serial_only": 0.2185
+        },
+        "none": {
+          "config": 0.12,
+          "realised": 0.1145,
+          "serial_only": 0.0999
+        }
+      },
+      "victim_activity": {
+        "walking": {
+          "config": 0.45,
+          "realised": 0.4483,
+          "serial_only": 0.445
+        },
+        "morning_walk": {
+          "config": 0.25,
+          "realised": 0.2384,
+          "serial_only": 0.1885
+        },
+        "shopping": {
+          "config": 0.12,
+          "realised": 0.127,
+          "serial_only": 0.1639
+        },
+        "riding_pillion": {
+          "config": 0.08,
+          "realised": 0.0887,
+          "serial_only": 0.1153
+        },
+        "waiting_for_transport": {
+          "config": 0.1,
+          "realised": 0.0976,
+          "serial_only": 0.0873
+        }
+      },
+      "escape_direction": {
+        "main_road": {
+          "config": 0.45,
+          "realised": 0.4693,
+          "serial_only": 0.509
+        },
+        "lanes": {
+          "config": 0.4,
+          "realised": 0.3857,
+          "serial_only": 0.3364
+        },
+        "highway": {
+          "config": 0.15,
+          "realised": 0.145,
+          "serial_only": 0.1546
+        }
+      }
+    },
+    "ATM_TAMPERING": {
+      "time_band": {
+        "night": {
+          "config": 0.65,
+          "realised": 0.6493,
+          "serial_only": 0.6145
+        },
+        "early_morning": {
+          "config": 0.25,
+          "realised": 0.2647,
+          "serial_only": 0.3079
+        },
+        "day": {
+          "config": 0.1,
+          "realised": 0.0859,
+          "serial_only": 0.0776
+        }
+      },
+      "group_size_est": {
+        "1": {
+          "config": 0.3,
+          "realised": 0.2853,
+          "serial_only": 0.2578
+        },
+        "2-3": {
+          "config": 0.55,
+          "realised": 0.5483,
+          "serial_only": 0.5369
+        },
+        "4+": {
+          "config": 0.15,
+          "realised": 0.1663,
+          "serial_only": 0.2053
+        }
+      },
+      "tools": {
+        "crowbar": {
+          "config": 0.15,
+          "realised": 0.1637,
+          "serial_only": 0.1865
+        },
+        "cutter": {
+          "config": 0.2,
+          "realised": 0.2075,
+          "serial_only": 0.2428
+        },
+        "screwdriver": {
+          "config": 0.3,
+          "realised": 0.3086,
+          "serial_only": 0.3104
+        },
+        "gas_cutter": {
+          "config": 0.25,
+          "realised": 0.4763,
+          "serial_only": 0.5507
+        }
+      },
+      "counter_forensic": {
+        "none": {
+          "config": 0.25,
+          "realised": 0.2276,
+          "serial_only": 0.1564
+        },
+        "gloves": {
+          "config": 0.15,
+          "realised": 0.1425,
+          "serial_only": 0.1327
+        },
+        "face_covered": {
+          "config": 0.35,
+          "realised": 0.3498,
+          "serial_only": 0.3367
+        },
+        "cctv_disabled": {
+          "config": 0.25,
+          "realised": 0.2801,
+          "serial_only": 0.3742
+        }
+      },
+      "target_selection": {
+        "opportunistic": {
+          "config": 0.15,
+          "realised": 0.1382,
+          "serial_only": 0.0751
+        },
+        "scouted": {
+          "config": 0.75,
+          "realised": 0.7544,
+          "serial_only": 0.811
+        },
+        "insider_info": {
+          "config": 0.1,
+          "realised": 0.1074,
+          "serial_only": 0.1139
+        }
+      },
+      "property_taken": {
+        "gold": {
+          "config": 0.0,
+          "realised": 0.0,
+          "serial_only": 0.0
+        },
+        "cash": {
+          "config": 0.9,
+          "realised": 0.9074,
+          "serial_only": 0.9212
+        },
+        "electronics": {
+          "config": 0.02,
+          "realised": 0.0232,
+          "serial_only": 0.02
+        },
+        "documents": {
+          "config": 0.0,
+          "realised": 0.0,
+          "serial_only": 0.0
+        },
+        "vehicle": {
+          "config": 0.0,
+          "realised": 0.0,
+          "serial_only": 0.0
+        }
+      },
+      "approach_mode": {
+        "on_foot": {
+          "config": 0.2,
+          "realised": 0.1913,
+          "serial_only": 0.164
+        },
+        "two_wheeler": {
+          "config": 0.45,
+          "realised": 0.4174,
+          "serial_only": 0.2816
+        },
+        "four_wheeler": {
+          "config": 0.35,
+          "realised": 0.3913,
+          "serial_only": 0.5544
+        }
+      },
+      "exit_mode": {
+        "on_foot": {
+          "config": 0.15,
+          "realised": 0.1811,
+          "serial_only": 0.1615
+        },
+        "two_wheeler": {
+          "config": 0.45,
+          "realised": 0.4177,
+          "serial_only": 0.2879
+        },
+        "four_wheeler": {
+          "config": 0.4,
+          "realised": 0.4012,
+          "serial_only": 0.5507
+        }
+      },
+      "machine_type": {
+        "onsite_branch": {
+          "config": 0.45,
+          "realised": 0.4174,
+          "serial_only": 0.3166
+        },
+        "offsite_kiosk": {
+          "config": 0.4,
+          "realised": 0.4226,
+          "serial_only": 0.4919
+        },
+        "white_label": {
+          "config": 0.15,
+          "realised": 0.1599,
+          "serial_only": 0.1915
+        }
+      },
+      "attack_method": {
+        "skimmer": {
+          "config": 0.35,
+          "realised": 0.344,
+          "serial_only": 0.2854
+        },
+        "cash_trap": {
+          "config": 0.2,
+          "realised": 0.1927,
+          "serial_only": 0.2153
+        },
+        "gas_cutting": {
+          "config": 0.25,
+          "realised": 0.2578,
+          "serial_only": 0.2666
+        },
+        "physical_forcing": {
+          "config": 0.15,
+          "realised": 0.1414,
+          "serial_only": 0.0876
+        },
+        "explosive": {
+          "config": 0.05,
+          "realised": 0.0642,
+          "serial_only": 0.1452
+        }
+      },
+      "alarm_defeated": {
+        "defeated": {
+          "config": 0.3,
+          "realised": 0.3454,
+          "serial_only": 0.4956
+        },
+        "not_defeated": {
+          "config": 0.7,
+          "realised": 0.6546,
+          "serial_only": 0.5044
+        }
+      }
+    }
+  },
+  "validators": {
+    "1_background_marginals": {
+      "passed": true,
+      "checks": 197,
+      "worst_abs_z": 2.86,
+      "failures": [],
+      "skipped_implied_fields": [
+        "ATM_TAMPERING.exit_mode",
+        "ATM_TAMPERING.tools",
+        "BURGLARY_COMMERCIAL.exit_mode",
+        "BURGLARY_RESIDENTIAL.exit_mode",
+        "SNATCHING.approach_mode",
+        "SNATCHING.exit_mode",
+        "VEHICLE_THEFT.exit_mode"
+      ],
+      "criterion": "every background value within |z| <= 4.0 of marginals.yaml"
+    },
+    "2_truth_mi": {
+      "passed": true,
+      "observed_bits": 2.3973,
+      "null_mean_bits": 1.5,
+      "null_max_bits": 1.6621,
+      "excess_bits": 0.8972,
+      "criterion": "summed cross-field MI in serial truth (one crime per offender per type) exceeds all 50 permutation nulls"
+    },
+    "3_recorded_mi": {
+      "passed": true,
+      "observed_bits": 3.3542,
+      "null_mean_bits": 2.7023,
+      "null_max_bits": 2.9785,
+      "excess_bits": 0.6519,
+      "excess_kept_vs_truth": 0.727,
+      "criterion": "recorded MI exceeds all 50 permutation nulls and keeps >= 50% of truth's excess"
+    },
+    "4_cheat_detector": {
+      "passed": true,
+      "auc_time_only": 0.8175,
+      "auc_time_plus_metadata": 0.8235,
+      "auc_metadata_only": 0.823,
+      "metadata_added_auc": 0.006,
+      "pairs": 31620,
+      "not_run": "state predictability after normalisation: no normaliser exists yet",
+      "criterion": "row position, case_id hash and FIR serial add < 0.01 AUC over the time gap alone"
+    },
+    "5_series_tail": {
+      "passed": true,
+      "dispersion_index": 3.0,
+      "mean_length": 3.98,
+      "max_length": 27,
+      "top10pct_offenders_share_of_true_pairs": 0.495,
+      "truncated_by_date_range": 0,
+      "criterion": "var/mean of (length - minimum) > 1.5 (Poisson gives 1)"
+    },
+    "6_recording_rates": {
+      "passed": true,
+      "checks": 95,
+      "failures": [],
+      "per_state": {
+        "MH": {
+          "crime_type_confusion": {
+            "config": 0.04,
+            "realised": 0.0412
+          },
+          "value_confusion": {
+            "config": 0.06,
+            "realised_upper_bound": 0.0597
+          }
+        },
+        "MP": {
+          "crime_type_confusion": {
+            "config": 0.08,
+            "realised": 0.0764
+          },
+          "value_confusion": {
+            "config": 0.12,
+            "realised_upper_bound": 0.1185
+          }
+        },
+        "KA": {
+          "crime_type_confusion": {
+            "config": 0.05,
+            "realised": 0.0478
+          },
+          "value_confusion": {
+            "config": 0.08,
+            "realised_upper_bound": 0.0805
+          }
+        },
+        "TG": {
+          "crime_type_confusion": {
+            "config": 0.06,
+            "realised": 0.0565
+          },
+          "value_confusion": {
+            "config": 0.1,
+            "realised_upper_bound": 0.0976
+          }
+        }
+      },
+      "criterion": "dropout and crime-type confusion within |z| <= 4.0 of states.yaml; value confusion not above config; structural absence exact"
+    }
+  },
+  "limitations": [
+    "SYNTHETIC. Evaluating on this corpus measures whether a model can invert this generator, not real-world performance.",
+    "Every marginal and loading is an assumption (provenance tag 'assumption'); loadings were drafted by Claude at the project owner's request and need owner review.",
+    "Narratives are templated English built from recorded values plus filler sentences. Cross-lingual retrieval cannot be demonstrated, and retrieval on templated text will look easier than on real FIRs.",
+    "Background one-offs are generated at style s = 0 exactly (brief decision). Rare, heavily-loaded values are therefore over-represented among serial crimes specifically: a generator artifact a scorer can exploit, and one that moves with serial_case_fraction.",
+    "Every case has a ground-truth offender, so non-links here are clean. Real unlabelled pairs are not confirmed non-links (positive-unlabelled); do not carry accuracy-style metrics over.",
+    "Validator 4's check that state is not predictable after normalisation was not run: no normaliser exists yet.",
+    "Within-crime implications are a small hand-written set (exit follows approach, vehicle class, vehicle_used; gas cutting implies gas cutter). Other real dependencies are absent."
+  ],
+  "config": {
+    "marginals": {
+      "crime_types": {
+        "provenance": {
+          "tag": "assumption",
+          "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+        },
+        "share": {
+          "BURGLARY_RESIDENTIAL": 0.3,
+          "BURGLARY_COMMERCIAL": 0.1,
+          "VEHICLE_THEFT": 0.35,
+          "SNATCHING": 0.18,
+          "ATM_TAMPERING": 0.07
+        }
+      },
+      "by_crime_type": {
+        "BURGLARY_RESIDENTIAL": {
+          "time_band": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."
+            },
+            "p": {
+              "night": 0.52,
+              "early_morning": 0.18,
+              "day": 0.3
+            }
+          },
+          "group_size_est": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."
+            },
+            "p": {
+              "1": 0.34,
+              "2-3": 0.48,
+              "4+": 0.18
+            }
+          },
+          "tools": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."
+            },
+            "rate": {
+              "crowbar": 0.3,
+              "cutter": 0.16,
+              "screwdriver": 0.35,
+              "gas_cutter": 0.02
+            }
+          },
+          "counter_forensic": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."
+            },
+            "p": {
+              "none": 0.8,
+              "gloves": 0.1,
+              "face_covered": 0.07,
+              "cctv_disabled": 0.03
+            }
+          },
+          "target_selection": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "opportunistic": 0.55,
+              "scouted": 0.37,
+              "insider_info": 0.08
+            }
+          },
+          "property_taken": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."
+            },
+            "rate": {
+              "gold": 0.61,
+              "cash": 0.54,
+              "electronics": 0.35,
+              "documents": 0.08,
+              "vehicle": 0.04
+            }
+          },
+          "approach_mode": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "on_foot": 0.4,
+              "two_wheeler": 0.45,
+              "four_wheeler": 0.15
+            }
+          },
+          "exit_mode": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "on_foot": 0.35,
+              "two_wheeler": 0.48,
+              "four_wheeler": 0.17
+            }
+          },
+          "entry_point": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."
+            },
+            "p": {
+              "door": 0.55,
+              "window": 0.25,
+              "balcony": 0.1,
+              "roof": 0.06,
+              "wall_breach": 0.04
+            }
+          },
+          "entry_method": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."
+            },
+            "p": {
+              "lock_broken": 0.45,
+              "forced_open": 0.25,
+              "grill_cut": 0.1,
+              "no_force": 0.12,
+              "duplicate_key": 0.08
+            }
+          },
+          "premise": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."
+            },
+            "p": {
+              "independent_house": 0.42,
+              "apartment": 0.4,
+              "row_house": 0.12,
+              "mixed_use": 0.06
+            }
+          },
+          "occupancy": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."
+            },
+            "p": {
+              "occupied": 0.22,
+              "temporarily_away": 0.58,
+              "vacant_extended": 0.2
+            }
+          },
+          "search_pattern": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."
+            },
+            "p": {
+              "selective": 0.28,
+              "ransacked": 0.57,
+              "targeted": 0.15
+            }
+          }
+        },
+        "BURGLARY_COMMERCIAL": {
+          "time_band": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "night": 0.7,
+              "early_morning": 0.2,
+              "day": 0.1
+            }
+          },
+          "group_size_est": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "1": 0.25,
+              "2-3": 0.5,
+              "4+": 0.25
+            }
+          },
+          "tools": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "rate": {
+              "crowbar": 0.4,
+              "cutter": 0.35,
+              "screwdriver": 0.2,
+              "gas_cutter": 0.08
+            }
+          },
+          "counter_forensic": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "none": 0.65,
+              "gloves": 0.12,
+              "face_covered": 0.13,
+              "cctv_disabled": 0.1
+            }
+          },
+          "target_selection": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "opportunistic": 0.4,
+              "scouted": 0.48,
+              "insider_info": 0.12
+            }
+          },
+          "property_taken": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "rate": {
+              "gold": 0.15,
+              "cash": 0.6,
+              "electronics": 0.4,
+              "documents": 0.1,
+              "vehicle": 0.02
+            }
+          },
+          "approach_mode": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "on_foot": 0.25,
+              "two_wheeler": 0.4,
+              "four_wheeler": 0.35
+            }
+          },
+          "exit_mode": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "on_foot": 0.2,
+              "two_wheeler": 0.4,
+              "four_wheeler": 0.4
+            }
+          },
+          "entry_point": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "door": 0.3,
+              "shutter": 0.4,
+              "window": 0.1,
+              "roof": 0.1,
+              "wall_breach": 0.1
+            }
+          },
+          "entry_method": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "lock_broken": 0.5,
+              "forced_open": 0.25,
+              "grill_cut": 0.1,
+              "no_force": 0.07,
+              "duplicate_key": 0.08
+            }
+          },
+          "premise": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "shop": 0.55,
+              "office": 0.15,
+              "warehouse": 0.2,
+              "mixed_use": 0.1
+            }
+          },
+          "occupancy": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "closed_overnight": 0.8,
+              "closed_extended": 0.2
+            }
+          },
+          "search_pattern": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "selective": 0.35,
+              "ransacked": 0.45,
+              "targeted": 0.2
+            }
+          }
+        },
+        "VEHICLE_THEFT": {
+          "time_band": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "night": 0.45,
+              "early_morning": 0.15,
+              "day": 0.4
+            }
+          },
+          "group_size_est": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "1": 0.55,
+              "2-3": 0.4,
+              "4+": 0.05
+            }
+          },
+          "tools": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "rate": {
+              "crowbar": 0.03,
+              "cutter": 0.1,
+              "screwdriver": 0.35,
+              "gas_cutter": 0.01
+            }
+          },
+          "counter_forensic": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "none": 0.85,
+              "gloves": 0.05,
+              "face_covered": 0.07,
+              "cctv_disabled": 0.03
+            }
+          },
+          "target_selection": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "opportunistic": 0.7,
+              "scouted": 0.25,
+              "insider_info": 0.05
+            }
+          },
+          "property_taken": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "rate": {
+              "gold": 0.0,
+              "cash": 0.02,
+              "electronics": 0.03,
+              "documents": 0.15,
+              "vehicle": 1.0
+            }
+          },
+          "approach_mode": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "on_foot": 0.6,
+              "two_wheeler": 0.35,
+              "four_wheeler": 0.05
+            }
+          },
+          "exit_mode": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "on_foot": 0.0,
+              "two_wheeler": 0.75,
+              "four_wheeler": 0.25
+            }
+          },
+          "vehicle_class": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "motorcycle": 0.5,
+              "scooter": 0.25,
+              "car": 0.18,
+              "commercial": 0.07
+            }
+          },
+          "ignition_method": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "duplicate_key": 0.3,
+              "direct_wiring": 0.25,
+              "handle_lock_broken": 0.25,
+              "key_left": 0.1,
+              "towed_or_lifted": 0.1
+            }
+          },
+          "location_type": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "residential_parking": 0.35,
+              "street": 0.3,
+              "market": 0.15,
+              "public_parking": 0.12,
+              "transit_hub": 0.08
+            }
+          }
+        },
+        "SNATCHING": {
+          "time_band": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "night": 0.15,
+              "early_morning": 0.35,
+              "day": 0.5
+            }
+          },
+          "group_size_est": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "1": 0.25,
+              "2-3": 0.72,
+              "4+": 0.03
+            }
+          },
+          "tools": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "rate": {
+              "crowbar": 0.0,
+              "cutter": 0.02,
+              "screwdriver": 0.0,
+              "gas_cutter": 0.0
+            }
+          },
+          "counter_forensic": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "none": 0.55,
+              "gloves": 0.03,
+              "face_covered": 0.4,
+              "cctv_disabled": 0.02
+            }
+          },
+          "target_selection": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "opportunistic": 0.75,
+              "scouted": 0.23,
+              "insider_info": 0.02
+            }
+          },
+          "property_taken": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "rate": {
+              "gold": 0.85,
+              "cash": 0.1,
+              "electronics": 0.2,
+              "documents": 0.03,
+              "vehicle": 0.0
+            }
+          },
+          "approach_mode": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "on_foot": 0.12,
+              "two_wheeler": 0.85,
+              "four_wheeler": 0.03
+            }
+          },
+          "exit_mode": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "on_foot": 0.1,
+              "two_wheeler": 0.87,
+              "four_wheeler": 0.03
+            }
+          },
+          "vehicle_used": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "motorcycle": 0.65,
+              "scooter": 0.23,
+              "none": 0.12
+            }
+          },
+          "victim_activity": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "walking": 0.45,
+              "morning_walk": 0.25,
+              "shopping": 0.12,
+              "riding_pillion": 0.08,
+              "waiting_for_transport": 0.1
+            }
+          },
+          "escape_direction": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "main_road": 0.45,
+              "lanes": 0.4,
+              "highway": 0.15
+            }
+          }
+        },
+        "ATM_TAMPERING": {
+          "time_band": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "night": 0.65,
+              "early_morning": 0.25,
+              "day": 0.1
+            }
+          },
+          "group_size_est": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "1": 0.3,
+              "2-3": 0.55,
+              "4+": 0.15
+            }
+          },
+          "tools": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "rate": {
+              "crowbar": 0.15,
+              "cutter": 0.2,
+              "screwdriver": 0.3,
+              "gas_cutter": 0.25
+            }
+          },
+          "counter_forensic": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "none": 0.25,
+              "gloves": 0.15,
+              "face_covered": 0.35,
+              "cctv_disabled": 0.25
+            }
+          },
+          "target_selection": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "opportunistic": 0.15,
+              "scouted": 0.75,
+              "insider_info": 0.1
+            }
+          },
+          "property_taken": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "rate": {
+              "gold": 0.0,
+              "cash": 0.9,
+              "electronics": 0.02,
+              "documents": 0.0,
+              "vehicle": 0.0
+            }
+          },
+          "approach_mode": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "on_foot": 0.2,
+              "two_wheeler": 0.45,
+              "four_wheeler": 0.35
+            }
+          },
+          "exit_mode": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "on_foot": 0.15,
+              "two_wheeler": 0.45,
+              "four_wheeler": 0.4
+            }
+          },
+          "machine_type": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "onsite_branch": 0.45,
+              "offsite_kiosk": 0.4,
+              "white_label": 0.15
+            }
+          },
+          "attack_method": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "skimmer": 0.35,
+              "cash_trap": 0.2,
+              "gas_cutting": 0.25,
+              "physical_forcing": 0.15,
+              "explosive": 0.05
+            }
+          },
+          "alarm_defeated": {
+            "provenance": {
+              "tag": "assumption",
+              "detail": "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."
+            },
+            "p": {
+              "defeated": 0.3,
+              "not_defeated": 0.7
+            }
+          }
+        }
+      }
+    },
+    "loadings": {
+      "crime_type": {
+        "BURGLARY_RESIDENTIAL": {
+          "stealth": 0.0,
+          "planned": 0.0,
+          "group": 0.0,
+          "why": "reference"
+        },
+        "BURGLARY_COMMERCIAL": {
+          "stealth": 0.0,
+          "planned": 0.5,
+          "group": 0.5,
+          "why": "Commercial targets need business hours scouted and more hands to move stock."
+        },
+        "VEHICLE_THEFT": {
+          "stealth": 0.5,
+          "planned": -0.5,
+          "group": -0.5,
+          "why": "Quick and quiet; one person can ride away with a vehicle found by chance."
+        },
+        "SNATCHING": {
+          "stealth": -1.0,
+          "planned": -0.5,
+          "group": 0.5,
+          "why": "Confrontational street crime of opportunity, usually a rider plus a snatcher."
+        },
+        "ATM_TAMPERING": {
+          "stealth": 0.5,
+          "planned": 1.5,
+          "group": 0.5,
+          "why": "Needs equipment and site reconnaissance; skimming is covert."
+        }
+      },
+      "mo_core": {
+        "time_band": {
+          "night": {
+            "stealth": 1.0,
+            "planned": 0.3,
+            "group": 0.0,
+            "why": "Darkness conceals; waiting for night implies some intent."
+          },
+          "early_morning": {
+            "stealth": 0.3,
+            "planned": 0.5,
+            "group": 0.0,
+            "why": "Early-morning strikes target routines (walkers, shop opening) that must be observed."
+          },
+          "day": {
+            "stealth": 0.0,
+            "planned": 0.0,
+            "group": 0.0,
+            "why": "reference"
+          }
+        },
+        "group_size_est": {
+          "1": {
+            "stealth": 0.0,
+            "planned": 0.0,
+            "group": 0.0,
+            "why": "reference"
+          },
+          "2-3": {
+            "stealth": 0.0,
+            "planned": 0.3,
+            "group": 1.0,
+            "why": "Definition of the group axis; pairing up is arranged in advance."
+          },
+          "4+": {
+            "stealth": -0.5,
+            "planned": 0.5,
+            "group": 2.0,
+            "why": "Large crews are conspicuous and rely on speed and force."
+          }
+        },
+        "tools": {
+          "crowbar": {
+            "stealth": -1.0,
+            "planned": 0.3,
+            "group": 0.0,
+            "why": "Prying is loud force; carrying one shows intent."
+          },
+          "cutter": {
+            "stealth": -0.3,
+            "planned": 0.5,
+            "group": 0.0,
+            "why": "Quieter than prying but still force, and must be brought for the job."
+          },
+          "screwdriver": {
+            "stealth": 0.3,
+            "planned": 0.0,
+            "group": 0.0,
+            "why": "Common, quiet, carried by anyone."
+          },
+          "gas_cutter": {
+            "stealth": -1.0,
+            "planned": 1.5,
+            "group": 1.0,
+            "why": "Heavy equipment: procurement, transport and a lookout."
+          }
+        },
+        "counter_forensic": {
+          "none": {
+            "stealth": 0.0,
+            "planned": 0.0,
+            "group": 0.0,
+            "why": "reference"
+          },
+          "gloves": {
+            "stealth": 0.7,
+            "planned": 0.7,
+            "group": 0.0,
+            "why": "Forensic awareness prepared before the crime."
+          },
+          "face_covered": {
+            "stealth": 0.3,
+            "planned": 0.5,
+            "group": 0.3,
+            "why": "Anticipates cameras and witnesses; common when a crew confronts victims."
+          },
+          "cctv_disabled": {
+            "stealth": 0.5,
+            "planned": 1.0,
+            "group": 0.0,
+            "why": "You can only disable a camera you knew was there, so this tracks scouting most strongly (planned 1.0). It is concealment rather than force, but a weaker signal of that (stealth 0.5). A solo offender and a crew are equally able to do it (group 0)."
+          }
+        },
+        "target_selection": {
+          "opportunistic": {
+            "stealth": 0.0,
+            "planned": 0.0,
+            "group": 0.0,
+            "why": "reference"
+          },
+          "scouted": {
+            "stealth": 0.3,
+            "planned": 1.5,
+            "group": 0.0,
+            "why": "Definition of the planned axis."
+          },
+          "insider_info": {
+            "stealth": 0.5,
+            "planned": 1.5,
+            "group": 0.5,
+            "why": "Insider access means a prior arrangement, often with an accomplice."
+          }
+        },
+        "property_taken": {
+          "gold": {
+            "stealth": 0.0,
+            "planned": 0.3,
+            "group": 0.0,
+            "why": "Easy to fence; preferred by offenders with a known outlet."
+          },
+          "cash": {
+            "stealth": 0.0,
+            "planned": 0.0,
+            "group": 0.0
+          },
+          "electronics": {
+            "stealth": -0.3,
+            "planned": -0.3,
+            "group": 0.3,
+            "why": "Bulky; grabbed in ransack-style crimes, easier with extra hands."
+          },
+          "documents": {
+            "stealth": 0.0,
+            "planned": -0.5,
+            "group": 0.0,
+            "why": "Usually incidental to grabbing a bag, not a goal."
+          },
+          "vehicle": {
+            "stealth": 0.0,
+            "planned": 0.0,
+            "group": 0.5,
+            "why": "Driving a vehicle away from a burglary needs a second person."
+          }
+        },
+        "approach_mode": {
+          "on_foot": {
+            "stealth": 0.0,
+            "planned": 0.0,
+            "group": 0.0,
+            "why": "reference"
+          },
+          "two_wheeler": {
+            "stealth": 0.0,
+            "planned": 0.3,
+            "group": 0.5,
+            "why": "Rider plus pillion is the common pairing; bringing a vehicle shows intent."
+          },
+          "four_wheeler": {
+            "stealth": 0.3,
+            "planned": 1.0,
+            "group": 1.5,
+            "why": "A car carries a crew and loot; arranging one is planning."
+          }
+        },
+        "exit_mode": {
+          "on_foot": {
+            "stealth": 0.0,
+            "planned": 0.0,
+            "group": 0.0,
+            "why": "reference"
+          },
+          "two_wheeler": {
+            "stealth": 0.0,
+            "planned": 0.3,
+            "group": 0.5,
+            "why": "As approach_mode."
+          },
+          "four_wheeler": {
+            "stealth": 0.3,
+            "planned": 1.0,
+            "group": 1.5,
+            "why": "As approach_mode."
+          }
+        }
+      },
+      "mo_ext": {
+        "burglary": {
+          "entry_point": {
+            "door": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            },
+            "window": {
+              "stealth": 0.5,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "Side windows are less visible than the front door."
+            },
+            "balcony": {
+              "stealth": 0.5,
+              "planned": 0.3,
+              "group": 0.0,
+              "why": "Climbing avoids the entrance but needs a known route."
+            },
+            "roof": {
+              "stealth": 1.0,
+              "planned": 0.5,
+              "group": 0.0,
+              "why": "Relative to the other entry points: a roof avoids the street-facing door, where forcing is seen and heard (stealth 1.0). Getting onto a roof usually needs prior knowledge of the building or adjoining roofs (planned 0.5, weaker). Nothing about crew size favours it (group 0)."
+            },
+            "wall_breach": {
+              "stealth": -1.0,
+              "planned": 1.0,
+              "group": 1.0,
+              "why": "Loud, slow labour that needs a safe time window and several people."
+            },
+            "shutter": {
+              "stealth": -0.5,
+              "planned": 0.3,
+              "group": 0.5,
+              "why": "Lifting or cutting a shutter is forceful and easier with two."
+            }
+          },
+          "entry_method": {
+            "lock_broken": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            },
+            "forced_open": {
+              "stealth": -0.7,
+              "planned": -0.3,
+              "group": 0.3,
+              "why": "Kicking or prying the door is the crudest option."
+            },
+            "grill_cut": {
+              "stealth": -0.3,
+              "planned": 0.7,
+              "group": 0.0,
+              "why": "Needs a cutter brought for the job."
+            },
+            "no_force": {
+              "stealth": 1.0,
+              "planned": 0.7,
+              "group": 0.0,
+              "why": "Finding an unsecured entry quietly implies watching the premises."
+            },
+            "duplicate_key": {
+              "stealth": 1.5,
+              "planned": 1.5,
+              "group": 0.0,
+              "why": "A key must be copied or obtained in advance."
+            }
+          },
+          "premise": {
+            "independent_house": {
+              "stealth": 0.3,
+              "planned": 0.5,
+              "group": 0.0,
+              "why": "Fewer neighbours and worth scouting."
+            },
+            "apartment": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference (residential)"
+            },
+            "row_house": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0
+            },
+            "mixed_use": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0
+            },
+            "shop": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference (commercial)"
+            },
+            "office": {
+              "stealth": 0.3,
+              "planned": 0.5,
+              "group": 0.0,
+              "why": "Electronics-heavy and empty at predictable hours."
+            },
+            "warehouse": {
+              "stealth": -0.3,
+              "planned": 1.0,
+              "group": 1.5,
+              "why": "Bulk goods need transport and a crew."
+            }
+          },
+          "occupancy": {
+            "occupied": {
+              "stealth": 1.0,
+              "planned": -0.5,
+              "group": 0.0,
+              "why": "Entering while occupants sleep demands quiet; often opportunistic."
+            },
+            "temporarily_away": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference (residential)"
+            },
+            "vacant_extended": {
+              "stealth": 0.0,
+              "planned": 1.0,
+              "group": 0.5,
+              "why": "Knowing a house is empty for days means watching it."
+            },
+            "closed_overnight": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference (commercial)"
+            },
+            "closed_extended": {
+              "stealth": 0.0,
+              "planned": 1.0,
+              "group": 0.5,
+              "why": "Holiday closures are known in advance."
+            }
+          },
+          "search_pattern": {
+            "selective": {
+              "stealth": 0.5,
+              "planned": 1.0,
+              "group": 0.0,
+              "why": "Knowing what to take and where it is."
+            },
+            "ransacked": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            },
+            "targeted": {
+              "stealth": 0.7,
+              "planned": 1.5,
+              "group": 0.0,
+              "why": "Straight to one location requires prior knowledge."
+            }
+          }
+        },
+        "vehicle": {
+          "vehicle_class": {
+            "motorcycle": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            },
+            "scooter": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0
+            },
+            "car": {
+              "stealth": 0.3,
+              "planned": 1.0,
+              "group": 0.5,
+              "why": "Cars need skill and a buyer lined up."
+            },
+            "commercial": {
+              "stealth": 0.0,
+              "planned": 1.5,
+              "group": 1.0,
+              "why": "Goods vehicles are stolen to order by organised groups."
+            }
+          },
+          "ignition_method": {
+            "duplicate_key": {
+              "stealth": 1.0,
+              "planned": 1.5,
+              "group": 0.0,
+              "why": "The key must be obtained beforehand."
+            },
+            "direct_wiring": {
+              "stealth": 0.3,
+              "planned": 0.5,
+              "group": 0.0,
+              "why": "Skill acquired in advance; quick and quiet."
+            },
+            "handle_lock_broken": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            },
+            "key_left": {
+              "stealth": 0.0,
+              "planned": -1.5,
+              "group": 0.0,
+              "why": "Pure opportunity."
+            },
+            "towed_or_lifted": {
+              "stealth": -1.0,
+              "planned": 1.0,
+              "group": 2.0,
+              "why": "Needs a truck and several people."
+            }
+          },
+          "location_type": {
+            "residential_parking": {
+              "stealth": 0.5,
+              "planned": 0.5,
+              "group": 0.0,
+              "why": "Night access to a known building's parking."
+            },
+            "street": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            },
+            "market": {
+              "stealth": 0.5,
+              "planned": -0.3,
+              "group": 0.0,
+              "why": "Crowds cover the theft; targets of chance."
+            },
+            "public_parking": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0
+            },
+            "transit_hub": {
+              "stealth": 0.3,
+              "planned": 0.5,
+              "group": 0.0,
+              "why": "Long-stay parking lets thieves time the owner's absence."
+            }
+          }
+        },
+        "snatching": {
+          "vehicle_used": {
+            "motorcycle": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            },
+            "scooter": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0
+            },
+            "none": {
+              "stealth": 0.3,
+              "planned": -0.5,
+              "group": -1.0,
+              "why": "On-foot snatchers are usually lone and opportunistic."
+            }
+          },
+          "victim_activity": {
+            "walking": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            },
+            "morning_walk": {
+              "stealth": 0.0,
+              "planned": 1.0,
+              "group": 0.0,
+              "why": "Routine walkers are watched and waited for."
+            },
+            "shopping": {
+              "stealth": 0.0,
+              "planned": -0.3,
+              "group": 0.0,
+              "why": "Chance encounter in a crowd."
+            },
+            "riding_pillion": {
+              "stealth": -0.7,
+              "planned": 0.5,
+              "group": 0.5,
+              "why": "Snatching from a moving vehicle is violent and needs a skilled rider."
+            },
+            "waiting_for_transport": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0
+            }
+          },
+          "escape_direction": {
+            "main_road": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            },
+            "lanes": {
+              "stealth": 0.3,
+              "planned": 1.0,
+              "group": 0.0,
+              "why": "Escaping through lanes needs route knowledge."
+            },
+            "highway": {
+              "stealth": -0.3,
+              "planned": 0.5,
+              "group": 0.3,
+              "why": "Fast exit out of the area, typical of travelling gangs."
+            }
+          }
+        },
+        "atm": {
+          "machine_type": {
+            "onsite_branch": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            },
+            "offsite_kiosk": {
+              "stealth": 0.3,
+              "planned": 0.5,
+              "group": 0.0,
+              "why": "Unguarded kiosks are chosen deliberately."
+            },
+            "white_label": {
+              "stealth": 0.3,
+              "planned": 0.5,
+              "group": 0.0,
+              "why": "As offsite_kiosk."
+            }
+          },
+          "attack_method": {
+            "skimmer": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference (the quiet end)"
+            },
+            "cash_trap": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0
+            },
+            "gas_cutting": {
+              "stealth": -1.5,
+              "planned": 0.5,
+              "group": 1.0,
+              "why": "Noisy, equipment-heavy, needs lookouts."
+            },
+            "physical_forcing": {
+              "stealth": -1.5,
+              "planned": -0.5,
+              "group": 0.5,
+              "why": "Crude, fast and loud."
+            },
+            "explosive": {
+              "stealth": -2.0,
+              "planned": 1.5,
+              "group": 1.5,
+              "why": "Procurement and a crew."
+            }
+          },
+          "alarm_defeated": {
+            "defeated": {
+              "stealth": 1.0,
+              "planned": 1.0,
+              "group": 0.0,
+              "why": "Defeating an alarm requires knowing the system beforehand."
+            },
+            "not_defeated": {
+              "stealth": 0.0,
+              "planned": 0.0,
+              "group": 0.0,
+              "why": "reference"
+            }
+          }
+        }
+      }
+    },
+    "states": {
+      "out_of_scope_crime_types": [
+        "ROBBERY"
+      ],
+      "confusability": {
+        "crime_type": [
+          [
+            "BURGLARY_RESIDENTIAL",
+            "BURGLARY_COMMERCIAL"
+          ],
+          [
+            "SNATCHING",
+            "ROBBERY"
+          ]
+        ],
+        "time_band": [
+          [
+            "night",
+            "early_morning"
+          ],
+          [
+            "early_morning",
+            "day"
+          ]
+        ],
+        "group_size_est": [
+          [
+            "1",
+            "2-3"
+          ],
+          [
+            "2-3",
+            "4+"
+          ]
+        ],
+        "tools": [
+          [
+            "crowbar",
+            "screwdriver"
+          ],
+          [
+            "cutter",
+            "gas_cutter"
+          ]
+        ],
+        "counter_forensic": [
+          [
+            "none",
+            "gloves"
+          ],
+          [
+            "none",
+            "face_covered"
+          ],
+          [
+            "none",
+            "cctv_disabled"
+          ]
+        ],
+        "target_selection": [
+          [
+            "opportunistic",
+            "scouted"
+          ],
+          [
+            "scouted",
+            "insider_info"
+          ]
+        ],
+        "property_taken": [],
+        "approach_mode": [
+          [
+            "on_foot",
+            "two_wheeler"
+          ]
+        ],
+        "exit_mode": [
+          [
+            "on_foot",
+            "two_wheeler"
+          ]
+        ],
+        "entry_point": [
+          [
+            "door",
+            "balcony"
+          ],
+          [
+            "window",
+            "balcony"
+          ],
+          [
+            "roof",
+            "wall_breach"
+          ],
+          [
+            "door",
+            "shutter"
+          ]
+        ],
+        "entry_method": [
+          [
+            "lock_broken",
+            "forced_open"
+          ],
+          [
+            "forced_open",
+            "grill_cut"
+          ],
+          [
+            "no_force",
+            "duplicate_key"
+          ]
+        ],
+        "premise": [
+          [
+            "independent_house",
+            "row_house"
+          ],
+          [
+            "independent_house",
+            "mixed_use"
+          ],
+          [
+            "shop",
+            "mixed_use"
+          ],
+          [
+            "shop",
+            "warehouse"
+          ],
+          [
+            "shop",
+            "office"
+          ]
+        ],
+        "occupancy": [
+          [
+            "occupied",
+            "temporarily_away"
+          ],
+          [
+            "temporarily_away",
+            "vacant_extended"
+          ],
+          [
+            "closed_overnight",
+            "closed_extended"
+          ]
+        ],
+        "search_pattern": [
+          [
+            "selective",
+            "targeted"
+          ],
+          [
+            "selective",
+            "ransacked"
+          ]
+        ],
+        "vehicle_class": [
+          [
+            "motorcycle",
+            "scooter"
+          ],
+          [
+            "car",
+            "commercial"
+          ]
+        ],
+        "ignition_method": [
+          [
+            "duplicate_key",
+            "key_left"
+          ],
+          [
+            "direct_wiring",
+            "handle_lock_broken"
+          ]
+        ],
+        "location_type": [
+          [
+            "street",
+            "market"
+          ],
+          [
+            "residential_parking",
+            "public_parking"
+          ],
+          [
+            "public_parking",
+            "transit_hub"
+          ]
+        ],
+        "vehicle_used": [
+          [
+            "motorcycle",
+            "scooter"
+          ]
+        ],
+        "victim_activity": [
+          [
+            "walking",
+            "morning_walk"
+          ],
+          [
+            "walking",
+            "shopping"
+          ],
+          [
+            "walking",
+            "waiting_for_transport"
+          ]
+        ],
+        "escape_direction": [
+          [
+            "main_road",
+            "highway"
+          ],
+          [
+            "main_road",
+            "lanes"
+          ]
+        ],
+        "machine_type": [
+          [
+            "offsite_kiosk",
+            "white_label"
+          ]
+        ],
+        "attack_method": [
+          [
+            "skimmer",
+            "cash_trap"
+          ],
+          [
+            "gas_cutting",
+            "physical_forcing"
+          ],
+          [
+            "physical_forcing",
+            "explosive"
+          ]
+        ],
+        "alarm_defeated": []
+      },
+      "states": {
+        "MH": {
+          "name": "Maharashtra",
+          "narrative_language": "en",
+          "case_share": 0.35,
+          "neighbours": [
+            "MP",
+            "KA",
+            "TG"
+          ],
+          "districts": [
+            "Pune",
+            "Nashik",
+            "Nagpur",
+            "Thane",
+            "Kolhapur"
+          ],
+          "stations_per_district": 8,
+          "recording": {
+            "crime_type_confusion": 0.04,
+            "value_confusion": 0.06,
+            "dropout": {
+              "default": 0.08,
+              "fields": {
+                "target_selection": 0.3,
+                "counter_forensic": 0.15,
+                "search_pattern": 0.2
+              }
+            },
+            "structurally_absent": [],
+            "narrative": {
+              "mentions_unrecorded": 0.15,
+              "omits_recorded": 0.2
+            }
+          },
+          "feed": {
+            "layout": "structured",
+            "date_format": "%d/%m/%Y %H:%M",
+            "date_only_format": "%d/%m/%Y",
+            "multi_value_delimiter": ";",
+            "columns": {
+              "fir_no": "FIR_NO",
+              "district": "DISTRICT",
+              "police_station": "POLICE_STATION",
+              "crime_type": "CRIME_HEAD",
+              "occurred_from": "OCCURRENCE_FROM",
+              "occurred_to": "OCCURRENCE_TO",
+              "registered_at": "REGISTRATION_DATE",
+              "group_size_est": "NO_OF_ACCUSED",
+              "tools": "WEAPONS_TOOLS",
+              "counter_forensic": "CONCEALMENT",
+              "target_selection": "TARGET_TYPE",
+              "property_taken": "PROPERTY_STOLEN",
+              "approach_mode": "MODE_OF_ARRIVAL",
+              "exit_mode": "MODE_OF_ESCAPE",
+              "entry_point": "PLACE_OF_ENTRY",
+              "entry_method": "MODE_OF_ENTRY",
+              "premise": "PREMISES_TYPE",
+              "occupancy": "PREMISES_STATUS",
+              "search_pattern": "SEARCH_TYPE",
+              "vehicle_class": "VEHICLE_TYPE",
+              "ignition_method": "VEHICLE_START_METHOD",
+              "location_type": "PARKING_PLACE",
+              "vehicle_used": "OFFENDER_VEHICLE",
+              "victim_activity": "VICTIM_ACTIVITY",
+              "escape_direction": "ESCAPE_ROUTE",
+              "machine_type": "ATM_SITE_TYPE",
+              "attack_method": "ATM_ATTACK",
+              "alarm_defeated": "ALARM_STATUS",
+              "narrative": "FIR_CONTENTS"
+            }
+          }
+        },
+        "MP": {
+          "name": "Madhya Pradesh",
+          "narrative_language": "en",
+          "case_share": 0.25,
+          "neighbours": [
+            "MH"
+          ],
+          "districts": [
+            "Indore",
+            "Bhopal",
+            "Jabalpur",
+            "Gwalior",
+            "Ujjain"
+          ],
+          "stations_per_district": 6,
+          "recording": {
+            "crime_type_confusion": 0.08,
+            "value_confusion": 0.12,
+            "dropout": {
+              "default": 0.15,
+              "fields": {
+                "group_size_est": 0.25,
+                "exit_mode": 0.35,
+                "target_selection": 0.45
+              }
+            },
+            "structurally_absent": [],
+            "narrative": {
+              "mentions_unrecorded": 0.1,
+              "omits_recorded": 0.3
+            }
+          },
+          "feed": {
+            "layout": "structured",
+            "date_format": "%d-%m-%Y %I:%M %p",
+            "date_only_format": "%d-%m-%Y",
+            "multi_value_delimiter": "|",
+            "columns": {
+              "police_station": "THANA",
+              "district": "ZILA",
+              "fir_no": "APRADH_KRAMANK",
+              "registered_at": "DARJ_DINANK",
+              "crime_type": "APRADH_SHIRSH",
+              "occurred_from": "GHATNA_DINANK_SE",
+              "occurred_to": "GHATNA_DINANK_TAK",
+              "narrative": "GHATNA_VIVARAN",
+              "entry_point": "PRAVESH_STHAN",
+              "entry_method": "PRAVESH_VIDHI",
+              "premise": "PARISAR",
+              "occupancy": "MAKAN_STHITI",
+              "search_pattern": "TALASHI_PRAKAR",
+              "group_size_est": "AAROPI_SANKHYA",
+              "tools": "UPKARAN",
+              "counter_forensic": "PEHCHAN_CHHIPANA",
+              "target_selection": "LAKSHYA_CHAYAN",
+              "property_taken": "CHORI_SAMPATTI",
+              "approach_mode": "AAGAMAN_SADHAN",
+              "exit_mode": "PALAYAN_SADHAN",
+              "vehicle_class": "VAHAN_SHRENI",
+              "ignition_method": "VAHAN_CHALU_VIDHI",
+              "location_type": "VAHAN_STHAN",
+              "vehicle_used": "AAROPI_VAHAN",
+              "victim_activity": "PEEDIT_GATIVIDHI",
+              "escape_direction": "PALAYAN_DISHA",
+              "machine_type": "ATM_STHAN",
+              "attack_method": "ATM_CHHEDCHHAD",
+              "alarm_defeated": "ALARM_STHITI"
+            }
+          }
+        },
+        "KA": {
+          "name": "Karnataka",
+          "narrative_language": "en",
+          "case_share": 0.22,
+          "neighbours": [
+            "MH",
+            "TG"
+          ],
+          "districts": [
+            "Bengaluru Urban",
+            "Mysuru",
+            "Belagavi",
+            "Kalaburagi",
+            "Dharwad"
+          ],
+          "stations_per_district": 7,
+          "recording": {
+            "crime_type_confusion": 0.05,
+            "value_confusion": 0.08,
+            "dropout": {
+              "default": 0.1,
+              "fields": {
+                "tools": 0.2,
+                "escape_direction": 0.3
+              }
+            },
+            "structurally_absent": [
+              "occupancy"
+            ],
+            "narrative": {
+              "mentions_unrecorded": 0.2,
+              "omits_recorded": 0.15
+            }
+          },
+          "feed": {
+            "layout": "structured",
+            "date_format": "%d-%b-%Y %H%M hrs",
+            "date_only_format": "%d-%b-%Y",
+            "multi_value_delimiter": " / ",
+            "columns": {
+              "fir_no": "FIR No.",
+              "registered_at": "FIR Date",
+              "district": "Unit Name",
+              "police_station": "PS Name",
+              "crime_type": "Crime Head",
+              "occurred_from": "Occurrence From",
+              "occurred_to": "Occurrence To",
+              "tools": "MO - Tools",
+              "entry_point": "MO - Entry Point",
+              "entry_method": "MO - Entry",
+              "premise": "MO - Premises",
+              "search_pattern": "MO - Search",
+              "group_size_est": "Accused Count",
+              "counter_forensic": "MO - Concealment",
+              "target_selection": "MO - Target",
+              "property_taken": "Property Lost",
+              "approach_mode": "Came By",
+              "exit_mode": "Fled By",
+              "vehicle_class": "Vehicle Category",
+              "ignition_method": "MO - Vehicle Start",
+              "location_type": "Place Of Theft",
+              "vehicle_used": "Offender Vehicle",
+              "victim_activity": "Victim Was",
+              "escape_direction": "Fled Towards",
+              "machine_type": "ATM Location Type",
+              "attack_method": "MO - ATM",
+              "alarm_defeated": "Alarm",
+              "narrative": "Brief Facts"
+            }
+          }
+        },
+        "TG": {
+          "name": "Telangana",
+          "narrative_language": "en",
+          "case_share": 0.18,
+          "neighbours": [
+            "MH",
+            "KA"
+          ],
+          "districts": [
+            "Hyderabad",
+            "Rangareddy",
+            "Hanumakonda",
+            "Karimnagar",
+            "Nizamabad"
+          ],
+          "stations_per_district": 7,
+          "recording": {
+            "crime_type_confusion": 0.06,
+            "value_confusion": 0.1,
+            "dropout": {
+              "default": 0.2,
+              "fields": {
+                "target_selection": 0.5,
+                "search_pattern": 0.4
+              }
+            },
+            "structurally_absent": [],
+            "narrative": {
+              "mentions_unrecorded": 0.25,
+              "omits_recorded": 0.1
+            }
+          },
+          "feed": {
+            "layout": "free_text_mo",
+            "date_format": "%Y-%m-%dT%H:%M:%S",
+            "date_only_format": "%Y-%m-%d",
+            "multi_value_delimiter": null,
+            "columns": {
+              "fir_no": "fir_number",
+              "district": "district_name",
+              "police_station": "ps_name",
+              "crime_type": "crime_category",
+              "occurred_from": "offence_from_dt",
+              "occurred_to": "offence_to_dt",
+              "registered_at": "fir_reg_dt",
+              "mo_description": "mo_description",
+              "narrative": "brief_facts"
+            }
+          }
+        }
+      }
+    },
+    "corpus": {
+      "n_cases": 45000,
+      "date_range": {
+        "start": "2021-01-01",
+        "end": "2025-12-31"
+      },
+      "geography": {
+        "same_district_rate": 0.7
+      },
+      "exit_same_as_approach": 0.8,
+      "serial_case_fraction": 0.16,
+      "repeat_rate": {
+        "value": 0.5,
+        "reference_frequency": 0.1
+      },
+      "style": {
+        "axes": [
+          "stealth",
+          "planned",
+          "group"
+        ],
+        "sd": 1.0
+      },
+      "tau": 0.75,
+      "series_length": {
+        "minimum": 2,
+        "extra_mean": 2.0,
+        "extra_dispersion": 1.0
+      },
+      "gap_days": [
+        {
+          "weight": 0.7,
+          "mean": 20
+        },
+        {
+          "weight": 0.3,
+          "mean": 120
+        }
+      ],
+      "relocation": {
+        "probability": 0.35,
+        "dormancy_days": [
+          90,
+          365
+        ],
+        "destination": "neighbour"
+      },
+      "occurrence_window_hours": {
+        "by_occupancy": {
+          "occupied": {
+            "median": 2,
+            "sigma": 0.6
+          },
+          "temporarily_away": {
+            "median": 10,
+            "sigma": 0.7
+          },
+          "vacant_extended": {
+            "median": 240,
+            "sigma": 0.8
+          },
+          "closed_overnight": {
+            "median": 12,
+            "sigma": 0.3
+          },
+          "closed_extended": {
+            "median": 60,
+            "sigma": 0.5
+          }
+        },
+        "by_crime_type": {
+          "VEHICLE_THEFT": {
+            "median": 8,
+            "sigma": 0.8
+          },
+          "SNATCHING": {
+            "median": 0.1,
+            "sigma": 0.5
+          },
+          "ATM_TAMPERING": {
+            "median": 18,
+            "sigma": 0.9
+          }
+        }
+      },
+      "registration_delay_hours": {
+        "median": 18,
+        "sigma": 1.0
+      },
+      "time_band": {
+        "hours": {
+          "night": [
+            22,
+            4
+          ],
+          "early_morning": [
+            4,
+            7
+          ],
+          "day": [
+            7,
+            22
+          ]
+        },
+        "unknowable_above_hours": 12
+      }
+    },
+    "vocab": {
+      "crime_type": {
+        "BURGLARY_RESIDENTIAL": {
+          "MH": "HOUSE BREAKING",
+          "MP": "GRIH_BHEDAN",
+          "KA": "Burglary - Dwelling",
+          "TG": "HB - Residential",
+          "en": "house burglary"
+        },
+        "BURGLARY_COMMERCIAL": {
+          "MH": "SHOP BREAKING",
+          "MP": "DUKAN_BHEDAN",
+          "KA": "Burglary - Commercial",
+          "TG": "HB - Commercial",
+          "en": "break-in at commercial premises"
+        },
+        "VEHICLE_THEFT": {
+          "MH": "MOTOR VEHICLE THEFT",
+          "MP": "VAHAN_CHORI",
+          "KA": "Theft - Vehicle",
+          "TG": "MV Theft",
+          "en": "vehicle theft"
+        },
+        "SNATCHING": {
+          "MH": "CHAIN SNATCHING",
+          "MP": "CHAIN_JHAPATNA",
+          "KA": "Theft - Chain Snatching",
+          "TG": "Chain Snatching",
+          "en": "chain snatching"
+        },
+        "ATM_TAMPERING": {
+          "MH": "ATM TAMPERING",
+          "MP": "ATM_CHHEDCHHAD",
+          "KA": "Cheating - ATM",
+          "TG": "ATM Offence",
+          "en": "ATM tampering"
+        }
+      },
+      "fields": {
+        "time_band": {
+          "night": {
+            "en": "struck at night"
+          },
+          "early_morning": {
+            "en": "struck early in the morning"
+          },
+          "day": {
+            "en": "struck during the day"
+          }
+        },
+        "group_size_est": {
+          "1": {
+            "MH": "ONE",
+            "MP": "EK",
+            "KA": "Single",
+            "en": "acted alone"
+          },
+          "2-3": {
+            "MH": "2 TO 3",
+            "MP": "DO_TEEN",
+            "KA": "Two-Three",
+            "en": "were two or three persons"
+          },
+          "4+": {
+            "MH": "4 AND ABOVE",
+            "MP": "CHAAR_SE_ADHIK",
+            "KA": "Gang (4+)",
+            "en": "were a group of four or more"
+          }
+        },
+        "tools": {
+          "crowbar": {
+            "MH": "CROWBAR",
+            "MP": "SABBAL",
+            "KA": "Iron Rod",
+            "en": "used a crowbar"
+          },
+          "cutter": {
+            "MH": "CUTTER",
+            "MP": "KATAR",
+            "KA": "Cutting Plier",
+            "en": "used a cutter"
+          },
+          "screwdriver": {
+            "MH": "SCREW DRIVER",
+            "MP": "PECHKAS",
+            "KA": "Screwdriver",
+            "en": "used a screwdriver"
+          },
+          "gas_cutter": {
+            "MH": "GAS CUTTER",
+            "MP": "GAS_KATAR",
+            "KA": "Gas Welding Set",
+            "en": "used a gas cutter"
+          },
+          "none_observed": {
+            "MH": "NIL",
+            "MP": "KOI_NAHI",
+            "KA": "None Observed",
+            "en": "left no sign of tools"
+          }
+        },
+        "counter_forensic": {
+          "none": {
+            "MH": "NIL",
+            "MP": "KOI_NAHI",
+            "KA": "None",
+            "en": "made no attempt to avoid identification"
+          },
+          "gloves": {
+            "MH": "HAND GLOVES",
+            "MP": "DASTANE",
+            "KA": "Gloves Worn",
+            "en": "wore gloves"
+          },
+          "face_covered": {
+            "MH": "FACE MASKED",
+            "MP": "MUNH_DHAKA",
+            "KA": "Face Covered",
+            "en": "had their faces covered"
+          },
+          "cctv_disabled": {
+            "MH": "CCTV DAMAGED",
+            "MP": "CCTV_TODA",
+            "KA": "CCTV Tampered",
+            "en": "disabled the CCTV camera"
+          }
+        },
+        "target_selection": {
+          "opportunistic": {
+            "MH": "CHANCE",
+            "MP": "AKASMIK",
+            "KA": "Random",
+            "en": "appear to have picked the target by chance"
+          },
+          "scouted": {
+            "MH": "RECCE DONE",
+            "MP": "REKI_KI",
+            "KA": "Pre-Surveyed",
+            "en": "appear to have watched the place beforehand"
+          },
+          "insider_info": {
+            "MH": "INSIDE INFORMATION",
+            "MP": "BHEDI_SOOCHNA",
+            "KA": "Insider Tip",
+            "en": "appear to have had inside information"
+          }
+        },
+        "property_taken": {
+          "gold": {
+            "MH": "GOLD ORNAMENTS",
+            "MP": "SONE_KE_GAHNE",
+            "KA": "Gold Jewellery",
+            "en": "took gold ornaments"
+          },
+          "cash": {
+            "MH": "CASH",
+            "MP": "NAKAD",
+            "KA": "Cash",
+            "en": "took cash"
+          },
+          "electronics": {
+            "MH": "ELECTRONIC ITEMS",
+            "MP": "ELECTRONIC_SAMAN",
+            "KA": "Electronics",
+            "en": "took electronic items"
+          },
+          "documents": {
+            "MH": "DOCUMENTS",
+            "MP": "DASTAVEZ",
+            "KA": "Documents",
+            "en": "took documents"
+          },
+          "vehicle": {
+            "MH": "VEHICLE",
+            "MP": "VAHAN",
+            "KA": "Vehicle",
+            "en": "took a vehicle"
+          },
+          "none_observed": {
+            "MH": "NIL",
+            "MP": "KUCHH_NAHI",
+            "KA": "Nothing Lost",
+            "en": "took nothing"
+          }
+        },
+        "approach_mode": {
+          "on_foot": {
+            "MH": "ON FOOT",
+            "MP": "PAIDAL",
+            "KA": "Walking",
+            "en": "came on foot"
+          },
+          "two_wheeler": {
+            "MH": "TWO WHEELER",
+            "MP": "DO_PAHIYA",
+            "KA": "Bike",
+            "en": "came on a two-wheeler"
+          },
+          "four_wheeler": {
+            "MH": "FOUR WHEELER",
+            "MP": "CHAR_PAHIYA",
+            "KA": "Car/Jeep",
+            "en": "came in a four-wheeler"
+          }
+        },
+        "exit_mode": {
+          "on_foot": {
+            "MH": "ON FOOT",
+            "MP": "PAIDAL",
+            "KA": "Walking",
+            "en": "fled on foot"
+          },
+          "two_wheeler": {
+            "MH": "TWO WHEELER",
+            "MP": "DO_PAHIYA",
+            "KA": "Bike",
+            "en": "fled on a two-wheeler"
+          },
+          "four_wheeler": {
+            "MH": "FOUR WHEELER",
+            "MP": "CHAR_PAHIYA",
+            "KA": "Car/Jeep",
+            "en": "fled in a four-wheeler"
+          }
+        },
+        "entry_point": {
+          "door": {
+            "MH": "MAIN DOOR",
+            "MP": "DARWAZA",
+            "KA": "Door",
+            "en": "got in through the door"
+          },
+          "window": {
+            "MH": "WINDOW",
+            "MP": "KHIDKI",
+            "KA": "Window",
+            "en": "got in through a window"
+          },
+          "balcony": {
+            "MH": "BALCONY",
+            "MP": "BALCONY",
+            "KA": "Balcony",
+            "en": "climbed in via the balcony"
+          },
+          "roof": {
+            "MH": "ROOF / TERRACE",
+            "MP": "CHHAT",
+            "KA": "Terrace",
+            "en": "got in through the roof"
+          },
+          "wall_breach": {
+            "MH": "WALL HOLE",
+            "MP": "DEEWAR_TODKAR",
+            "KA": "Wall Breached",
+            "en": "made a hole in the wall"
+          },
+          "shutter": {
+            "MH": "SHUTTER",
+            "MP": "SHUTTER",
+            "KA": "Rolling Shutter",
+            "en": "got in by lifting the shutter"
+          }
+        },
+        "entry_method": {
+          "lock_broken": {
+            "MH": "LOCK BROKEN",
+            "MP": "TALA_TODA",
+            "KA": "Forced - lock",
+            "en": "broke the lock"
+          },
+          "forced_open": {
+            "MH": "DOOR FORCED",
+            "MP": "DHAKKA_DEKAR_KHOLA",
+            "KA": "Forced - door",
+            "en": "forced the door open"
+          },
+          "grill_cut": {
+            "MH": "GRILL CUT",
+            "MP": "GRILL_KATI",
+            "KA": "Forced - grill cut",
+            "en": "cut the grill"
+          },
+          "no_force": {
+            "MH": "NO FORCE",
+            "MP": "BINA_TOD_FOD",
+            "KA": "Unforced",
+            "en": "entered without force"
+          },
+          "duplicate_key": {
+            "MH": "DUPLICATE KEY",
+            "MP": "NAKLI_CHABI",
+            "KA": "Unforced - key",
+            "en": "opened it with a duplicate key"
+          }
+        },
+        "premise": {
+          "independent_house": {
+            "MH": "BUNGALOW",
+            "MP": "SWATANTRA_MAKAN",
+            "KA": "Independent House",
+            "en": "targeted an independent house"
+          },
+          "apartment": {
+            "MH": "FLAT",
+            "MP": "FLAT",
+            "KA": "Apartment",
+            "en": "targeted an apartment"
+          },
+          "row_house": {
+            "MH": "ROW HOUSE",
+            "MP": "KATAR_MAKAN",
+            "KA": "Row House",
+            "en": "targeted a row house"
+          },
+          "mixed_use": {
+            "MH": "SHOP CUM RESIDENCE",
+            "MP": "DUKAN_SAH_AAWAS",
+            "KA": "Mixed Use",
+            "en": "targeted a shop-cum-residence"
+          },
+          "shop": {
+            "MH": "SHOP",
+            "MP": "DUKAN",
+            "KA": "Shop",
+            "en": "targeted a shop"
+          },
+          "office": {
+            "MH": "OFFICE",
+            "MP": "KARYALAYA",
+            "KA": "Office",
+            "en": "targeted an office"
+          },
+          "warehouse": {
+            "MH": "GODOWN",
+            "MP": "GODAM",
+            "KA": "Warehouse",
+            "en": "targeted a godown"
+          }
+        },
+        "occupancy": {
+          "occupied": {
+            "MH": "OCCUPIED",
+            "MP": "GHAR_WALE_MAUJOOD",
+            "en": "struck while the occupants were inside"
+          },
+          "temporarily_away": {
+            "MH": "LOCKED - OWNER OUT",
+            "MP": "THODI_DER_BAHAR",
+            "en": "struck while the occupants were out"
+          },
+          "vacant_extended": {
+            "MH": "LOCKED - OUT OF STATION",
+            "MP": "BAHARGAON_GAYE",
+            "en": "struck while the house was locked for days"
+          },
+          "closed_overnight": {
+            "MH": "CLOSED FOR NIGHT",
+            "MP": "RAAT_ME_BAND",
+            "en": "struck while the premises were closed for the night"
+          },
+          "closed_extended": {
+            "MH": "CLOSED - HOLIDAY",
+            "MP": "CHHUTTI_ME_BAND",
+            "en": "struck while the premises were closed for a holiday"
+          }
+        },
+        "search_pattern": {
+          "selective": {
+            "MH": "SELECTIVE",
+            "MP": "CHUNINDA_SAMAN",
+            "KA": "Selective Search",
+            "en": "took only selected valuables"
+          },
+          "ransacked": {
+            "MH": "RANSACKED",
+            "MP": "SAB_BIKHRA",
+            "KA": "Ransacked",
+            "en": "ransacked the place"
+          },
+          "targeted": {
+            "MH": "DIRECT TO VALUABLES",
+            "MP": "SEEDHE_TIJORI",
+            "KA": "Targeted",
+            "en": "went straight to where the valuables were kept"
+          }
+        },
+        "vehicle_class": {
+          "motorcycle": {
+            "MH": "MOTOR CYCLE",
+            "MP": "MOTORCYCLE",
+            "KA": "Motorcycle",
+            "en": "stole a motorcycle"
+          },
+          "scooter": {
+            "MH": "SCOOTER",
+            "MP": "SCOOTY",
+            "KA": "Scooter",
+            "en": "stole a scooter"
+          },
+          "car": {
+            "MH": "CAR",
+            "MP": "CAR",
+            "KA": "Car",
+            "en": "stole a car"
+          },
+          "commercial": {
+            "MH": "GOODS VEHICLE",
+            "MP": "MAAL_VAHAN",
+            "KA": "Goods Vehicle",
+            "en": "stole a goods vehicle"
+          }
+        },
+        "ignition_method": {
+          "duplicate_key": {
+            "MH": "DUPLICATE KEY",
+            "MP": "NAKLI_CHABI",
+            "KA": "Master Key",
+            "en": "started it with a duplicate key"
+          },
+          "direct_wiring": {
+            "MH": "DIRECT CONNECTION",
+            "MP": "TAAR_JODKAR",
+            "KA": "Wire Bypass",
+            "en": "started it by joining the wires"
+          },
+          "handle_lock_broken": {
+            "MH": "HANDLE LOCK BROKEN",
+            "MP": "HANDLE_LOCK_TODA",
+            "KA": "Handle Lock Broken",
+            "en": "broke the handle lock"
+          },
+          "key_left": {
+            "MH": "KEY IN VEHICLE",
+            "MP": "CHABI_LAGI_THI",
+            "KA": "Key Left In Vehicle",
+            "en": "found the key left in the vehicle"
+          },
+          "towed_or_lifted": {
+            "MH": "TOWED AWAY",
+            "MP": "UTHA_LE_GAYE",
+            "KA": "Lifted/Towed",
+            "en": "lifted or towed it away"
+          }
+        },
+        "location_type": {
+          "residential_parking": {
+            "MH": "SOCIETY PARKING",
+            "MP": "GHAR_KE_BAHAR",
+            "KA": "Residence Parking",
+            "en": "took it from residential parking"
+          },
+          "street": {
+            "MH": "ROADSIDE",
+            "MP": "SADAK_KINARE",
+            "KA": "Road Side",
+            "en": "took it from the roadside"
+          },
+          "market": {
+            "MH": "MARKET AREA",
+            "MP": "BAZAAR",
+            "KA": "Market",
+            "en": "took it from a market area"
+          },
+          "public_parking": {
+            "MH": "PAY AND PARK",
+            "MP": "SARVAJANIK_PARKING",
+            "KA": "Public Parking",
+            "en": "took it from a public parking lot"
+          },
+          "transit_hub": {
+            "MH": "RLY STN / BUS STAND",
+            "MP": "STATION_PARISAR",
+            "KA": "Bus/Railway Station",
+            "en": "took it from station parking"
+          }
+        },
+        "vehicle_used": {
+          "motorcycle": {
+            "MH": "MOTOR CYCLE",
+            "MP": "MOTORCYCLE",
+            "KA": "Motorcycle",
+            "en": "rode a motorcycle"
+          },
+          "scooter": {
+            "MH": "SCOOTER",
+            "MP": "SCOOTY",
+            "KA": "Scooter",
+            "en": "rode a scooter"
+          },
+          "none": {
+            "MH": "NIL",
+            "MP": "KOI_NAHI",
+            "KA": "No Vehicle",
+            "en": "used no vehicle"
+          }
+        },
+        "victim_activity": {
+          "walking": {
+            "MH": "WALKING",
+            "MP": "PAIDAL_JA_RAHI",
+            "KA": "Walking On Road",
+            "en": "targeted a victim who was walking"
+          },
+          "morning_walk": {
+            "MH": "MORNING WALK",
+            "MP": "SUBAH_TEHALNA",
+            "KA": "Morning Walk",
+            "en": "targeted a victim on a morning walk"
+          },
+          "shopping": {
+            "MH": "SHOPPING",
+            "MP": "KHAREEDARI",
+            "KA": "Shopping",
+            "en": "targeted a victim who was shopping"
+          },
+          "riding_pillion": {
+            "MH": "PILLION RIDER",
+            "MP": "PICHHE_BAITHI",
+            "KA": "Pillion Riding",
+            "en": "targeted a victim riding pillion"
+          },
+          "waiting_for_transport": {
+            "MH": "WAITING AT BUS STOP",
+            "MP": "BUS_KA_INTEZAAR",
+            "KA": "Waiting For Bus",
+            "en": "targeted a victim waiting for transport"
+          }
+        },
+        "escape_direction": {
+          "main_road": {
+            "MH": "MAIN ROAD",
+            "MP": "MUKHYA_MARG",
+            "KA": "Main Road",
+            "en": "escaped along the main road"
+          },
+          "lanes": {
+            "MH": "BY LANES",
+            "MP": "GALIYON_SE",
+            "KA": "Cross Roads",
+            "en": "escaped through the lanes"
+          },
+          "highway": {
+            "MH": "HIGHWAY",
+            "MP": "HIGHWAY",
+            "KA": "Highway",
+            "en": "escaped towards the highway"
+          }
+        },
+        "machine_type": {
+          "onsite_branch": {
+            "MH": "BRANCH ATM",
+            "MP": "SHAKHA_ATM",
+            "KA": "Onsite",
+            "en": "targeted an ATM at a bank branch"
+          },
+          "offsite_kiosk": {
+            "MH": "OFFSITE ATM",
+            "MP": "BAHARI_ATM",
+            "KA": "Offsite",
+            "en": "targeted an offsite ATM kiosk"
+          },
+          "white_label": {
+            "MH": "WHITE LABEL ATM",
+            "MP": "WHITE_LABEL_ATM",
+            "KA": "WLA",
+            "en": "targeted a white-label ATM"
+          }
+        },
+        "attack_method": {
+          "skimmer": {
+            "MH": "SKIMMER FITTED",
+            "MP": "SKIMMER_LAGAYA",
+            "KA": "Skimming",
+            "en": "fitted a skimming device"
+          },
+          "cash_trap": {
+            "MH": "CASH TRAP",
+            "MP": "NOTE_ATKAYE",
+            "KA": "Cash Trapping",
+            "en": "fitted a cash trap"
+          },
+          "gas_cutting": {
+            "MH": "GAS CUT",
+            "MP": "GAS_SE_KATA",
+            "KA": "Gas Cutting",
+            "en": "cut the machine open with gas"
+          },
+          "physical_forcing": {
+            "MH": "FORCIBLY OPENED",
+            "MP": "TODKAR_KHOLA",
+            "KA": "Physical Attack",
+            "en": "forced the machine open"
+          },
+          "explosive": {
+            "MH": "EXPLOSIVE USED",
+            "MP": "VISFOTAK",
+            "KA": "Explosion",
+            "en": "used explosives on the machine"
+          }
+        },
+        "alarm_defeated": {
+          "defeated": {
+            "MH": "ALARM DISABLED",
+            "MP": "ALARM_BAND_KIYA",
+            "KA": "Disabled",
+            "en": "disabled the alarm"
+          },
+          "not_defeated": {
+            "MH": "ALARM INTACT",
+            "MP": "ALARM_CHALU",
+            "KA": "Working",
+            "en": "left the alarm untouched"
+          }
+        }
+      }
+    }
+  }
+}

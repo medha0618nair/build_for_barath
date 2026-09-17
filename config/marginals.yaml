@@ -1,0 +1,229 @@
+# Population marginals p — the STYLE-NEUTRAL distribution.
+#
+# This is what an offender at style s = 0 produces. It is NOT what the
+# corpus will show: averaging style-tilted distributions over offenders
+# drifts away from p (Jensen; rare, heavily-loaded values drift most). The
+# manifest records realised marginals. Present those, never these.
+#
+# Categorical fields: `p`, sums to 1. Tag fields (tools, property_taken):
+# `rate`, one independent probability per tag. 0 and 1 are structural (e.g.
+# vehicle theft always takes a vehicle) and stay fixed under style tilting.
+#
+# Burglary numbers match the TECHNICAL_SPEC.md §4.3 worked example and the
+# TASK_DATA_GENERATION.md drift table. Everything else is a placeholder.
+#
+# PROVENANCE — filled by Claude at Nithin's request; all are `assumption`
+# until someone sources them. One per field:
+#   tag:    published   a citable table (put the citation in detail)
+#           derived     computed from published figures (show the step)
+#           assumption  judgement call (say what it rests on)
+#   detail: free text
+# `python -m linkage.config` lists every provenance still null.
+
+crime_types:
+  provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+  share:
+    BURGLARY_RESIDENTIAL: 0.30
+    BURGLARY_COMMERCIAL: 0.10
+    VEHICLE_THEFT: 0.35
+    SNATCHING: 0.18
+    ATM_TAMPERING: 0.07
+
+by_crime_type:
+
+  BURGLARY_RESIDENTIAL:
+    # mo_core
+    time_band:
+      provenance: {tag: assumption, detail: "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."}
+      p: {night: 0.52, early_morning: 0.18, day: 0.30}
+    group_size_est:
+      provenance: {tag: assumption, detail: "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."}
+      p: {"1": 0.34, "2-3": 0.48, "4+": 0.18}
+    tools:
+      provenance: {tag: assumption, detail: "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."}
+      rate: {crowbar: 0.30, cutter: 0.16, screwdriver: 0.35, gas_cutter: 0.02}
+    counter_forensic:
+      provenance: {tag: assumption, detail: "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."}
+      p: {none: 0.80, gloves: 0.10, face_covered: 0.07, cctv_disabled: 0.03}
+    target_selection:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {opportunistic: 0.55, scouted: 0.37, insider_info: 0.08}
+    property_taken:
+      provenance: {tag: assumption, detail: "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."}
+      rate: {gold: 0.61, cash: 0.54, electronics: 0.35, documents: 0.08, vehicle: 0.04}
+    approach_mode:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {on_foot: 0.40, two_wheeler: 0.45, four_wheeler: 0.15}
+    exit_mode:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {on_foot: 0.35, two_wheeler: 0.48, four_wheeler: 0.17}
+    # mo_ext: burglary
+    entry_point:
+      provenance: {tag: assumption, detail: "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."}
+      p: {door: 0.55, window: 0.25, balcony: 0.10, roof: 0.06, wall_breach: 0.04}
+    entry_method:
+      provenance: {tag: assumption, detail: "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."}
+      p: {lock_broken: 0.45, forced_open: 0.25, grill_cut: 0.10, no_force: 0.12, duplicate_key: 0.08}
+    premise:
+      provenance: {tag: assumption, detail: "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."}
+      p: {independent_house: 0.42, apartment: 0.40, row_house: 0.12, mixed_use: 0.06}
+    occupancy:
+      provenance: {tag: assumption, detail: "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."}
+      p: {occupied: 0.22, temporarily_away: 0.58, vacant_extended: 0.20}
+    search_pattern:
+      provenance: {tag: assumption, detail: "Values match the TECHNICAL_SPEC.md §4.3 worked example / brief drift table, which are themselves illustrative. Not from published data."}
+      p: {selective: 0.28, ransacked: 0.57, targeted: 0.15}
+
+  BURGLARY_COMMERCIAL:
+    # mo_core
+    time_band:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {night: 0.70, early_morning: 0.20, day: 0.10}
+    group_size_est:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {"1": 0.25, "2-3": 0.50, "4+": 0.25}
+    tools:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      rate: {crowbar: 0.40, cutter: 0.35, screwdriver: 0.20, gas_cutter: 0.08}
+    counter_forensic:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {none: 0.65, gloves: 0.12, face_covered: 0.13, cctv_disabled: 0.10}
+    target_selection:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {opportunistic: 0.40, scouted: 0.48, insider_info: 0.12}
+    property_taken:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      rate: {gold: 0.15, cash: 0.60, electronics: 0.40, documents: 0.10, vehicle: 0.02}
+    approach_mode:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {on_foot: 0.25, two_wheeler: 0.40, four_wheeler: 0.35}
+    exit_mode:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {on_foot: 0.20, two_wheeler: 0.40, four_wheeler: 0.40}
+    # mo_ext: burglary
+    entry_point:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {door: 0.30, shutter: 0.40, window: 0.10, roof: 0.10, wall_breach: 0.10}
+    entry_method:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {lock_broken: 0.50, forced_open: 0.25, grill_cut: 0.10, no_force: 0.07, duplicate_key: 0.08}
+    premise:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {shop: 0.55, office: 0.15, warehouse: 0.20, mixed_use: 0.10}
+    occupancy:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {closed_overnight: 0.80, closed_extended: 0.20}
+    search_pattern:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {selective: 0.35, ransacked: 0.45, targeted: 0.20}
+
+  VEHICLE_THEFT:
+    # mo_core
+    time_band:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {night: 0.45, early_morning: 0.15, day: 0.40}
+    group_size_est:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {"1": 0.55, "2-3": 0.40, "4+": 0.05}
+    tools:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      rate: {crowbar: 0.03, cutter: 0.10, screwdriver: 0.35, gas_cutter: 0.01}
+    counter_forensic:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {none: 0.85, gloves: 0.05, face_covered: 0.07, cctv_disabled: 0.03}
+    target_selection:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {opportunistic: 0.70, scouted: 0.25, insider_info: 0.05}
+    property_taken:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      rate: {gold: 0.00, cash: 0.02, electronics: 0.03, documents: 0.15, vehicle: 1.00}
+    approach_mode:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {on_foot: 0.60, two_wheeler: 0.35, four_wheeler: 0.05}
+    exit_mode:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {on_foot: 0.00, two_wheeler: 0.75, four_wheeler: 0.25}
+    # mo_ext: vehicle
+    vehicle_class:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {motorcycle: 0.50, scooter: 0.25, car: 0.18, commercial: 0.07}
+    ignition_method:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {duplicate_key: 0.30, direct_wiring: 0.25, handle_lock_broken: 0.25, key_left: 0.10, towed_or_lifted: 0.10}
+    location_type:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {residential_parking: 0.35, street: 0.30, market: 0.15, public_parking: 0.12, transit_hub: 0.08}
+
+  SNATCHING:
+    # mo_core
+    time_band:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {night: 0.15, early_morning: 0.35, day: 0.50}
+    group_size_est:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {"1": 0.25, "2-3": 0.72, "4+": 0.03}
+    tools:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      rate: {crowbar: 0.00, cutter: 0.02, screwdriver: 0.00, gas_cutter: 0.00}
+    counter_forensic:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {none: 0.55, gloves: 0.03, face_covered: 0.40, cctv_disabled: 0.02}
+    target_selection:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {opportunistic: 0.75, scouted: 0.23, insider_info: 0.02}
+    property_taken:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      rate: {gold: 0.85, cash: 0.10, electronics: 0.20, documents: 0.03, vehicle: 0.00}
+    approach_mode:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {on_foot: 0.12, two_wheeler: 0.85, four_wheeler: 0.03}
+    exit_mode:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {on_foot: 0.10, two_wheeler: 0.87, four_wheeler: 0.03}
+    # mo_ext: snatching
+    vehicle_used:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {motorcycle: 0.65, scooter: 0.23, none: 0.12}
+    victim_activity:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {walking: 0.45, morning_walk: 0.25, shopping: 0.12, riding_pillion: 0.08, waiting_for_transport: 0.10}
+    escape_direction:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {main_road: 0.45, lanes: 0.40, highway: 0.15}
+
+  ATM_TAMPERING:
+    # mo_core
+    time_band:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {night: 0.65, early_morning: 0.25, day: 0.10}
+    group_size_est:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {"1": 0.30, "2-3": 0.55, "4+": 0.15}
+    tools:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      rate: {crowbar: 0.15, cutter: 0.20, screwdriver: 0.30, gas_cutter: 0.25}
+    counter_forensic:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {none: 0.25, gloves: 0.15, face_covered: 0.35, cctv_disabled: 0.25}
+    target_selection:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {opportunistic: 0.15, scouted: 0.75, insider_info: 0.10}
+    property_taken:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      rate: {gold: 0.00, cash: 0.90, electronics: 0.02, documents: 0.00, vehicle: 0.00}
+    approach_mode:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {on_foot: 0.20, two_wheeler: 0.45, four_wheeler: 0.35}
+    exit_mode:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {on_foot: 0.15, two_wheeler: 0.45, four_wheeler: 0.40}
+    # mo_ext: atm
+    machine_type:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {onsite_branch: 0.45, offsite_kiosk: 0.40, white_label: 0.15}
+    attack_method:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {skimmer: 0.35, cash_trap: 0.20, gas_cutting: 0.25, physical_forcing: 0.15, explosive: 0.05}
+    alarm_defeated:
+      provenance: {tag: assumption, detail: "Placeholder chosen by Claude (2026-09-17) for the synthetic corpus. Not sourced; replace before claiming real-world rates."}
+      p: {defeated: 0.30, not_defeated: 0.70}

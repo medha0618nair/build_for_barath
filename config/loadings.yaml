@@ -1,0 +1,168 @@
+# Loadings — the behavioural model.
+#
+# DRAFTED BY CLAUDE at Nithin's request (2026-09-17), not by Nithin. Every
+# non-zero entry is still a claim the project has to defend: review the
+# `why` lines before presenting any result built on them.
+#
+# How a loading acts
+#   Offender style s ~ N(0, sd^2) on three axes (corpus.yaml):
+#     stealth   + stealth   / - force
+#     planned   + planned   / - opportunistic
+#     group     + group     / - solo
+#   Categorical field:  q_v ∝ p_v · exp(τ · Σ_k s_k · loading_v,k), normalised per field
+#   Tag field:          logit(q) = logit(p) + τ · Σ_k s_k · loading_k
+#   s = 0 reproduces marginals.yaml exactly.
+#
+# Reading the scale (τ = 1, s = +1 on one axis)
+#   loading 0.5 → odds × 1.65     1.0 → × 2.72     2.0 → × 7.39
+#   Categorical: only differences within a field matter. Each field has one
+#   reference value at 0 (marked "reference"); the rest are relative to it.
+#   Tags: each tag stands alone, so the absolute value matters.
+#
+# Entry format: {stealth, planned, group, why}. `why` required when non-zero.
+#
+# crime_type: each crime's type is drawn through the same chain, so
+# cross-type offenders emerge from style and repeat_rate.
+
+crime_type:
+  BURGLARY_RESIDENTIAL: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+  BURGLARY_COMMERCIAL:  {stealth: 0.0, planned: 0.5, group: 0.5, why: "Commercial targets need business hours scouted and more hands to move stock."}
+  VEHICLE_THEFT:        {stealth: 0.5, planned: -0.5, group: -0.5, why: "Quick and quiet; one person can ride away with a vehicle found by chance."}
+  SNATCHING:            {stealth: -1.0, planned: -0.5, group: 0.5, why: "Confrontational street crime of opportunity, usually a rider plus a snatcher."}
+  ATM_TAMPERING:        {stealth: 0.5, planned: 1.5, group: 0.5, why: "Needs equipment and site reconnaissance; skimming is covert."}
+
+mo_core:
+  time_band:
+    night:         {stealth: 1.0, planned: 0.3, group: 0.0, why: "Darkness conceals; waiting for night implies some intent."}
+    early_morning: {stealth: 0.3, planned: 0.5, group: 0.0, why: "Early-morning strikes target routines (walkers, shop opening) that must be observed."}
+    day:           {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+  group_size_est:
+    "1":   {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+    "2-3": {stealth: 0.0, planned: 0.3, group: 1.0, why: "Definition of the group axis; pairing up is arranged in advance."}
+    "4+":  {stealth: -0.5, planned: 0.5, group: 2.0, why: "Large crews are conspicuous and rely on speed and force."}
+  tools:   # tags
+    crowbar:     {stealth: -1.0, planned: 0.3, group: 0.0, why: "Prying is loud force; carrying one shows intent."}
+    cutter:      {stealth: -0.3, planned: 0.5, group: 0.0, why: "Quieter than prying but still force, and must be brought for the job."}
+    screwdriver: {stealth: 0.3, planned: 0.0, group: 0.0, why: "Common, quiet, carried by anyone."}
+    gas_cutter:  {stealth: -1.0, planned: 1.5, group: 1.0, why: "Heavy equipment: procurement, transport and a lookout."}
+  counter_forensic:
+    none:          {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+    gloves:        {stealth: 0.7, planned: 0.7, group: 0.0, why: "Forensic awareness prepared before the crime."}
+    face_covered:  {stealth: 0.3, planned: 0.5, group: 0.3, why: "Anticipates cameras and witnesses; common when a crew confronts victims."}
+    cctv_disabled:
+      stealth: 0.5
+      planned: 1.0
+      group: 0.0
+      why: >-
+        You can only disable a camera you knew was there, so this tracks
+        scouting most strongly (planned 1.0). It is concealment rather than
+        force, but a weaker signal of that (stealth 0.5). A solo offender and
+        a crew are equally able to do it (group 0).
+  target_selection:
+    opportunistic: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+    scouted:       {stealth: 0.3, planned: 1.5, group: 0.0, why: "Definition of the planned axis."}
+    insider_info:  {stealth: 0.5, planned: 1.5, group: 0.5, why: "Insider access means a prior arrangement, often with an accomplice."}
+  property_taken:   # tags
+    gold:        {stealth: 0.0, planned: 0.3, group: 0.0, why: "Easy to fence; preferred by offenders with a known outlet."}
+    cash:        {stealth: 0.0, planned: 0.0, group: 0.0}
+    electronics: {stealth: -0.3, planned: -0.3, group: 0.3, why: "Bulky; grabbed in ransack-style crimes, easier with extra hands."}
+    documents:   {stealth: 0.0, planned: -0.5, group: 0.0, why: "Usually incidental to grabbing a bag, not a goal."}
+    vehicle:     {stealth: 0.0, planned: 0.0, group: 0.5, why: "Driving a vehicle away from a burglary needs a second person."}
+  approach_mode:
+    on_foot:      {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+    two_wheeler:  {stealth: 0.0, planned: 0.3, group: 0.5, why: "Rider plus pillion is the common pairing; bringing a vehicle shows intent."}
+    four_wheeler: {stealth: 0.3, planned: 1.0, group: 1.5, why: "A car carries a crew and loot; arranging one is planning."}
+  exit_mode:
+    on_foot:      {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+    two_wheeler:  {stealth: 0.0, planned: 0.3, group: 0.5, why: "As approach_mode."}
+    four_wheeler: {stealth: 0.3, planned: 1.0, group: 1.5, why: "As approach_mode."}
+
+mo_ext:
+  burglary:
+    entry_point:
+      door:        {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+      window:      {stealth: 0.5, planned: 0.0, group: 0.0, why: "Side windows are less visible than the front door."}
+      balcony:     {stealth: 0.5, planned: 0.3, group: 0.0, why: "Climbing avoids the entrance but needs a known route."}
+      roof:
+        stealth: 1.0
+        planned: 0.5
+        group: 0.0
+        why: >-
+          Relative to the other entry points: a roof avoids the street-facing
+          door, where forcing is seen and heard (stealth 1.0). Getting onto
+          a roof usually needs prior knowledge of the building or adjoining
+          roofs (planned 0.5, weaker). Nothing about crew size favours it
+          (group 0).
+      wall_breach: {stealth: -1.0, planned: 1.0, group: 1.0, why: "Loud, slow labour that needs a safe time window and several people."}
+      shutter:     {stealth: -0.5, planned: 0.3, group: 0.5, why: "Lifting or cutting a shutter is forceful and easier with two."}
+    entry_method:
+      lock_broken:   {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+      forced_open:   {stealth: -0.7, planned: -0.3, group: 0.3, why: "Kicking or prying the door is the crudest option."}
+      grill_cut:     {stealth: -0.3, planned: 0.7, group: 0.0, why: "Needs a cutter brought for the job."}
+      no_force:      {stealth: 1.0, planned: 0.7, group: 0.0, why: "Finding an unsecured entry quietly implies watching the premises."}
+      duplicate_key: {stealth: 1.5, planned: 1.5, group: 0.0, why: "A key must be copied or obtained in advance."}
+    premise:
+      independent_house: {stealth: 0.3, planned: 0.5, group: 0.0, why: "Fewer neighbours and worth scouting."}
+      apartment:         {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference (residential)"}
+      row_house:         {stealth: 0.0, planned: 0.0, group: 0.0}
+      mixed_use:         {stealth: 0.0, planned: 0.0, group: 0.0}
+      shop:              {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference (commercial)"}
+      office:            {stealth: 0.3, planned: 0.5, group: 0.0, why: "Electronics-heavy and empty at predictable hours."}
+      warehouse:         {stealth: -0.3, planned: 1.0, group: 1.5, why: "Bulk goods need transport and a crew."}
+    occupancy:
+      occupied:         {stealth: 1.0, planned: -0.5, group: 0.0, why: "Entering while occupants sleep demands quiet; often opportunistic."}
+      temporarily_away: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference (residential)"}
+      vacant_extended:  {stealth: 0.0, planned: 1.0, group: 0.5, why: "Knowing a house is empty for days means watching it."}
+      closed_overnight: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference (commercial)"}
+      closed_extended:  {stealth: 0.0, planned: 1.0, group: 0.5, why: "Holiday closures are known in advance."}
+    search_pattern:
+      selective: {stealth: 0.5, planned: 1.0, group: 0.0, why: "Knowing what to take and where it is."}
+      ransacked: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+      targeted:  {stealth: 0.7, planned: 1.5, group: 0.0, why: "Straight to one location requires prior knowledge."}
+  vehicle:
+    vehicle_class:
+      motorcycle: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+      scooter:    {stealth: 0.0, planned: 0.0, group: 0.0}
+      car:        {stealth: 0.3, planned: 1.0, group: 0.5, why: "Cars need skill and a buyer lined up."}
+      commercial: {stealth: 0.0, planned: 1.5, group: 1.0, why: "Goods vehicles are stolen to order by organised groups."}
+    ignition_method:
+      duplicate_key:      {stealth: 1.0, planned: 1.5, group: 0.0, why: "The key must be obtained beforehand."}
+      direct_wiring:      {stealth: 0.3, planned: 0.5, group: 0.0, why: "Skill acquired in advance; quick and quiet."}
+      handle_lock_broken: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+      key_left:           {stealth: 0.0, planned: -1.5, group: 0.0, why: "Pure opportunity."}
+      towed_or_lifted:    {stealth: -1.0, planned: 1.0, group: 2.0, why: "Needs a truck and several people."}
+    location_type:
+      residential_parking: {stealth: 0.5, planned: 0.5, group: 0.0, why: "Night access to a known building's parking."}
+      street:              {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+      market:              {stealth: 0.5, planned: -0.3, group: 0.0, why: "Crowds cover the theft; targets of chance."}
+      public_parking:      {stealth: 0.0, planned: 0.0, group: 0.0}
+      transit_hub:         {stealth: 0.3, planned: 0.5, group: 0.0, why: "Long-stay parking lets thieves time the owner's absence."}
+  snatching:
+    vehicle_used:
+      motorcycle: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+      scooter:    {stealth: 0.0, planned: 0.0, group: 0.0}
+      none:       {stealth: 0.3, planned: -0.5, group: -1.0, why: "On-foot snatchers are usually lone and opportunistic."}
+    victim_activity:
+      walking:               {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+      morning_walk:          {stealth: 0.0, planned: 1.0, group: 0.0, why: "Routine walkers are watched and waited for."}
+      shopping:              {stealth: 0.0, planned: -0.3, group: 0.0, why: "Chance encounter in a crowd."}
+      riding_pillion:        {stealth: -0.7, planned: 0.5, group: 0.5, why: "Snatching from a moving vehicle is violent and needs a skilled rider."}
+      waiting_for_transport: {stealth: 0.0, planned: 0.0, group: 0.0}
+    escape_direction:
+      main_road: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+      lanes:     {stealth: 0.3, planned: 1.0, group: 0.0, why: "Escaping through lanes needs route knowledge."}
+      highway:   {stealth: -0.3, planned: 0.5, group: 0.3, why: "Fast exit out of the area, typical of travelling gangs."}
+  atm:
+    machine_type:
+      onsite_branch: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}
+      offsite_kiosk: {stealth: 0.3, planned: 0.5, group: 0.0, why: "Unguarded kiosks are chosen deliberately."}
+      white_label:   {stealth: 0.3, planned: 0.5, group: 0.0, why: "As offsite_kiosk."}
+    attack_method:
+      skimmer:          {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference (the quiet end)"}
+      cash_trap:        {stealth: 0.0, planned: 0.0, group: 0.0}
+      gas_cutting:      {stealth: -1.5, planned: 0.5, group: 1.0, why: "Noisy, equipment-heavy, needs lookouts."}
+      physical_forcing: {stealth: -1.5, planned: -0.5, group: 0.5, why: "Crude, fast and loud."}
+      explosive:        {stealth: -2.0, planned: 1.5, group: 1.5, why: "Procurement and a crew."}
+    alarm_defeated:
+      defeated:     {stealth: 1.0, planned: 1.0, group: 0.0, why: "Defeating an alarm requires knowing the system beforehand."}
+      not_defeated: {stealth: 0.0, planned: 0.0, group: 0.0, why: "reference"}

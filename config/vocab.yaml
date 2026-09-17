@@ -1,0 +1,129 @@
+# State-native labels per canonical value, plus `en`: an English clause
+# (subject "the accused") used in narratives and TG's free-text MO column.
+#
+# Labels are one-to-one within a field per state, so a normaliser adapter can
+# invert them. A state needs labels only for columns its feed actually has.
+# Tag fields carry `none_observed`: what a state writes for an empty tag set,
+# which is different from a blank (missing) cell.
+
+crime_type:
+  BURGLARY_RESIDENTIAL: {MH: "HOUSE BREAKING", MP: GRIH_BHEDAN, KA: "Burglary - Dwelling", TG: "HB - Residential", en: "house burglary"}
+  BURGLARY_COMMERCIAL:  {MH: "SHOP BREAKING", MP: DUKAN_BHEDAN, KA: "Burglary - Commercial", TG: "HB - Commercial", en: "break-in at commercial premises"}
+  VEHICLE_THEFT:        {MH: "MOTOR VEHICLE THEFT", MP: VAHAN_CHORI, KA: "Theft - Vehicle", TG: "MV Theft", en: "vehicle theft"}
+  SNATCHING:            {MH: "CHAIN SNATCHING", MP: CHAIN_JHAPATNA, KA: "Theft - Chain Snatching", TG: "Chain Snatching", en: "chain snatching"}
+  ATM_TAMPERING:        {MH: "ATM TAMPERING", MP: ATM_CHHEDCHHAD, KA: "Cheating - ATM", TG: "ATM Offence", en: "ATM tampering"}
+
+fields:
+  time_band:
+    night:         {en: "struck at night"}
+    early_morning: {en: "struck early in the morning"}
+    day:           {en: "struck during the day"}
+  group_size_est:
+    "1":   {MH: "ONE", MP: EK, KA: "Single", en: "acted alone"}
+    "2-3": {MH: "2 TO 3", MP: DO_TEEN, KA: "Two-Three", en: "were two or three persons"}
+    "4+":  {MH: "4 AND ABOVE", MP: CHAAR_SE_ADHIK, KA: "Gang (4+)", en: "were a group of four or more"}
+  tools:
+    crowbar:       {MH: "CROWBAR", MP: SABBAL, KA: "Iron Rod", en: "used a crowbar"}
+    cutter:        {MH: "CUTTER", MP: KATAR, KA: "Cutting Plier", en: "used a cutter"}
+    screwdriver:   {MH: "SCREW DRIVER", MP: PECHKAS, KA: "Screwdriver", en: "used a screwdriver"}
+    gas_cutter:    {MH: "GAS CUTTER", MP: GAS_KATAR, KA: "Gas Welding Set", en: "used a gas cutter"}
+    none_observed: {MH: "NIL", MP: KOI_NAHI, KA: "None Observed", en: "left no sign of tools"}
+  counter_forensic:
+    none:          {MH: "NIL", MP: KOI_NAHI, KA: "None", en: "made no attempt to avoid identification"}
+    gloves:        {MH: "HAND GLOVES", MP: DASTANE, KA: "Gloves Worn", en: "wore gloves"}
+    face_covered:  {MH: "FACE MASKED", MP: MUNH_DHAKA, KA: "Face Covered", en: "had their faces covered"}
+    cctv_disabled: {MH: "CCTV DAMAGED", MP: CCTV_TODA, KA: "CCTV Tampered", en: "disabled the CCTV camera"}
+  target_selection:
+    opportunistic: {MH: "CHANCE", MP: AKASMIK, KA: "Random", en: "appear to have picked the target by chance"}
+    scouted:       {MH: "RECCE DONE", MP: REKI_KI, KA: "Pre-Surveyed", en: "appear to have watched the place beforehand"}
+    insider_info:  {MH: "INSIDE INFORMATION", MP: BHEDI_SOOCHNA, KA: "Insider Tip", en: "appear to have had inside information"}
+  property_taken:
+    gold:          {MH: "GOLD ORNAMENTS", MP: SONE_KE_GAHNE, KA: "Gold Jewellery", en: "took gold ornaments"}
+    cash:          {MH: "CASH", MP: NAKAD, KA: "Cash", en: "took cash"}
+    electronics:   {MH: "ELECTRONIC ITEMS", MP: ELECTRONIC_SAMAN, KA: "Electronics", en: "took electronic items"}
+    documents:     {MH: "DOCUMENTS", MP: DASTAVEZ, KA: "Documents", en: "took documents"}
+    vehicle:       {MH: "VEHICLE", MP: VAHAN, KA: "Vehicle", en: "took a vehicle"}
+    none_observed: {MH: "NIL", MP: KUCHH_NAHI, KA: "Nothing Lost", en: "took nothing"}
+  approach_mode:
+    on_foot:      {MH: "ON FOOT", MP: PAIDAL, KA: "Walking", en: "came on foot"}
+    two_wheeler:  {MH: "TWO WHEELER", MP: DO_PAHIYA, KA: "Bike", en: "came on a two-wheeler"}
+    four_wheeler: {MH: "FOUR WHEELER", MP: CHAR_PAHIYA, KA: "Car/Jeep", en: "came in a four-wheeler"}
+  exit_mode:
+    on_foot:      {MH: "ON FOOT", MP: PAIDAL, KA: "Walking", en: "fled on foot"}
+    two_wheeler:  {MH: "TWO WHEELER", MP: DO_PAHIYA, KA: "Bike", en: "fled on a two-wheeler"}
+    four_wheeler: {MH: "FOUR WHEELER", MP: CHAR_PAHIYA, KA: "Car/Jeep", en: "fled in a four-wheeler"}
+  entry_point:
+    door:        {MH: "MAIN DOOR", MP: DARWAZA, KA: "Door", en: "got in through the door"}
+    window:      {MH: "WINDOW", MP: KHIDKI, KA: "Window", en: "got in through a window"}
+    balcony:     {MH: "BALCONY", MP: BALCONY, KA: "Balcony", en: "climbed in via the balcony"}
+    roof:        {MH: "ROOF / TERRACE", MP: CHHAT, KA: "Terrace", en: "got in through the roof"}
+    wall_breach: {MH: "WALL HOLE", MP: DEEWAR_TODKAR, KA: "Wall Breached", en: "made a hole in the wall"}
+    shutter:     {MH: "SHUTTER", MP: SHUTTER, KA: "Rolling Shutter", en: "got in by lifting the shutter"}
+  entry_method:
+    lock_broken:   {MH: "LOCK BROKEN", MP: TALA_TODA, KA: "Forced - lock", en: "broke the lock"}
+    forced_open:   {MH: "DOOR FORCED", MP: DHAKKA_DEKAR_KHOLA, KA: "Forced - door", en: "forced the door open"}
+    grill_cut:     {MH: "GRILL CUT", MP: GRILL_KATI, KA: "Forced - grill cut", en: "cut the grill"}
+    no_force:      {MH: "NO FORCE", MP: BINA_TOD_FOD, KA: "Unforced", en: "entered without force"}
+    duplicate_key: {MH: "DUPLICATE KEY", MP: NAKLI_CHABI, KA: "Unforced - key", en: "opened it with a duplicate key"}
+  premise:
+    independent_house: {MH: "BUNGALOW", MP: SWATANTRA_MAKAN, KA: "Independent House", en: "targeted an independent house"}
+    apartment:         {MH: "FLAT", MP: FLAT, KA: "Apartment", en: "targeted an apartment"}
+    row_house:         {MH: "ROW HOUSE", MP: KATAR_MAKAN, KA: "Row House", en: "targeted a row house"}
+    mixed_use:         {MH: "SHOP CUM RESIDENCE", MP: DUKAN_SAH_AAWAS, KA: "Mixed Use", en: "targeted a shop-cum-residence"}
+    shop:              {MH: "SHOP", MP: DUKAN, KA: "Shop", en: "targeted a shop"}
+    office:            {MH: "OFFICE", MP: KARYALAYA, KA: "Office", en: "targeted an office"}
+    warehouse:         {MH: "GODOWN", MP: GODAM, KA: "Warehouse", en: "targeted a godown"}
+  occupancy:
+    occupied:         {MH: "OCCUPIED", MP: GHAR_WALE_MAUJOOD, en: "struck while the occupants were inside"}
+    temporarily_away: {MH: "LOCKED - OWNER OUT", MP: THODI_DER_BAHAR, en: "struck while the occupants were out"}
+    vacant_extended:  {MH: "LOCKED - OUT OF STATION", MP: BAHARGAON_GAYE, en: "struck while the house was locked for days"}
+    closed_overnight: {MH: "CLOSED FOR NIGHT", MP: RAAT_ME_BAND, en: "struck while the premises were closed for the night"}
+    closed_extended:  {MH: "CLOSED - HOLIDAY", MP: CHHUTTI_ME_BAND, en: "struck while the premises were closed for a holiday"}
+  search_pattern:
+    selective: {MH: "SELECTIVE", MP: CHUNINDA_SAMAN, KA: "Selective Search", en: "took only selected valuables"}
+    ransacked: {MH: "RANSACKED", MP: SAB_BIKHRA, KA: "Ransacked", en: "ransacked the place"}
+    targeted:  {MH: "DIRECT TO VALUABLES", MP: SEEDHE_TIJORI, KA: "Targeted", en: "went straight to where the valuables were kept"}
+  vehicle_class:
+    motorcycle: {MH: "MOTOR CYCLE", MP: MOTORCYCLE, KA: "Motorcycle", en: "stole a motorcycle"}
+    scooter:    {MH: "SCOOTER", MP: SCOOTY, KA: "Scooter", en: "stole a scooter"}
+    car:        {MH: "CAR", MP: CAR, KA: "Car", en: "stole a car"}
+    commercial: {MH: "GOODS VEHICLE", MP: MAAL_VAHAN, KA: "Goods Vehicle", en: "stole a goods vehicle"}
+  ignition_method:
+    duplicate_key:      {MH: "DUPLICATE KEY", MP: NAKLI_CHABI, KA: "Master Key", en: "started it with a duplicate key"}
+    direct_wiring:      {MH: "DIRECT CONNECTION", MP: TAAR_JODKAR, KA: "Wire Bypass", en: "started it by joining the wires"}
+    handle_lock_broken: {MH: "HANDLE LOCK BROKEN", MP: HANDLE_LOCK_TODA, KA: "Handle Lock Broken", en: "broke the handle lock"}
+    key_left:           {MH: "KEY IN VEHICLE", MP: CHABI_LAGI_THI, KA: "Key Left In Vehicle", en: "found the key left in the vehicle"}
+    towed_or_lifted:    {MH: "TOWED AWAY", MP: UTHA_LE_GAYE, KA: "Lifted/Towed", en: "lifted or towed it away"}
+  location_type:
+    residential_parking: {MH: "SOCIETY PARKING", MP: GHAR_KE_BAHAR, KA: "Residence Parking", en: "took it from residential parking"}
+    street:              {MH: "ROADSIDE", MP: SADAK_KINARE, KA: "Road Side", en: "took it from the roadside"}
+    market:              {MH: "MARKET AREA", MP: BAZAAR, KA: "Market", en: "took it from a market area"}
+    public_parking:      {MH: "PAY AND PARK", MP: SARVAJANIK_PARKING, KA: "Public Parking", en: "took it from a public parking lot"}
+    transit_hub:         {MH: "RLY STN / BUS STAND", MP: STATION_PARISAR, KA: "Bus/Railway Station", en: "took it from station parking"}
+  vehicle_used:
+    motorcycle: {MH: "MOTOR CYCLE", MP: MOTORCYCLE, KA: "Motorcycle", en: "rode a motorcycle"}
+    scooter:    {MH: "SCOOTER", MP: SCOOTY, KA: "Scooter", en: "rode a scooter"}
+    none:       {MH: "NIL", MP: KOI_NAHI, KA: "No Vehicle", en: "used no vehicle"}
+  victim_activity:
+    walking:               {MH: "WALKING", MP: PAIDAL_JA_RAHI, KA: "Walking On Road", en: "targeted a victim who was walking"}
+    morning_walk:          {MH: "MORNING WALK", MP: SUBAH_TEHALNA, KA: "Morning Walk", en: "targeted a victim on a morning walk"}
+    shopping:              {MH: "SHOPPING", MP: KHAREEDARI, KA: "Shopping", en: "targeted a victim who was shopping"}
+    riding_pillion:        {MH: "PILLION RIDER", MP: PICHHE_BAITHI, KA: "Pillion Riding", en: "targeted a victim riding pillion"}
+    waiting_for_transport: {MH: "WAITING AT BUS STOP", MP: BUS_KA_INTEZAAR, KA: "Waiting For Bus", en: "targeted a victim waiting for transport"}
+  escape_direction:
+    main_road: {MH: "MAIN ROAD", MP: MUKHYA_MARG, KA: "Main Road", en: "escaped along the main road"}
+    lanes:     {MH: "BY LANES", MP: GALIYON_SE, KA: "Cross Roads", en: "escaped through the lanes"}
+    highway:   {MH: "HIGHWAY", MP: HIGHWAY, KA: "Highway", en: "escaped towards the highway"}
+  machine_type:
+    onsite_branch: {MH: "BRANCH ATM", MP: SHAKHA_ATM, KA: "Onsite", en: "targeted an ATM at a bank branch"}
+    offsite_kiosk: {MH: "OFFSITE ATM", MP: BAHARI_ATM, KA: "Offsite", en: "targeted an offsite ATM kiosk"}
+    white_label:   {MH: "WHITE LABEL ATM", MP: WHITE_LABEL_ATM, KA: "WLA", en: "targeted a white-label ATM"}
+  attack_method:
+    skimmer:          {MH: "SKIMMER FITTED", MP: SKIMMER_LAGAYA, KA: "Skimming", en: "fitted a skimming device"}
+    cash_trap:        {MH: "CASH TRAP", MP: NOTE_ATKAYE, KA: "Cash Trapping", en: "fitted a cash trap"}
+    gas_cutting:      {MH: "GAS CUT", MP: GAS_SE_KATA, KA: "Gas Cutting", en: "cut the machine open with gas"}
+    physical_forcing: {MH: "FORCIBLY OPENED", MP: TODKAR_KHOLA, KA: "Physical Attack", en: "forced the machine open"}
+    explosive:        {MH: "EXPLOSIVE USED", MP: VISFOTAK, KA: "Explosion", en: "used explosives on the machine"}
+  alarm_defeated:
+    defeated:     {MH: "ALARM DISABLED", MP: ALARM_BAND_KIYA, KA: "Disabled", en: "disabled the alarm"}
+    not_defeated: {MH: "ALARM INTACT", MP: ALARM_CHALU, KA: "Working", en: "left the alarm untouched"}

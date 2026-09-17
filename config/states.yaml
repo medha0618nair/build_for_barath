@@ -1,0 +1,252 @@
+# How each state RECORDS and PUBLISHES a crime. Behaviour marginals are
+# national (marginals.yaml); nothing here changes what an offender did.
+#
+# Corruption rates are PROVISIONAL: tune them against validator 3. If
+# cross-field MI in the recorded table collapses toward zero, corruption is
+# washing out the correlation the evaluation depends on — lower the rates.
+#
+# State-native value vocabularies live in vocab.yaml.
+#
+# Narratives are English in every state. Regional-language narratives need
+# real FIR text or translation; the generator does not fake them, so this
+# corpus cannot demonstrate cross-lingual retrieval.
+
+# Recorded crime-type labels outside the property family. A case recorded
+# under one of these never reaches the pipeline: a real, modelled loss.
+out_of_scope_crime_types: [ROBBERY]
+
+# Confusability graph: which recorded values can plausibly stand in for the
+# true one. Undirected edges. Confusion only ever moves along an edge, never
+# to a random value; a value with no edge is never confused. Neighbours not
+# valid for the case's crime type are skipped (residential has no shutter).
+# Tag fields: a present tag is swapped for a neighbour. Every field is listed
+# so an empty list is a decision, not an omission.
+confusability:
+  crime_type:
+    - [BURGLARY_RESIDENTIAL, BURGLARY_COMMERCIAL]
+    - [SNATCHING, ROBBERY]
+  # mo_core (time_band is derived from the window at recording, so its
+  # edges are unused; kept so every field is listed)
+  time_band: [[night, early_morning], [early_morning, day]]
+  group_size_est: [["1", "2-3"], ["2-3", "4+"]]
+  tools: [[crowbar, screwdriver], [cutter, gas_cutter]]
+  counter_forensic: [[none, gloves], [none, face_covered], [none, cctv_disabled]]
+  target_selection: [[opportunistic, scouted], [scouted, insider_info]]
+  property_taken: []
+  approach_mode: [[on_foot, two_wheeler]]
+  exit_mode: [[on_foot, two_wheeler]]
+  # mo_ext: burglary
+  entry_point: [[door, balcony], [window, balcony], [roof, wall_breach], [door, shutter]]
+  entry_method: [[lock_broken, forced_open], [forced_open, grill_cut], [no_force, duplicate_key]]
+  premise:
+    - [independent_house, row_house]
+    - [independent_house, mixed_use]
+    - [shop, mixed_use]
+    - [shop, warehouse]
+    - [shop, office]
+  occupancy: [[occupied, temporarily_away], [temporarily_away, vacant_extended], [closed_overnight, closed_extended]]
+  search_pattern: [[selective, targeted], [selective, ransacked]]
+  # mo_ext: vehicle
+  vehicle_class: [[motorcycle, scooter], [car, commercial]]
+  ignition_method: [[duplicate_key, key_left], [direct_wiring, handle_lock_broken]]
+  location_type: [[street, market], [residential_parking, public_parking], [public_parking, transit_hub]]
+  # mo_ext: snatching
+  vehicle_used: [[motorcycle, scooter]]
+  victim_activity: [[walking, morning_walk], [walking, shopping], [walking, waiting_for_transport]]
+  escape_direction: [[main_road, highway], [main_road, lanes]]
+  # mo_ext: atm
+  machine_type: [[offsite_kiosk, white_label]]
+  attack_method: [[skimmer, cash_trap], [gas_cutting, physical_forcing], [physical_forcing, explosive]]
+  alarm_defeated: []
+
+# recording.dropout: per-field probability the value is blank. For time_band
+# it means the occurrence timestamps are written date-only.
+# recording.structurally_absent: the state has no such column at all.
+# recording.narrative: mentions_unrecorded = narrative carries an MO detail
+# the structured fields lack; omits_recorded = a structured field is filled
+# but the narrative never mentions it.
+# feed.columns: canonical name → state-native column; file order = list order.
+states:
+
+  MH:
+    name: Maharashtra
+    narrative_language: en
+    case_share: 0.35
+    neighbours: [MP, KA, TG]
+    districts: [Pune, Nashik, Nagpur, Thane, Kolhapur]
+    stations_per_district: 8
+    recording:
+      crime_type_confusion: 0.04
+      value_confusion: 0.06
+      dropout:
+        default: 0.08
+        fields: {target_selection: 0.30, counter_forensic: 0.15, search_pattern: 0.20}
+      structurally_absent: []
+      narrative: {mentions_unrecorded: 0.15, omits_recorded: 0.20}
+    feed:
+      layout: structured
+      date_format: "%d/%m/%Y %H:%M"
+      date_only_format: "%d/%m/%Y"
+      multi_value_delimiter: ";"
+      columns:
+        fir_no: FIR_NO
+        district: DISTRICT
+        police_station: POLICE_STATION
+        crime_type: CRIME_HEAD
+        occurred_from: OCCURRENCE_FROM
+        occurred_to: OCCURRENCE_TO
+        registered_at: REGISTRATION_DATE
+        group_size_est: NO_OF_ACCUSED
+        tools: WEAPONS_TOOLS
+        counter_forensic: CONCEALMENT
+        target_selection: TARGET_TYPE
+        property_taken: PROPERTY_STOLEN
+        approach_mode: MODE_OF_ARRIVAL
+        exit_mode: MODE_OF_ESCAPE
+        entry_point: PLACE_OF_ENTRY
+        entry_method: MODE_OF_ENTRY
+        premise: PREMISES_TYPE
+        occupancy: PREMISES_STATUS
+        search_pattern: SEARCH_TYPE
+        vehicle_class: VEHICLE_TYPE
+        ignition_method: VEHICLE_START_METHOD
+        location_type: PARKING_PLACE
+        vehicle_used: OFFENDER_VEHICLE
+        victim_activity: VICTIM_ACTIVITY
+        escape_direction: ESCAPE_ROUTE
+        machine_type: ATM_SITE_TYPE
+        attack_method: ATM_ATTACK
+        alarm_defeated: ALARM_STATUS
+        narrative: FIR_CONTENTS
+
+  MP:
+    name: Madhya Pradesh
+    narrative_language: en
+    case_share: 0.25
+    neighbours: [MH]
+    districts: [Indore, Bhopal, Jabalpur, Gwalior, Ujjain]
+    stations_per_district: 6
+    recording:
+      crime_type_confusion: 0.08
+      value_confusion: 0.12
+      dropout:
+        default: 0.15
+        fields: {group_size_est: 0.25, exit_mode: 0.35, target_selection: 0.45}
+      structurally_absent: []
+      narrative: {mentions_unrecorded: 0.10, omits_recorded: 0.30}
+    feed:
+      layout: structured
+      date_format: "%d-%m-%Y %I:%M %p"
+      date_only_format: "%d-%m-%Y"
+      multi_value_delimiter: "|"
+      columns:
+        police_station: THANA
+        district: ZILA
+        fir_no: APRADH_KRAMANK
+        registered_at: DARJ_DINANK
+        crime_type: APRADH_SHIRSH
+        occurred_from: GHATNA_DINANK_SE
+        occurred_to: GHATNA_DINANK_TAK
+        narrative: GHATNA_VIVARAN
+        entry_point: PRAVESH_STHAN
+        entry_method: PRAVESH_VIDHI
+        premise: PARISAR
+        occupancy: MAKAN_STHITI
+        search_pattern: TALASHI_PRAKAR
+        group_size_est: AAROPI_SANKHYA
+        tools: UPKARAN
+        counter_forensic: PEHCHAN_CHHIPANA
+        target_selection: LAKSHYA_CHAYAN
+        property_taken: CHORI_SAMPATTI
+        approach_mode: AAGAMAN_SADHAN
+        exit_mode: PALAYAN_SADHAN
+        vehicle_class: VAHAN_SHRENI
+        ignition_method: VAHAN_CHALU_VIDHI
+        location_type: VAHAN_STHAN
+        vehicle_used: AAROPI_VAHAN
+        victim_activity: PEEDIT_GATIVIDHI
+        escape_direction: PALAYAN_DISHA
+        machine_type: ATM_STHAN
+        attack_method: ATM_CHHEDCHHAD
+        alarm_defeated: ALARM_STHITI
+
+  KA:
+    name: Karnataka
+    narrative_language: en
+    case_share: 0.22
+    neighbours: [MH, TG]
+    districts: [Bengaluru Urban, Mysuru, Belagavi, Kalaburagi, Dharwad]
+    stations_per_district: 7
+    recording:
+      crime_type_confusion: 0.05
+      value_confusion: 0.08
+      dropout:
+        default: 0.10
+        fields: {tools: 0.20, escape_direction: 0.30}
+      structurally_absent: [occupancy]
+      narrative: {mentions_unrecorded: 0.20, omits_recorded: 0.15}
+    feed:
+      layout: structured
+      date_format: "%d-%b-%Y %H%M hrs"
+      date_only_format: "%d-%b-%Y"
+      multi_value_delimiter: " / "
+      columns:
+        fir_no: "FIR No."
+        registered_at: "FIR Date"
+        district: "Unit Name"
+        police_station: "PS Name"
+        crime_type: "Crime Head"
+        occurred_from: "Occurrence From"
+        occurred_to: "Occurrence To"
+        tools: "MO - Tools"
+        entry_point: "MO - Entry Point"
+        entry_method: "MO - Entry"
+        premise: "MO - Premises"
+        search_pattern: "MO - Search"
+        group_size_est: "Accused Count"
+        counter_forensic: "MO - Concealment"
+        target_selection: "MO - Target"
+        property_taken: "Property Lost"
+        approach_mode: "Came By"
+        exit_mode: "Fled By"
+        vehicle_class: "Vehicle Category"
+        ignition_method: "MO - Vehicle Start"
+        location_type: "Place Of Theft"
+        vehicle_used: "Offender Vehicle"
+        victim_activity: "Victim Was"
+        escape_direction: "Fled Towards"
+        machine_type: "ATM Location Type"
+        attack_method: "MO - ATM"
+        alarm_defeated: "Alarm"
+        narrative: "Brief Facts"
+
+  TG:
+    name: Telangana
+    narrative_language: en
+    case_share: 0.18
+    neighbours: [MH, KA]
+    districts: [Hyderabad, Rangareddy, Hanumakonda, Karimnagar, Nizamabad]
+    stations_per_district: 7
+    recording:
+      crime_type_confusion: 0.06
+      value_confusion: 0.10
+      dropout:
+        default: 0.20
+        fields: {target_selection: 0.50, search_pattern: 0.40}
+      structurally_absent: []
+      narrative: {mentions_unrecorded: 0.25, omits_recorded: 0.10}
+    feed:
+      layout: free_text_mo
+      date_format: "%Y-%m-%dT%H:%M:%S"
+      date_only_format: "%Y-%m-%d"
+      multi_value_delimiter: null
+      columns:
+        fir_no: fir_number
+        district: district_name
+        police_station: ps_name
+        crime_type: crime_category
+        occurred_from: offence_from_dt
+        occurred_to: offence_to_dt
+        registered_at: fir_reg_dt
+        mo_description: mo_description
+        narrative: brief_facts
