@@ -182,6 +182,17 @@ def normalise_feed(code: str, feed_df: pd.DataFrame, cfg: dict, rev_fields: dict
             yield case
 
 
+def normalise_all(cfg: dict, data_dir: Path, extractor: Extractor | None = None) -> list[dict]:
+    """Every feed, normalised, in one list — the corpus the scorer trains
+    frequencies and priors against."""
+    rev_fields, rev_ct = reverse_vocab(cfg["vocab"]), reverse_crime_type(cfg["vocab"])
+    cases = []
+    for code in cfg["states"]["states"]:
+        feed_df = pd.read_csv(data_dir / "feeds" / f"{code}.csv", dtype=str, keep_default_na=False)
+        cases.extend(normalise_feed(code, feed_df, cfg, rev_fields, rev_ct, extractor))
+    return cases
+
+
 # --- gate: agreement against the generator's answer key ---------------------
 
 # Fields the normaliser reads straight from a structured column for a given
