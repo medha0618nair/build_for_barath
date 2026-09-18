@@ -59,7 +59,8 @@ class Context:
     frequencies, priors, alphas, a retrieval index, and the offender split.
     Building this once and sharing it keeps train/evaluate/sweep consistent."""
 
-    def __init__(self, data_dir: Path, cfg: dict, seed: int = 0, embed_dim: int = 512):
+    def __init__(self, data_dir: Path, cfg: dict, seed: int = 0, embed_dim: int = 512,
+                 embedder=None, build_retrieval: bool = True):
         self.cfg = cfg
         self.cases = normalise_all(cfg, data_dir, LocalStubExtractor())
         self.by_id = {c["case_id"]: c for c in self.cases}
@@ -74,21 +75,36 @@ class Context:
         self.alpha_cross = (config_mod.alpha(cross_rr, rr["reference_frequency"])
                              if cross_rr and cross_rr > rr["reference_frequency"] else self.alpha_same)
 
+        self.split = offender_split(self.truth, seed=seed)
+
+        self.neighbours = {}
+        if build_retrieval:
+            self.set_embedder(embedder or HashingTfidfEmbedder(dim=embed_dim))
+
+    def set_embedder(self, embedder) -> None:
+        """(Re)build the retrieval index with a given Embedder — lets the
+        same normalised corpus be compared across embedders without
+        re-normalising or recomputing frequencies/priors each time."""
         ids = [c["case_id"] for c in self.cases]
         texts = [c["narrative_text"] for c in self.cases]
-        vectors, _ = embed_corpus(ids, texts, HashingTfidfEmbedder(dim=embed_dim))
+        vectors, _ = embed_corpus(ids, texts, embedder)
         self.neighbours = top_k(vectors, ids, k=TOP_K, chunk_size=CHUNK_SIZE)
-
-        self.split = offender_split(self.truth, seed=seed)
 
     def offender(self, case_id: str) -> str:
         return self.truth.loc[case_id, "offender_id"]
 
 
-def offender_split(truth: pd.DataFrame, train: float = 0.7, calib: float = 0.15,
+def offender_split(truth: pd.DataFrame, train: float = 0.55, calib: float = 0.15,
                     seed: int = 0) -> dict[str, str]:
     """offender_id -> 'train' | 'calib' | 'test', a random partition seeded
-    for reproducibility. Every case of a given offender lands in one split."""
+    for reproducibility. Every case of a given offender lands in one split.
+
+    Test gets ~30% of offenders (not the more usual ~15-20%) because true
+    pairs are held by the *offender*, not the case: DATASET.md's top 10% of
+    offenders hold half of all true pairs, so a small test slice can land
+    only a few hundred true pairs and swing a lot between seeds. A bigger
+    test slice buys a more stable per-pair-class evaluate.py readout at the
+    cost of less training data — an acceptable trade for a demo corpus."""
     offenders = sorted(truth["offender_id"].unique())
     rng = np.random.default_rng(seed)
     perm = rng.permutation(len(offenders))

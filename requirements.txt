@@ -10,3 +10,6 @@ pyyaml>=6
 pytest>=8
 scikit-learn>=1.4
 matplotlib>=3.8
+# local semantic embedder for linkage/retrieve.py's SentenceTransformerEmbedder —
+# no AWS; the model is cached locally after the first download.
+sentence-transformers>=3.0

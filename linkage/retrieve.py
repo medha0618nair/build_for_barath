@@ -32,16 +32,39 @@ class Embedder(Protocol):
     def transform(self, texts: list[str]) -> np.ndarray: ...
 
 
+def ngrams(tokens: list[str], ngram_range: tuple[int, int] = (1, 2)) -> list[str]:
+    lo, hi = ngram_range
+    out = []
+    for n in range(lo, hi + 1):
+        if n == 1:
+            out.extend(tokens)
+        else:
+            out.extend("_".join(tokens[i:i + n]) for i in range(len(tokens) - n + 1))
+    return out
+
+
 class HashingTfidfEmbedder:
-    """Local stub: hash tokens into `dim` buckets, weight by corpus IDF,
-    L2-normalise so cosine similarity is a plain dot product. Not a real
-    semantic embedder (no meaning-preserving geometry across paraphrases) —
-    a placeholder so the pipeline runs with no AWS dependency.
+    """Local stub: hash word n-grams into `dim` buckets, weight by corpus
+    IDF, L2-normalise so cosine similarity is a plain dot product. Not a
+    real semantic embedder (no meaning-preserving geometry across
+    paraphrases) — a placeholder so the pipeline runs with no AWS
+    dependency.
+
+    `max_df` drops boilerplate: a bucket that shows up in more than that
+    fraction of documents gets its IDF zeroed out — cheap approximation of
+    scikit-learn's `max_df`, coarser here because multiple n-grams can hash
+    into the same bucket. `sublinear_tf` uses 1+log(count) instead of raw
+    counts, so a term repeated many times in one narrative (the generator's
+    filler sentences do this) doesn't dominate the vector.
     """
 
-    def __init__(self, dim: int = 512, seed: int = 0):
+    def __init__(self, dim: int = 512, seed: int = 0, ngram_range: tuple[int, int] = (1, 2),
+                 sublinear_tf: bool = False, max_df: float = 1.0):
         self.dim = dim
         self.seed = seed
+        self.ngram_range = ngram_range
+        self.sublinear_tf = sublinear_tf
+        self.max_df = max_df
         self.idf_: np.ndarray | None = None
 
     def _hash(self, token: str) -> int:
@@ -51,21 +74,29 @@ class HashingTfidfEmbedder:
             h = ((h ^ ord(ch)) * 16777619) & 0xFFFFFFFF
         return (h ^ self.seed) % self.dim
 
+    def _terms(self, text: str) -> list[str]:
+        return ngrams(tokenize(text), self.ngram_range)
+
     def _counts(self, text: str) -> np.ndarray:
         v = np.zeros(self.dim, dtype=np.float32)
-        for tok in tokenize(text):
-            v[self._hash(tok)] += 1.0
+        for term in self._terms(text):
+            v[self._hash(term)] += 1.0
+        if self.sublinear_tf:
+            nonzero = v > 0
+            v[nonzero] = 1.0 + np.log(v[nonzero])
         return v
 
     def fit(self, texts: list[str]) -> "HashingTfidfEmbedder":
         df = np.zeros(self.dim, dtype=np.float64)
         for text in texts:
             seen = np.zeros(self.dim, dtype=bool)
-            for tok in tokenize(text):
-                seen[self._hash(tok)] = True
+            for term in self._terms(text):
+                seen[self._hash(term)] = True
             df += seen
         n = max(len(texts), 1)
-        self.idf_ = np.log((n + 1) / (df + 1)) + 1.0
+        idf = np.log((n + 1) / (df + 1)) + 1.0
+        idf[df / n > self.max_df] = 0.0  # boilerplate: drop buckets that are everywhere
+        self.idf_ = idf
         return self
 
     def transform(self, texts: list[str]) -> np.ndarray:
@@ -78,6 +109,36 @@ class HashingTfidfEmbedder:
             norm = np.linalg.norm(vec)
             out[i] = vec / norm if norm > 0 else vec
         return out
+
+
+class SentenceTransformerEmbedder:
+    """Local semantic embedder: sentence-transformers, cached under
+    ~/.cache/torch/sentence_transformers after the first run, no AWS. Same
+    Embedder interface as the TF-IDF stub and handlers/cohere_embed.py —
+    swapping to Cohere later is a config change, not a code change.
+    `fit()` is a no-op: the model is pretrained, not fit per-corpus.
+    """
+
+    def __init__(self, model_name: str = "all-MiniLM-L6-v2", batch_size: int = 64):
+        self.model_name = model_name
+        self.batch_size = batch_size
+        self._model = None
+
+    def _load(self):
+        if self._model is None:
+            from sentence_transformers import SentenceTransformer
+            self._model = SentenceTransformer(self.model_name)
+        return self._model
+
+    def fit(self, texts: list[str]) -> "SentenceTransformerEmbedder":
+        self._load()
+        return self
+
+    def transform(self, texts: list[str]) -> np.ndarray:
+        model = self._load()
+        vectors = model.encode(texts, batch_size=self.batch_size, show_progress_bar=False,
+                                normalize_embeddings=True, convert_to_numpy=True)
+        return vectors.astype(np.float32)
 
 
 def embed_corpus(case_ids: list[str], narratives: list[str], embedder: Embedder | None = None,
