@@ -1,7 +1,12 @@
 # Local generator / training only. Lambda handlers carry their own, smaller
 # requirements — never ship this file's contents to Lambda (CLAUDE.md rule 3).
+# scikit-learn in particular: used only by linkage/train.py to fit the
+# logistic regression + isotonic calibration locally; linkage/score.py's
+# Lambda-side inference is pure numpy (1/(1+exp(-(w@x+b)))) from weights.json.
 numpy>=1.26
 pandas>=2.1
 pyarrow>=14
 pyyaml>=6
 pytest>=8
+scikit-learn>=1.4
+matplotlib>=3.8

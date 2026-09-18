@@ -60,6 +60,14 @@ N_FIELDS = len(schema.ALL_MO_FIELDS)
 WIDTH = 3 * N_FIELDS + 4            # per field: omit, mention, order; opening, 2 filler, amount
 
 
+def _is_na(value) -> bool:
+    """pandas>=3's default string dtype turns a column's `None` cells into
+    float NaN (not None) once the column also holds real strings — `x is
+    None` silently stops matching. `value != value` is the NaN-only,
+    dtype-independent test."""
+    return value is None or (isinstance(value, float) and value != value)
+
+
 def _join(clauses: list[str]) -> str:
     return clauses[0] if len(clauses) == 1 else ", ".join(clauses[:-1]) + " and " + clauses[-1]
 
@@ -77,7 +85,7 @@ def _mo_clauses(case: dict, state_rec: dict, vocab: dict, u: np.ndarray, for_nar
     for i, f in enumerate(schema.ALL_MO_FIELDS):
         rec_v, true_v = case[f"rec_{f}"], case[f]
         u_omit, u_mention, u_order = u[3 * i: 3 * i + 3]
-        if rec_v is None or rec_v == UNKNOWABLE:
+        if _is_na(rec_v) or rec_v == UNKNOWABLE:
             continue
         if rec_v in (MISSING, ABSENT):
             if not (for_narrative and u_mention < state_rec["narrative"]["mentions_unrecorded"]):
@@ -107,7 +115,7 @@ def _narrative(case: dict, code: str, st: dict, vocab: dict, u: np.ndarray, frm:
 
 
 def _cell(f: str, value, code: str, vocab: dict, delim: str) -> str:
-    if value is None or value == MISSING:
+    if _is_na(value) or value == MISSING:
         return ""
     labels = vocab["fields"][f]
     if f in schema.TAG_FIELDS:
