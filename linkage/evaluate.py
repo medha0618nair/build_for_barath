@@ -37,12 +37,43 @@ def raw_fs_score(x: np.ndarray) -> float:
     return float(x.sum())
 
 
-# --- recall@50 (retrieval stage) ---------------------------------------------
+# --- ground truth: all same-offender pairs among a case set, no retrieval involved ---
 
-def recall_at_k(ctx: Context, test_cases: set[str]) -> dict[str, float]:
+def true_pairs(ctx: Context, cases: set[str]) -> dict[str, set[tuple[str, str]]]:
+    """Every unordered same-offender pair with both endpoints in `cases`,
+    split by pair_class. This is the actual denominator recall@k measures
+    against — a direct count from offender_id, untouched by retrieval."""
+    by_offender: dict[str, list[str]] = defaultdict(list)
+    for cid in cases:
+        by_offender[ctx.offender(cid)].append(cid)
+    out: dict[str, set[tuple[str, str]]] = {"same_type": set(), "cross_type": set()}
+    for case_ids in by_offender.values():
+        if len(case_ids) < 2:
+            continue
+        for i in range(len(case_ids)):
+            for j in range(i + 1, len(case_ids)):
+                a, b = sorted((case_ids[i], case_ids[j]))
+                pc = ("same_type" if ctx.by_id[a]["crime_type"] == ctx.by_id[b]["crime_type"]
+                      else "cross_type")
+                out[pc].add((a, b))
+    return out
+
+
+# --- recall@k (retrieval stage) -----------------------------------------------
+
+def recall_at_k(ctx: Context, test_cases: set[str], neighbours: dict | None = None,
+                 k: int = 50) -> dict[str, float | None]:
     """For each query case with >=1 true partner (of a given pair_class) also
     in the test set, recall_i = |true partners found in top-k| / |true partners|.
-    recall@k is the mean over such queries, per pair_class."""
+    recall@k is the mean over such queries, per pair_class.
+
+    `neighbours` defaults to ctx.neighbours (the corpus-wide top-50 index);
+    pass a different {case_id: [(case_id, sim), ...]} map (e.g. a top-500
+    index) to evaluate recall@k for k > 50, or for a different embedder
+    entirely. The denominator here (`relevant`, built from `test_cases`
+    directly via true_pairs-style offender grouping) is NOT filtered by
+    retrieval — see true_pairs() for the same computation exposed directly."""
+    neighbours = ctx.neighbours if neighbours is None else neighbours
     by_offender: dict[str, list[str]] = defaultdict(list)
     for cid in test_cases:
         by_offender[ctx.offender(cid)].append(cid)
@@ -53,7 +84,7 @@ def recall_at_k(ctx: Context, test_cases: set[str]) -> dict[str, float]:
         partners = [p for p in by_offender[ctx.offender(cid)] if p != cid]
         if not partners:
             continue
-        retrieved = {b for b, _ in ctx.neighbours.get(cid, [])}
+        retrieved = {b for b, _ in neighbours.get(cid, [])[:k]}
         for pc in PAIR_CLASSES:
             same = pc == "same_type"
             relevant = [p for p in partners
@@ -149,14 +180,18 @@ def per_offender_recall(ctx: Context, test_cases: set[str]) -> dict[str, float |
 def evaluate(ctx: Context, weights: dict) -> dict:
     test_cases = {cid for cid in ctx.by_id if ctx.split.get(ctx.offender(cid)) == "test"}
     scored = scored_candidates(ctx, weights, ("test",))
+    gt_pairs = true_pairs(ctx, test_cases)
     return {
         "n_test_cases": len(test_cases),
         "recall_at_50": recall_at_k(ctx, test_cases),
         "precision_at_10": precision_at_k(scored),
         "pr_auc": pr_auc(scored),
         "per_offender_recall_at_50": per_offender_recall(ctx, test_cases),
-        "n_pairs": {pc: len(rows) for pc, rows in scored.items()},
-        "n_positive_pairs": {pc: sum(r[2] for r in rows) for pc, rows in scored.items()},
+        # candidate pairs that survived retrieval — precision@10/PR-AUC's pool, NOT recall@50's denominator
+        "n_candidate_pairs": {pc: len(rows) for pc, rows in scored.items()},
+        "n_candidate_true_pairs": {pc: sum(r[2] for r in rows) for pc, rows in scored.items()},
+        # the actual ground-truth denominator recall@50 is measured against
+        "n_true_pairs": {pc: len(gt_pairs[pc]) for pc in PAIR_CLASSES},
     }
 
 
@@ -168,9 +203,12 @@ def print_table(results: dict) -> None:
         row = " ".join(f"{(vals[pc]*100 if vals[pc] is not None else float('nan')):>11.1f}%"
                        for pc in PAIR_CLASSES)
         print(f"{label:<26} {row}")
-    print(f"{'n test pairs':<26} {results['n_pairs']['same_type']:>12} {results['n_pairs']['cross_type']:>12}")
-    print(f"{'n true pairs':<26} {results['n_positive_pairs']['same_type']:>12} "
-          f"{results['n_positive_pairs']['cross_type']:>12}")
+    print(f"{'n true pairs (ground truth)':<26} {results['n_true_pairs']['same_type']:>12} "
+          f"{results['n_true_pairs']['cross_type']:>12}")
+    print(f"{'n candidate pairs':<26} {results['n_candidate_pairs']['same_type']:>12} "
+          f"{results['n_candidate_pairs']['cross_type']:>12}")
+    print(f"{'  of which true':<26} {results['n_candidate_true_pairs']['same_type']:>12} "
+          f"{results['n_candidate_true_pairs']['cross_type']:>12}")
     print(f"\n{results['n_test_cases']} test cases (held out by offender)")
 
 
