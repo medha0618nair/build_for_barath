@@ -661,6 +661,14 @@ Resources:
     Type: AWS::Serverless::HttpApi
     Properties:
       Name: !Sub crime-linkage-${Stage}
+      # The frontend (Phase 6) is a browser app on a different origin
+      # (Amplify Hosting) than this API — without CORS, every request fails
+      # preflight before Cognito auth even gets checked. AllowOrigins is "*"
+      # for the dev stage; tighten to the Amplify domain once it's known.
+      CorsConfiguration:
+        AllowOrigins: ["*"]
+        AllowMethods: [GET, POST, OPTIONS]
+        AllowHeaders: [Content-Type, Authorization]
       Auth:
         Authorizers:
           CognitoAuthorizer:
