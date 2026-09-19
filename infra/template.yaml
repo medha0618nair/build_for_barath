@@ -1,0 +1,736 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Cross-jurisdiction crime linkage (TECHNICAL_SPEC.md §7). S3 + DynamoDB +
+  Step Functions pipeline (Normalise -> Enrich -> Index -> Link), an HTTP
+  API behind Cognito, and Verified Permissions gating PII access. Five
+  Lambda IAM roles matching §7's table exactly: Ingest, Enrich, Link, Api,
+  Pii — some roles are shared by more than one function where the table's
+  own "Can reach" column already covers both (Enrich's Bedrock+S3-vectors
+  access is what BuildIndex needs too; Link's cases-read access is what the
+  two pipeline list-helpers need too).
+
+Parameters:
+  Stage:
+    Type: String
+    Default: dev
+  BedrockHaikuModelId:
+    Type: String
+    Default: anthropic.claude-haiku-4-5
+    Description: >
+      UNVERIFIED short form (CLAUDE.md). Replace with the exact id from
+      `aws bedrock list-foundation-models --region ap-south-1` (or
+      list-inference-profiles, if it's profile-only) before deploying for
+      real use. See README.md's "One-time Bedrock model access" section.
+  CohereEmbedModelId:
+    Type: String
+    Default: cohere.embed-multilingual-v3
+    Description: Same caveat as BedrockHaikuModelId — verify before real use.
+
+Globals:
+  Function:
+    Runtime: python3.12
+    Timeout: 60
+    MemorySize: 512
+    Tracing: Active
+
+Resources:
+
+  # ---------------------------------------------------------------- S3 ----
+  DataBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub crime-linkage-${Stage}-${AWS::AccountId}
+      NotificationConfiguration:
+        EventBridgeConfiguration:
+          EventBridgeEnabled: true
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  # ----------------------------------------------------------- DynamoDB ----
+  CasesTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub crime-linkage-${Stage}-cases
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: case_id
+          AttributeType: S
+        - AttributeName: sk
+          AttributeType: S
+        - AttributeName: crime_type_year_quarter
+          AttributeType: S
+      KeySchema:
+        - AttributeName: case_id
+          KeyType: HASH
+        - AttributeName: sk
+          KeyType: RANGE
+      GlobalSecondaryIndexes:
+        - IndexName: GSI1
+          KeySchema:
+            - AttributeName: crime_type_year_quarter
+              KeyType: HASH
+            - AttributeName: case_id
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+
+  PiiTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub crime-linkage-${Stage}-pii
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: case_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: case_id
+          KeyType: HASH
+      SSESpecification:
+        SSEEnabled: true
+        SSEType: KMS
+        KMSMasterKeyId: !Ref PiiKmsKey
+
+  LinksTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub crime-linkage-${Stage}-links
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: case_id_a
+          AttributeType: S
+        - AttributeName: sk
+          AttributeType: S
+      KeySchema:
+        - AttributeName: case_id_a
+          KeyType: HASH
+        - AttributeName: sk
+          KeyType: RANGE
+
+  AuditTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub crime-linkage-${Stage}-audit
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: actor_id
+          AttributeType: S
+        - AttributeName: iso_timestamp
+          AttributeType: S
+      KeySchema:
+        - AttributeName: actor_id
+          KeyType: HASH
+        - AttributeName: iso_timestamp
+          KeyType: RANGE
+
+  FeedbackTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub crime-linkage-${Stage}-feedback
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: pair_id
+          AttributeType: S
+        - AttributeName: sk
+          AttributeType: S
+      KeySchema:
+        - AttributeName: pair_id
+          KeyType: HASH
+        - AttributeName: sk
+          KeyType: RANGE
+
+  # ----------------------------------------------------------------- KMS ----
+  # KeyPolicy delegates entirely to IAM (just the account-root statement AWS
+  # itself recommends as the default) instead of naming IngestRole/PiiRole
+  # here — naming them would create a circular dependency (PiiTable ->
+  # PiiKmsKey -> PiiRole -> PiiTable via PiiRole's own DynamoDB policy).
+  # The actual grants live on IngestRole's and PiiRole's IAM policies below
+  # (kms:Encrypt for writes, kms:Decrypt for PiiRole's reads), which is a
+  # one-directional dependency (role -> key) and the standard AWS pattern.
+  PiiKmsKey:
+    Type: AWS::KMS::Key
+    Properties:
+      Description: !Sub crime-linkage-${Stage} pii table CMK — separate from every other table's default encryption (TECHNICAL_SPEC.md §7)
+      EnableKeyRotation: true
+      KeyPolicy:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: AccountRoot
+            Effect: Allow
+            Principal:
+              AWS: !Sub arn:aws:iam::${AWS::AccountId}:root
+            Action: 'kms:*'
+            Resource: '*'
+
+  PiiKmsKeyAlias:
+    Type: AWS::KMS::Alias
+    Properties:
+      AliasName: !Sub alias/crime-linkage-${Stage}-pii
+      TargetKeyId: !Ref PiiKmsKey
+
+  # --------------------------------------------------- IAM: five roles ----
+  # TECHNICAL_SPEC.md §7's IAM boundaries table, one role per row. Where a
+  # role's own "Can reach" column already covers a second function
+  # (Enrich's Bedrock+S3-vectors access is what BuildIndex needs too;
+  # Link's read-only cases access is what the two list-helpers need too),
+  # that function reuses the same role rather than getting a sixth one.
+
+  IngestRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub crime-linkage-${Stage}-IngestRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: IngestAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [s3:GetObject]
+                Resource: !Sub arn:aws:s3:::${DataBucket}/raw/*
+              - Effect: Allow
+                Action: [s3:GetObject]
+                Resource: !Sub arn:aws:s3:::${DataBucket}/config/*
+              - Effect: Allow
+                Action: [dynamodb:PutItem, dynamodb:BatchWriteItem]
+                Resource: !GetAtt CasesTable.Arn
+              - Effect: Allow
+                Action: [dynamodb:PutItem, dynamodb:BatchWriteItem]
+                Resource: !GetAtt PiiTable.Arn
+              - Effect: Allow
+                Action: [kms:Encrypt, kms:GenerateDataKey, kms:DescribeKey]
+                Resource: !GetAtt PiiKmsKey.Arn
+
+  EnrichRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub crime-linkage-${Stage}-EnrichRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: EnrichAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [bedrock:InvokeModel]
+                Resource: '*'
+              - Effect: Allow
+                Action: [dynamodb:GetItem, dynamodb:UpdateItem, dynamodb:Scan]
+                Resource: !GetAtt CasesTable.Arn
+              - Effect: Allow
+                Action: [s3:GetObject, s3:PutObject]
+                Resource: !Sub arn:aws:s3:::${DataBucket}/vectors/*
+              - Effect: Allow
+                Action: [s3:GetObject]
+                Resource: !Sub arn:aws:s3:::${DataBucket}/config/*
+
+  LinkRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub crime-linkage-${Stage}-LinkRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: LinkAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [dynamodb:GetItem, dynamodb:Scan]
+                Resource: !GetAtt CasesTable.Arn
+              - Effect: Allow
+                Action: [dynamodb:PutItem, dynamodb:BatchWriteItem]
+                Resource: !GetAtt LinksTable.Arn
+              - Effect: Allow
+                Action: [s3:GetObject]
+                Resource: !Sub arn:aws:s3:::${DataBucket}/vectors/*
+              - Effect: Allow
+                Action: [s3:GetObject]
+                Resource: !Sub arn:aws:s3:::${DataBucket}/model/*
+
+  ApiRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub crime-linkage-${Stage}-ApiRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: ApiAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [dynamodb:GetItem, dynamodb:Query]
+                Resource: !GetAtt CasesTable.Arn
+              - Effect: Allow
+                Action: [dynamodb:Query]
+                Resource: !GetAtt LinksTable.Arn
+              - Effect: Allow
+                Action: [dynamodb:PutItem]
+                Resource: !GetAtt AuditTable.Arn
+              - Effect: Allow
+                Action: [dynamodb:PutItem]
+                Resource: !GetAtt FeedbackTable.Arn
+              - Effect: Allow
+                Action: [verifiedpermissions:IsAuthorized]
+                Resource: !GetAtt PiiPolicyStore.Arn
+              - Effect: Allow
+                Action: [lambda:InvokeFunction]
+                Resource: !GetAtt PiiReaderFunction.Arn
+
+  PiiRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub crime-linkage-${Stage}-PiiRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: { Service: lambda.amazonaws.com }
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: PiiAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: [dynamodb:GetItem]
+                Resource: !GetAtt PiiTable.Arn
+              - Effect: Allow
+                Action: [kms:Decrypt, kms:DescribeKey, kms:GenerateDataKey]
+                Resource: !GetAtt PiiKmsKey.Arn
+      # Deliberately no verifiedpermissions:*, no other table, no Bedrock —
+      # this is the whole point of the role (TECHNICAL_SPEC.md §7).
+
+  # ---------------------------------------------------------- Lambdas ----
+  IngestFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-ingest
+      CodeUri: ../
+      Handler: handlers/ingest.handler
+      Role: !GetAtt IngestRole.Arn
+      Environment:
+        Variables:
+          CASES_TABLE: !Ref CasesTable
+          PII_TABLE: !Ref PiiTable
+          CONFIG_BUCKET: !Ref DataBucket
+          CONFIG_PREFIX: config
+
+  EnrichFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-enrich
+      CodeUri: ../
+      Handler: handlers/enrich.handler
+      Role: !GetAtt EnrichRole.Arn
+      Timeout: 30
+      Environment:
+        Variables:
+          CASES_TABLE: !Ref CasesTable
+          CONFIG_BUCKET: !Ref DataBucket
+          CONFIG_PREFIX: config
+          BEDROCK_HAIKU_MODEL_ID: !Ref BedrockHaikuModelId
+
+  BuildIndexFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-build-index
+      CodeUri: ../
+      Handler: handlers/build_index.handler
+      Role: !GetAtt EnrichRole.Arn
+      Timeout: 900
+      MemorySize: 1024
+      Environment:
+        Variables:
+          CASES_TABLE: !Ref CasesTable
+          VECTORS_BUCKET: !Ref DataBucket
+          VECTORS_PREFIX: vectors
+          COHERE_EMBED_MODEL_ID: !Ref CohereEmbedModelId
+
+  ListEnrichTargetsFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-list-enrich-targets
+      CodeUri: ../
+      Handler: handlers/pipeline_helpers.list_enrich_targets
+      Role: !GetAtt LinkRole.Arn
+      Timeout: 120
+      Environment:
+        Variables:
+          CASES_TABLE: !Ref CasesTable
+
+  ListLinkChunksFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-list-link-chunks
+      CodeUri: ../
+      Handler: handlers/pipeline_helpers.list_link_chunks
+      Role: !GetAtt LinkRole.Arn
+      Timeout: 120
+      Environment:
+        Variables:
+          CASES_TABLE: !Ref CasesTable
+
+  LinkFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-link
+      CodeUri: ../
+      Handler: handlers/link.handler
+      Role: !GetAtt LinkRole.Arn
+      Timeout: 840
+      MemorySize: 1024
+      Environment:
+        Variables:
+          CASES_TABLE: !Ref CasesTable
+          LINKS_TABLE: !Ref LinksTable
+          VECTORS_BUCKET: !Ref DataBucket
+          VECTORS_PREFIX: vectors
+          MODEL_BUCKET: !Ref DataBucket
+          MODEL_PREFIX: model
+
+  ApiGetCaseFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-api-get-case
+      CodeUri: ../
+      Handler: handlers/api.get_case
+      Role: !GetAtt ApiRole.Arn
+      Environment:
+        Variables:
+          CASES_TABLE: !Ref CasesTable
+          AUDIT_TABLE: !Ref AuditTable
+      Events:
+        Route:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /v1/cases/{id}
+            Method: GET
+            Auth:
+              Authorizer: CognitoAuthorizer
+
+  ApiGetCaseLinksFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-api-get-case-links
+      CodeUri: ../
+      Handler: handlers/api.get_case_links
+      Role: !GetAtt ApiRole.Arn
+      Environment:
+        Variables:
+          LINKS_TABLE: !Ref LinksTable
+          AUDIT_TABLE: !Ref AuditTable
+      Events:
+        Route:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /v1/cases/{id}/links
+            Method: GET
+            Auth:
+              Authorizer: CognitoAuthorizer
+
+  ApiPostFeedbackFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-api-post-feedback
+      CodeUri: ../
+      Handler: handlers/api.post_feedback
+      Role: !GetAtt ApiRole.Arn
+      Environment:
+        Variables:
+          FEEDBACK_TABLE: !Ref FeedbackTable
+          AUDIT_TABLE: !Ref AuditTable
+      Events:
+        Route:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /v1/feedback
+            Method: POST
+            Auth:
+              Authorizer: CognitoAuthorizer
+
+  PiiRequestFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-pii-request
+      CodeUri: ../
+      Handler: handlers/pii_request.handler
+      Role: !GetAtt ApiRole.Arn
+      Environment:
+        Variables:
+          AUDIT_TABLE: !Ref AuditTable
+          POLICY_STORE_ID: !Ref PiiPolicyStore
+          PII_READER_FUNCTION: !Ref PiiReaderFunction
+      Events:
+        Route:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /v1/cases/{id}/pii-request
+            Method: POST
+            Auth:
+              Authorizer: CognitoAuthorizer
+
+  PiiReaderFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      BuildMethod: makefile
+    Properties:
+      FunctionName: !Sub crime-linkage-${Stage}-pii-reader
+      CodeUri: ../
+      Handler: handlers/pii.handler
+      Role: !GetAtt PiiRole.Arn
+      Environment:
+        Variables:
+          PII_TABLE: !Ref PiiTable
+      # No Events: block — never exposed on the HTTP API. Invoked only by
+      # PiiRequestFunction (handlers/pii_request.py) via lambda:InvokeFunction,
+      # after Verified Permissions has already returned ALLOW.
+
+  # ------------------------------------------------------- Step Functions ----
+  StateMachineExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub crime-linkage-${Stage}-StateMachineRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: { Service: states.amazonaws.com }
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: InvokePipelineFunctions
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: lambda:InvokeFunction
+                Resource:
+                  - !GetAtt IngestFunction.Arn
+                  - !GetAtt EnrichFunction.Arn
+                  - !GetAtt BuildIndexFunction.Arn
+                  - !GetAtt LinkFunction.Arn
+                  - !GetAtt ListEnrichTargetsFunction.Arn
+                  - !GetAtt ListLinkChunksFunction.Arn
+
+  PipelineStateMachine:
+    Type: AWS::Serverless::StateMachine
+    Properties:
+      Name: !Sub crime-linkage-${Stage}-pipeline
+      DefinitionUri: statemachine/pipeline.asl.json
+      DefinitionSubstitutions:
+        IngestFunctionArn: !GetAtt IngestFunction.Arn
+        EnrichFunctionArn: !GetAtt EnrichFunction.Arn
+        BuildIndexFunctionArn: !GetAtt BuildIndexFunction.Arn
+        LinkFunctionArn: !GetAtt LinkFunction.Arn
+        ListEnrichTargetsFunctionArn: !GetAtt ListEnrichTargetsFunction.Arn
+        ListLinkChunksFunctionArn: !GetAtt ListLinkChunksFunction.Arn
+      Role: !GetAtt StateMachineExecutionRole.Arn
+
+  # -------------------------------------------------------- EventBridge ----
+  EventBridgeStartPipelineRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub crime-linkage-${Stage}-EventBridgeRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal: { Service: events.amazonaws.com }
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: StartPipeline
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action: states:StartExecution
+                Resource: !Ref PipelineStateMachine
+
+  S3PutRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Name: !Sub crime-linkage-${Stage}-on-s3-put
+      Description: Starts the pipeline when a new feed lands under raw/ (TECHNICAL_SPEC.md §6)
+      EventPattern:
+        source: [aws.s3]
+        detail-type: [Object Created]
+        detail:
+          bucket:
+            name: [!Ref DataBucket]
+          object:
+            key: [{ prefix: raw/ }]
+      Targets:
+        - Id: StartPipeline
+          Arn: !Ref PipelineStateMachine
+          RoleArn: !GetAtt EventBridgeStartPipelineRole.Arn
+
+  NightlyScheduleRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Name: !Sub crime-linkage-${Stage}-nightly
+      Description: Nightly full-corpus re-link (TECHNICAL_SPEC.md §6)
+      ScheduleExpression: cron(0 20 * * ? *)
+      Targets:
+        - Id: StartPipeline
+          Arn: !Ref PipelineStateMachine
+          RoleArn: !GetAtt EventBridgeStartPipelineRole.Arn
+
+  # --------------------------------------------------------- Cognito ----
+  UserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: !Sub crime-linkage-${Stage}
+      AutoVerifiedAttributes: [email]
+      UsernameAttributes: [email]
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 12
+          RequireUppercase: true
+          RequireLowercase: true
+          RequireNumbers: true
+          RequireSymbols: true
+
+  UserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      ClientName: !Sub crime-linkage-${Stage}-client
+      UserPoolId: !Ref UserPool
+      GenerateSecret: false
+      ExplicitAuthFlows:
+        - ALLOW_USER_PASSWORD_AUTH
+        - ALLOW_REFRESH_TOKEN_AUTH
+
+  # ------------------------------------------------------------ HTTP API ----
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      Name: !Sub crime-linkage-${Stage}
+      Auth:
+        Authorizers:
+          CognitoAuthorizer:
+            JwtConfiguration:
+              issuer: !Sub https://cognito-idp.${AWS::Region}.amazonaws.com/${UserPool}
+              audience:
+                - !Ref UserPoolClient
+            IdentitySource: $request.header.Authorization
+
+  # ---------------------------------------------------- Verified Permissions ----
+  PiiPolicyStore:
+    Type: AWS::VerifiedPermissions::PolicyStore
+    Properties:
+      Description: !Sub crime-linkage-${Stage} PII access gate (TECHNICAL_SPEC.md §7)
+      ValidationSettings:
+        Mode: STRICT
+      Schema:
+        CedarJson: |
+          {
+            "CrimeLinkage": {
+              "entityTypes": {
+                "User": { "shape": { "type": "Record", "attributes": {} } },
+                "Case": { "shape": { "type": "Record", "attributes": {} } }
+              },
+              "actions": {
+                "AssumePiiRole": {
+                  "appliesTo": {
+                    "principalTypes": ["User"],
+                    "resourceTypes": ["Case"],
+                    "context": {
+                      "type": "Record",
+                      "attributes": {
+                        "reason": { "type": "String", "required": true }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+  PiiAccessPolicy:
+    Type: AWS::VerifiedPermissions::Policy
+    Properties:
+      PolicyStoreId: !Ref PiiPolicyStore
+      Definition:
+        Static:
+          Description: Requires a stated, non-empty reason before PII may be read (infra/cedar/pii-access.cedar)
+          Statement: |
+            permit (
+                principal,
+                action == CrimeLinkage::Action::"AssumePiiRole",
+                resource
+            )
+            when {
+                context has reason &&
+                context.reason != ""
+            };
+
+Outputs:
+  ApiUrl:
+    Description: HTTP API base URL
+    Value: !Sub https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com
+  DataBucketName:
+    Value: !Ref DataBucket
+  PipelineStateMachineArn:
+    Value: !Ref PipelineStateMachine
+  UserPoolId:
+    Value: !Ref UserPool
+  UserPoolClientId:
+    Value: !Ref UserPoolClient
+  PolicyStoreId:
+    Value: !Ref PiiPolicyStore

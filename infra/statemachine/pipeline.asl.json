@@ -1,0 +1,77 @@
+{
+  "Comment": "Cross-jurisdiction crime linkage pipeline (TECHNICAL_SPEC.md §6). Normalise -> Enrich (Map, MaxConcurrency 5) -> Index -> Link (Map over 1k-case chunks).",
+  "StartAt": "Normalise",
+  "States": {
+    "Normalise": {
+      "Type": "Map",
+      "ItemsPath": "$.feed_files",
+      "MaxConcurrency": 4,
+      "ItemProcessor": {
+        "ProcessorConfig": { "Mode": "INLINE" },
+        "StartAt": "IngestOne",
+        "States": {
+          "IngestOne": {
+            "Type": "Task",
+            "Resource": "${IngestFunctionArn}",
+            "End": true
+          }
+        }
+      },
+      "ResultPath": "$.normaliseResults",
+      "Next": "ListEnrichTargets"
+    },
+    "ListEnrichTargets": {
+      "Type": "Task",
+      "Resource": "${ListEnrichTargetsFunctionArn}",
+      "ResultPath": "$.enrichTargets",
+      "Next": "Enrich"
+    },
+    "Enrich": {
+      "Type": "Map",
+      "ItemsPath": "$.enrichTargets.case_ids",
+      "MaxConcurrency": 5,
+      "ItemProcessor": {
+        "ProcessorConfig": { "Mode": "INLINE" },
+        "StartAt": "EnrichOne",
+        "States": {
+          "EnrichOne": {
+            "Type": "Task",
+            "Resource": "${EnrichFunctionArn}",
+            "End": true
+          }
+        }
+      },
+      "ResultPath": "$.enrichResults",
+      "Next": "Index"
+    },
+    "Index": {
+      "Type": "Task",
+      "Resource": "${BuildIndexFunctionArn}",
+      "ResultPath": "$.indexResult",
+      "Next": "ListLinkChunks"
+    },
+    "ListLinkChunks": {
+      "Type": "Task",
+      "Resource": "${ListLinkChunksFunctionArn}",
+      "ResultPath": "$.linkChunks",
+      "Next": "Link"
+    },
+    "Link": {
+      "Type": "Map",
+      "ItemsPath": "$.linkChunks.chunks",
+      "MaxConcurrency": 10,
+      "ItemProcessor": {
+        "ProcessorConfig": { "Mode": "INLINE" },
+        "StartAt": "LinkOne",
+        "States": {
+          "LinkOne": {
+            "Type": "Task",
+            "Resource": "${LinkFunctionArn}",
+            "End": true
+          }
+        }
+      },
+      "End": true
+    }
+  }
+}

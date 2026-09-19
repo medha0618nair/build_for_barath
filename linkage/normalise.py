@@ -8,6 +8,11 @@ config/adapters/.
 
     python -m linkage.normalise --check      per-state, per-field agreement
                                               against data/final/truth.parquet
+
+pandas is imported lazily, inside the functions that need it (CSV/parquet
+loading, --check), not at module level — handlers/ingest.py imports
+normalise()/reverse_vocab()/reverse_crime_type() directly and must not pull
+pandas into the Lambda package (CLAUDE.md rule 3: numpy only in Lambda).
 """
 from __future__ import annotations
 
@@ -17,12 +22,10 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-import pandas as pd
-
 from linkage import config as config_mod
 from linkage import schema
 from linkage.extract import Extractor, LocalStubExtractor
-from linkage.generate.corrupt import ABSENT, MISSING, UNKNOWABLE
+from linkage.schema import ABSENT, MISSING, UNKNOWABLE
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "final"
 
@@ -91,7 +94,9 @@ def parse_window(raw_from: str, raw_to: str, feed: dict, corpus_tb: dict) -> tup
 # --- structured-column reads --------------------------------------------------
 
 def _blank(raw) -> bool:
-    return raw is None or raw == "" or (isinstance(raw, float) and pd.isna(raw))
+    # `raw != raw` is the dependency-free NaN test (see linkage/generate/render.py's
+    # _is_na) — read_field() is on the Lambda-safe path and must not need pandas.
+    return raw is None or raw == "" or (isinstance(raw, float) and raw != raw)
 
 
 def read_field(raw, fname: str, code: str, rev: dict, delimiter: str | None):
@@ -184,7 +189,11 @@ def normalise_feed(code: str, feed_df: pd.DataFrame, cfg: dict, rev_fields: dict
 
 def normalise_all(cfg: dict, data_dir: Path, extractor: Extractor | None = None) -> list[dict]:
     """Every feed, normalised, in one list — the corpus the scorer trains
-    frequencies and priors against."""
+    frequencies and priors against. Offline/batch only (reads with pandas);
+    handlers/ingest.py processes one feed file per S3 event with csv.DictReader
+    instead, so the Lambda package never needs pandas."""
+    import pandas as pd
+
     rev_fields, rev_ct = reverse_vocab(cfg["vocab"]), reverse_crime_type(cfg["vocab"])
     cases = []
     for code in cfg["states"]["states"]:
@@ -225,6 +234,8 @@ def _case_value(case: dict, field: str):
 
 
 def check(data_dir: Path, cfg: dict, extractor: Extractor | None = None) -> dict:
+    import pandas as pd
+
     truth = pd.read_parquet(data_dir / "truth.parquet").set_index("case_id")
     vocab = cfg["vocab"]
     rev_fields, rev_ct = reverse_vocab(vocab), reverse_crime_type(vocab)

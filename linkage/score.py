@@ -13,6 +13,12 @@ same MO_EXT vocabulary (schema.FAMILY) — both burglary types, even when
 `--scope` puts them in the cross-type prior bucket (see linkage/schema.py's
 comment: "both burglary types score against each other on the full
 burglary field set").
+
+pandas is imported lazily, inside the functions that need it — score_pair()
+itself (the function handlers/link.py's Lambda inference path calls) is
+pure dict/list operations over linkage.features, with no pandas dependency,
+and must stay importable without pulling pandas into the Lambda package
+(CLAUDE.md rule 3: numpy only in Lambda).
 """
 from __future__ import annotations
 
@@ -21,8 +27,6 @@ import sys
 from collections import defaultdict
 from math import log2
 from pathlib import Path
-
-import pandas as pd
 
 from linkage import config as config_mod
 from linkage import features, frequencies as frequencies_mod, prior as prior_mod, schema
@@ -83,7 +87,7 @@ def fit_cross_type_repeat_rate(cases: list[dict], truth: pd.DataFrame) -> float 
     by_offender: dict = defaultdict(list)
     for case in cases:
         off = offender.get(case["case_id"])
-        if off is not None and pd.notna(off):
+        if off is not None and off == off:  # `off == off` is the pandas-free NaN test
             by_offender[off].append(case)
 
     categorical_core = [f for f in schema.MO_CORE if f not in schema.TAG_FIELDS]
@@ -157,6 +161,8 @@ def print_worked_example() -> bool:
 # --- CLI ----------------------------------------------------------------------
 
 def _load_context(data_dir: Path, cfg: dict):
+    import pandas as pd
+
     from linkage.extract import LocalStubExtractor
     cases = normalise_all(cfg, data_dir, LocalStubExtractor())
     truth = pd.read_parquet(data_dir / "truth.parquet")

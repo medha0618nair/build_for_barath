@@ -1,0 +1,15 @@
+# CodeUri for every Lambda function is the repo root (infra/template.yaml),
+# since handlers/ needs linkage/ as a sibling package. SAM copies the whole
+# CodeUri before running the Makefile build — exclude everything the
+# Makefile doesn't actually need, so that copy stays fast.
+.venv/
+.git/
+.aws-sam/
+data/
+tests/
+frontend/
+reports/
+__pycache__/
+*.pyc
+.pytest_cache/
+weights.json

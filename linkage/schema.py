@@ -86,6 +86,17 @@ DERIVED_AT_NORMALISATION = ("time_band",)
 # A free-text feed replaces every structured MO column with this one.
 MO_DESCRIPTION = "mo_description"
 
+# Recorded-value sentinel tokens (DATASET.md's `rec_*` tokens). Schema-level
+# concepts, not generator internals: normalise.py emits them, features.py
+# and frequencies.py treat them as zero evidence (CLAUDE.md hard rule), and
+# handlers/link.py's Lambda needs them without importing anything from
+# linkage/generate/ (pandas-heavy, not Lambda-safe — CLAUDE.md rule 3).
+# linkage/generate/corrupt.py re-exports these for its own callers.
+MISSING = "__MISSING__"          # the column exists; this cell is blank
+UNKNOWABLE = "__UNKNOWABLE__"    # time_band only: window too wide to place in one band
+ABSENT = "__ABSENT__"            # the state has no such column at all
+SENTINEL_TOKENS = frozenset({MISSING, UNKNOWABLE, ABSENT})
+
 
 def mo_fields(crime_type: str) -> tuple[str, ...]:
     return MO_CORE + MO_EXT[FAMILY[crime_type]]

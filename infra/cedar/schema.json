@@ -1,0 +1,26 @@
+{
+  "CrimeLinkage": {
+    "entityTypes": {
+      "User": {
+        "shape": { "type": "Record", "attributes": {} }
+      },
+      "Case": {
+        "shape": { "type": "Record", "attributes": {} }
+      }
+    },
+    "actions": {
+      "AssumePiiRole": {
+        "appliesTo": {
+          "principalTypes": ["User"],
+          "resourceTypes": ["Case"],
+          "context": {
+            "type": "Record",
+            "attributes": {
+              "reason": { "type": "String", "required": true }
+            }
+          }
+        }
+      }
+    }
+  }
+}

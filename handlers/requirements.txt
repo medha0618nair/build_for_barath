@@ -1,0 +1,5 @@
+# Lambda deps: numpy only (CLAUDE.md rule 3). boto3 is provided by the
+# Lambda runtime already and is never packaged. No scikit-learn, no
+# pandas, no PyYAML — config is uploaded as JSON (scripts/upload_config.py)
+# so handlers/config_loader.py can use json.loads (stdlib) instead.
+numpy>=1.26

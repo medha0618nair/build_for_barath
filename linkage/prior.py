@@ -18,9 +18,14 @@ from __future__ import annotations
 
 from math import comb, log2
 
-import pandas as pd
-
 from linkage import schema
+
+# `truth: pd.DataFrame` below is a lazily-evaluated string annotation
+# (`from __future__ import annotations`) — compute() itself only calls
+# duck-typed methods on whatever's passed in, so this module needs no
+# pandas import of its own. handlers/link.py imports linkage.score, which
+# imports this module; keeping it import-light keeps that chain numpy-only
+# (CLAUDE.md rule 3).
 
 
 def _bits(true_pairs: int, total_pairs: int) -> float | None:

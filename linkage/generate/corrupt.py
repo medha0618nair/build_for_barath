@@ -13,11 +13,7 @@ import pandas as pd
 from linkage import schema
 from linkage.generate import rng as streams
 from linkage.generate.sample import Model, _hours
-
-MISSING = "__MISSING__"          # the column exists; this cell is blank
-UNKNOWABLE = "__UNKNOWABLE__"    # time_band only: window too wide to place in one band
-ABSENT = "__ABSENT__"            # the state has no such column at all
-TOKENS = frozenset({MISSING, UNKNOWABLE, ABSENT})
+from linkage.schema import ABSENT, MISSING, SENTINEL_TOKENS as TOKENS, UNKNOWABLE  # re-exported for callers
 
 
 def _adjacency(edges: list) -> dict[str, list[str]]:

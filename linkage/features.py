@@ -41,7 +41,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from math import log2
 
-from linkage.generate.corrupt import ABSENT, MISSING, UNKNOWABLE
+from linkage.schema import ABSENT, MISSING, UNKNOWABLE
 
 SENTINELS = frozenset({ABSENT, MISSING, UNKNOWABLE})
 
