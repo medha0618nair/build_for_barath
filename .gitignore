@@ -9,3 +9,9 @@ weights.json
 # of the committed corpus (DATASET.md's artifact table doesn't list it),
 # and too large (100MB+) to check in.
 data/final/links.parquet
+
+# frontend (Phase 6)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
