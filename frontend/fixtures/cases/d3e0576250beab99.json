@@ -1,0 +1,45 @@
+{
+  "case_id": "d3e0576250beab99",
+  "state_code": "MP",
+  "district": "Gwalior",
+  "crime_type": "ATM_TAMPERING",
+  "occurred_from": "2024-02-18T00:00:00",
+  "occurred_to": "2024-02-18T00:00:00",
+  "registered_at": "2024-02-19T13:23:00",
+  "mo_core": {
+    "time_band": "__MISSING__",
+    "group_size_est": "2-3",
+    "tools": [
+      "crowbar",
+      "cutter",
+      "gas_cutter"
+    ],
+    "counter_forensic": "__MISSING__",
+    "target_selection": "__MISSING__",
+    "property_taken": [
+      "cash"
+    ],
+    "approach_mode": "two_wheeler",
+    "exit_mode": "__MISSING__"
+  },
+  "mo_ext": {
+    "machine_type": "onsite_branch",
+    "attack_method": "__MISSING__",
+    "alarm_defeated": "not_defeated"
+  },
+  "narrative_text": "Complainant appeared at MP-GWA-04 and stated that a ATM tampering happened between 18-02-2024 and 18-02-2024 in Gwalior. It is stated that the accused used a crowbar, used a cutter, used a gas cutter, were two or three persons, left the alarm untouched and came on a two-wheeler. The beat constable had passed the area about an hour earlier. The complainant noticed the incident on returning and informed the police.",
+  "narrative_lang": "en",
+  "field_provenance": {
+    "group_size_est": "source",
+    "tools": "source",
+    "counter_forensic": null,
+    "target_selection": null,
+    "property_taken": "source",
+    "approach_mode": "source",
+    "exit_mode": null,
+    "machine_type": "source",
+    "attack_method": null,
+    "alarm_defeated": "source",
+    "time_band": null
+  }
+}

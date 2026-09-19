@@ -1,0 +1,5381 @@
+{
+  "case_id": "5131089eceb2b5af",
+  "scope": "same",
+  "links": [
+    {
+      "partner_id": "79eb0b4bb7c12d45",
+      "rank": 1,
+      "total_bits": -10.709574,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=face_covered",
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "face_covered",
+          "u": 0.087913,
+          "bits": 2.488274,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "3b34a170098fa03f",
+      "rank": 2,
+      "total_bits": -11.036809,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=face_covered",
+        "location_type=market",
+        "ignition_method=direct_wiring"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "face_covered",
+          "u": 0.087913,
+          "bits": 2.488274,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "market",
+          "u": 0.169515,
+          "bits": 1.667852,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.019943,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "ebfc9b58441d565a",
+      "rank": 3,
+      "total_bits": -11.762942,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=face_covered",
+        "ignition_method=direct_wiring",
+        "tools:screwdriver=True"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "face_covered",
+          "u": 0.087913,
+          "bits": 2.488274,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "100d393d971ac7c4",
+      "rank": 4,
+      "total_bits": -12.224464,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter",
+        "tools:screwdriver=True"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "public_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "2e9f08d7ea955e0d",
+      "rank": 5,
+      "total_bits": -12.224464,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter",
+        "tools:screwdriver=True"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.019943,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "fe193f54538df814",
+      "rank": 6,
+      "total_bits": -12.341968,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=face_covered",
+        "vehicle_class=scooter",
+        "tools:screwdriver=True"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "face_covered",
+          "u": 0.087913,
+          "bits": 2.488274,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "handle_lock_broken",
+          "u": 0.225579,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e48b058be02fa8a3",
+      "rank": 7,
+      "total_bits": -12.703976,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter",
+        "tools:screwdriver=True"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "df3fe241d024fc50",
+      "rank": 8,
+      "total_bits": -12.857505,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "location_type=market",
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter"
+      ],
+      "contributions": [
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "market",
+          "u": 0.169515,
+          "bits": 1.667852,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "a6bb579ba2ee5fc7",
+      "rank": 9,
+      "total_bits": -12.88508,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=face_covered",
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "face_covered",
+          "u": 0.087913,
+          "bits": 2.488274,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.093216,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "2d5efbf1a54f6e84",
+      "rank": 10,
+      "total_bits": -13.104811,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=face_covered",
+        "ignition_method=direct_wiring",
+        "approach_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "face_covered",
+          "u": 0.087913,
+          "bits": 2.488274,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c7afb7c54658484a",
+      "rank": 11,
+      "total_bits": -13.525083,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "location_type=market",
+        "ignition_method=direct_wiring",
+        "tools:screwdriver disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "market",
+          "u": 0.169515,
+          "bits": 1.667852,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "fa764e81b48eba8c",
+      "rank": 12,
+      "total_bits": -13.525083,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "location_type=market",
+        "ignition_method=direct_wiring",
+        "tools:screwdriver disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "market",
+          "u": 0.169515,
+          "bits": 1.667852,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "4b128716ecb26717",
+      "rank": 13,
+      "total_bits": -13.705502,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "location_type=market",
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter"
+      ],
+      "contributions": [
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "market",
+          "u": 0.169515,
+          "bits": 1.667852,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.019943,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b617d7629f33e39d",
+      "rank": 14,
+      "total_bits": -13.869522,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=face_covered",
+        "location_type=market",
+        "ignition_method=direct_wiring"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "face_covered",
+          "u": 0.087913,
+          "bits": 2.488274,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "market",
+          "u": 0.169515,
+          "bits": 1.667852,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "car",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "2754196f49681ba8",
+      "rank": 15,
+      "total_bits": -13.98293,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=face_covered",
+        "location_type disagrees",
+        "tools:screwdriver disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "face_covered",
+          "u": 0.087913,
+          "bits": 2.488274,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "transit_hub",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b1ab83e80bf1158d",
+      "rank": 16,
+      "total_bits": -14.02876,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "tools:screwdriver=True",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "transit_hub",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "a0f019f9dc1cfa8e",
+      "rank": 17,
+      "total_bits": -14.045845,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e67c30b168375a79",
+      "rank": 18,
+      "total_bits": -14.07751,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "transit_hub",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c2ee7d452378f1d3",
+      "rank": 19,
+      "total_bits": -14.289228,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=face_covered",
+        "ignition_method=direct_wiring",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "face_covered",
+          "u": 0.087913,
+          "bits": 2.488274,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.150789,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "commercial",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "abc27079c3c33d5b",
+      "rank": 20,
+      "total_bits": -14.344939,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "location_type disagrees",
+        "tools:screwdriver disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "88a2942740198ba3",
+      "rank": 21,
+      "total_bits": -14.893842,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.059677,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "transit_hub",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "237dada054a73412",
+      "rank": 22,
+      "total_bits": -15.192936,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "location_type disagrees",
+        "tools:screwdriver disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "54c1044ad66cfb39",
+      "rank": 23,
+      "total_bits": -15.293992,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter",
+        "approach_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "d219c0d159a6c5de",
+      "rank": 24,
+      "total_bits": -15.324605,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "tools:screwdriver=True",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "car",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "ae3949f2245ae03a",
+      "rank": 25,
+      "total_bits": -15.324605,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "tools:screwdriver=True",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "gloves",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "commercial",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "3c476081a732005f",
+      "rank": 26,
+      "total_bits": -15.724754,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "tools:screwdriver=True",
+        "approach_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b060eea436f0798c",
+      "rank": 27,
+      "total_bits": -16.030561,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter",
+        "approach_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "transit_hub",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "4afe705af036dc44",
+      "rank": 28,
+      "total_bits": -16.040933,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "location_type disagrees",
+        "tools:screwdriver disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "public_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.150789,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "7bfd56b7cbb4f854",
+      "rank": 29,
+      "total_bits": -16.079074,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=face_covered",
+        "approach_mode disagrees",
+        "ignition_method disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "face_covered",
+          "u": 0.087913,
+          "bits": 2.488274,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "duplicate_key",
+          "u": 0.225579,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "9a90ec6e6b2283b5",
+      "rank": 30,
+      "total_bits": -16.172111,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "vehicle_class=scooter",
+        "ignition_method disagrees",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "handle_lock_broken",
+          "u": 0.225579,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "public_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "3935c7249657969f",
+      "rank": 31,
+      "total_bits": -16.429168,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "vehicle_class=scooter",
+        "ignition_method disagrees",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "key_left",
+          "u": 0.225579,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "transit_hub",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "234580309123449d",
+      "rank": 32,
+      "total_bits": -16.441082,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "location_type disagrees",
+        "tools:screwdriver disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "5249eacb94503d52",
+      "rank": 33,
+      "total_bits": -16.572751,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "tools:screwdriver=True",
+        "approach_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "car",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "6ca5ae56ad6fab24",
+      "rank": 34,
+      "total_bits": -16.777502,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "location_type disagrees",
+        "tools:screwdriver disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "car",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "34e337983c9bcf64",
+      "rank": 35,
+      "total_bits": -17.052264,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "tools:screwdriver=True",
+        "approach_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "car",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "75378da98172d0fd",
+      "rank": 36,
+      "total_bits": -17.145986,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "location_type disagrees",
+        "tools:screwdriver disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "car",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "a94a6349f1d8dd0f",
+      "rank": 37,
+      "total_bits": -17.177651,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "approach_mode disagrees",
+        "group_size_est disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "1b78b858d7b8980b",
+      "rank": 38,
+      "total_bits": -17.319201,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "location_type disagrees",
+        "tools:screwdriver disagrees",
+        "counter_forensic disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "transit_hub",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "60eef1b9878decb4",
+      "rank": 39,
+      "total_bits": -17.368442,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "location_type disagrees",
+        "group_size_est disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "4+",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c60177570a2e98e4",
+      "rank": 40,
+      "total_bits": -17.469498,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "vehicle_class=scooter",
+        "approach_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "scooter",
+          "u": 0.267881,
+          "bits": 1.14709,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "public_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.093216,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "33a9c5cd01a5fc56",
+      "rank": 41,
+      "total_bits": -17.500111,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "tools:screwdriver=True",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315682,
+          "bits": 0.973385,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.150789,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "commercial",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "01759caa46b6d151",
+      "rank": 42,
+      "total_bits": -17.546136,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "approach_mode disagrees",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "gloves",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "9204fc0ca3978a07",
+      "rank": 43,
+      "total_bits": -17.768591,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "approach_mode disagrees",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "1aa3dbe73c0d7fd0",
+      "rank": 44,
+      "total_bits": -18.025648,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "approach_mode disagrees",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "284bcc4e2f845f0e",
+      "rank": 45,
+      "total_bits": -18.025648,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "approach_mode disagrees",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "3b13d726479fd247",
+      "rank": 46,
+      "total_bits": -18.394133,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "approach_mode disagrees",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.547159,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "car",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "81fbd00510f0acb5",
+      "rank": 47,
+      "total_bits": -18.616588,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "approach_mode disagrees",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "baa822814603f2c7",
+      "rank": 48,
+      "total_bits": -18.985073,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "tools:crowbar disagrees",
+        "approach_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.059677,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "public_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.093216,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "89daca29bbeea239",
+      "rank": 49,
+      "total_bits": -19.064436,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "ignition_method=direct_wiring",
+        "property_taken:electronics disagrees",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "direct_wiring",
+          "u": 0.237681,
+          "bits": 1.278269,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.029052,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "street",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "2-3",
+          "u": 0.451334,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.093216,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.581666,
+          "bits": 0.40015,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "4d09effbae50cd9a",
+      "rank": 50,
+      "total_bits": -19.415345,
+      "prior_bits": -15.063933,
+      "pair_class": "same_type",
+      "driven_by": [
+        "approach_mode disagrees",
+        "ignition_method disagrees",
+        "location_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.476627,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "ignition_method",
+          "value_a": "direct_wiring",
+          "value_b": "duplicate_key",
+          "u": 0.225579,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "location_type",
+          "value_a": "market",
+          "value_b": "residential_parking",
+          "u": 0.23966,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315682,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "face_covered",
+          "value_b": "none",
+          "u": 0.637345,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "vehicle_class",
+          "value_a": "scooter",
+          "value_b": "motorcycle",
+          "u": 0.342983,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "1",
+          "value_b": "1",
+          "u": 0.52991,
+          "bits": 0.479512,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.695006,
+          "bits": 0.257057,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 1.0,
+          "bits": 0.0,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    }
+  ]
+}

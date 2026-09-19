@@ -1,0 +1,261 @@
+openapi: 3.0.3
+info:
+  title: Cross-jurisdiction crime linkage API
+  version: "0.1.0"
+  description: >
+    Surfaces a ranked shortlist of probably-linked cases for a human
+    analyst. Never renders a probability (CLAUDE.md hard rule 4) — every
+    link carries rank, bits, and the driving field-level contributions
+    instead. No PII: case records here are the canonical MO record only;
+    pii_ref is a pointer never inlined (TECHNICAL_SPEC.md §3.1, §7).
+
+servers:
+  - url: /v1
+
+paths:
+  /cases/{id}:
+    get:
+      summary: Canonical case record (no PII)
+      operationId: getCase
+      parameters:
+        - $ref: '#/components/parameters/CaseId'
+      responses:
+        '200':
+          description: The case record
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Case'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /cases/{id}/links:
+    get:
+      summary: Ranked links for this case, with bit contributions
+      operationId: getCaseLinks
+      parameters:
+        - $ref: '#/components/parameters/CaseId'
+        - name: scope
+          in: query
+          description: >
+            same (default): only same-crime-type candidates, using that
+            crime type's own prior. all: widen to every property-crime
+            type, using the (worse) cross-type prior — TECHNICAL_SPEC.md
+            §4.4. Never blended in one response; scope picks exactly one.
+          schema:
+            type: string
+            enum: [same, all]
+            default: same
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+            default: 10
+      responses:
+        '200':
+          description: Ranked list, highest total_bits first
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  case_id:
+                    type: string
+                  scope:
+                    type: string
+                    enum: [same, all]
+                  links:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Link'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /feedback:
+    post:
+      summary: Analyst feedback on a specific link
+      operationId: postFeedback
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FeedbackRequest'
+      responses:
+        '201':
+          description: Feedback recorded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeedbackRecord'
+        '400':
+          description: Missing or invalid reason
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  parameters:
+    CaseId:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+
+  responses:
+    NotFound:
+      description: No such case
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+
+  schemas:
+    Error:
+      type: object
+      required: [message]
+      properties:
+        message:
+          type: string
+
+    Case:
+      type: object
+      required: [case_id, state_code, district, crime_type, occurred_from, occurred_to,
+                 registered_at, mo_core, mo_ext, narrative_text, narrative_lang, field_provenance]
+      properties:
+        case_id:
+          type: string
+        state_code:
+          type: string
+          example: MH
+        district:
+          type: string
+        crime_type:
+          type: string
+          enum: [BURGLARY_RESIDENTIAL, BURGLARY_COMMERCIAL, VEHICLE_THEFT, SNATCHING, ATM_TAMPERING]
+        occurred_from:
+          type: string
+          format: date-time
+        occurred_to:
+          type: string
+          format: date-time
+        registered_at:
+          type: string
+          format: date-time
+        mo_core:
+          type: object
+          description: >
+            Fields scoreable across every property-crime type. A value may
+            be a category string, a list of tags, or one of the sentinel
+            tokens __MISSING__ / __ABSENT__ / __UNKNOWABLE__.
+          additionalProperties: true
+        mo_ext:
+          type: object
+          description: Fields scoreable only within this crime's family (see linkage/schema.py).
+          additionalProperties: true
+        narrative_text:
+          type: string
+        narrative_lang:
+          type: string
+          example: en
+        field_provenance:
+          type: object
+          description: Per MO field, "source" (recorded), "llm_extracted", or null (no value).
+          additionalProperties:
+            type: string
+            nullable: true
+            enum: [source, llm_extracted, null]
+
+    Contribution:
+      type: object
+      required: [field, value_a, value_b, u, bits, provenance]
+      properties:
+        field:
+          type: string
+          description: >
+            MO field name. Tag fields are suffixed with the specific tag,
+            e.g. "property_taken:gold" (linkage/features.py).
+        value_a:
+          type: string
+          nullable: true
+        value_b:
+          type: string
+          nullable: true
+        u:
+          type: number
+          description: Population frequency this value/field agreement was scored against.
+        bits:
+          type: number
+          description: log2(m/u) on agreement, log2((1-m)/(1-u)) on disagreement. Signed.
+        provenance:
+          type: object
+          properties:
+            a:
+              type: string
+              nullable: true
+            b:
+              type: string
+              nullable: true
+
+    Link:
+      type: object
+      required: [partner_id, rank, total_bits, prior_bits, pair_class, contributions]
+      properties:
+        partner_id:
+          type: string
+        rank:
+          type: integer
+        total_bits:
+          type: number
+          description: prior_bits + sum(contributions[].bits). Never a probability (CLAUDE.md hard rule 4).
+        prior_bits:
+          type: number
+          nullable: true
+        pair_class:
+          type: string
+          enum: [same_type, cross_type]
+        driven_by:
+          type: array
+          description: Top 3 contributions by |bits|, for the one-line UI summary.
+          items:
+            type: string
+          maxItems: 3
+        contributions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Contribution'
+
+    FeedbackRequest:
+      type: object
+      required: [case_id_a, case_id_b, status, reason]
+      properties:
+        case_id_a:
+          type: string
+        case_id_b:
+          type: string
+        status:
+          type: string
+          enum: [confirmed, rejected, unsure]
+        reason:
+          type: string
+          minLength: 1
+          description: Required on every submission (CLAUDE.md: an analyst must be able to say why).
+        actor_id:
+          type: string
+          description: Cognito principal; populated server-side from the JWT in production.
+
+    FeedbackRecord:
+      allOf:
+        - $ref: '#/components/schemas/FeedbackRequest'
+        - type: object
+          required: [pair_id, submitted_at]
+          properties:
+            pair_id:
+              type: string
+            submitted_at:
+              type: string
+              format: date-time

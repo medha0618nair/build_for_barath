@@ -1,0 +1,43 @@
+{
+  "case_id": "5131089eceb2b5af",
+  "state_code": "MH",
+  "district": "Nashik",
+  "crime_type": "VEHICLE_THEFT",
+  "occurred_from": "2023-07-15T07:14:00",
+  "occurred_to": "2023-07-18T02:21:00",
+  "registered_at": "2023-07-20T09:19:00",
+  "mo_core": {
+    "time_band": "__UNKNOWABLE__",
+    "group_size_est": "1",
+    "tools": [
+      "screwdriver"
+    ],
+    "counter_forensic": "face_covered",
+    "target_selection": "__MISSING__",
+    "property_taken": [
+      "vehicle"
+    ],
+    "approach_mode": "on_foot",
+    "exit_mode": "two_wheeler"
+  },
+  "mo_ext": {
+    "vehicle_class": "scooter",
+    "ignition_method": "direct_wiring",
+    "location_type": "market"
+  },
+  "narrative_text": "As per the complaint, unknown persons committed vehicle theft in Nashik (MH-NAS-05) sometime between 15/07/2023 07:14 and 18/07/2023 02:21. It is stated that the accused took a vehicle, fled on a two-wheeler, stole a scooter, started it by joining the wires, acted alone and had their faces covered. A relative of the complainant was the first to notice. The complainant has submitted bills for some of the items.",
+  "narrative_lang": "en",
+  "field_provenance": {
+    "group_size_est": "source",
+    "tools": "source",
+    "counter_forensic": "source",
+    "target_selection": null,
+    "property_taken": "source",
+    "approach_mode": "source",
+    "exit_mode": "source",
+    "vehicle_class": "source",
+    "ignition_method": "source",
+    "location_type": "source",
+    "time_band": null
+  }
+}

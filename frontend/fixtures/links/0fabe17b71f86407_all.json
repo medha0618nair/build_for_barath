@@ -1,0 +1,6294 @@
+{
+  "case_id": "0fabe17b71f86407",
+  "scope": "all",
+  "links": [
+    {
+      "partner_id": "ba5fce80a0461bcb",
+      "rank": 1,
+      "total_bits": -4.57215,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "262b0c483a5802a7",
+      "rank": 2,
+      "total_bits": -6.499794,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "property_taken:documents=True",
+        "target_selection=insider_info"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "insider_info",
+          "u": 0.135327,
+          "bits": 1.941022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "bfba975678280b0f",
+      "rank": 3,
+      "total_bits": -6.786463,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "aaa79b1201650239",
+      "rank": 4,
+      "total_bits": -6.801165,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b63fe5f823d13365",
+      "rank": 5,
+      "total_bits": -7.116141,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "1c482e14fe59ca4f",
+      "rank": 6,
+      "total_bits": -7.853181,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "fdfbbda238110ed7",
+      "rank": 7,
+      "total_bits": -8.497159,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.024689,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "f83fd466d3c14e2e",
+      "rank": 8,
+      "total_bits": -8.532043,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "25c97781389db0c2",
+      "rank": 9,
+      "total_bits": -8.633124,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.204364,
+          "bits": 1.449072,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "3b4389dd5dd41d6e",
+      "rank": 10,
+      "total_bits": -8.729379,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.204364,
+          "bits": 1.449072,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "5c44132a45c66b6a",
+      "rank": 11,
+      "total_bits": -9.481121,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.204364,
+          "bits": 1.449072,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "dbb80061054b1822",
+      "rank": 12,
+      "total_bits": -9.795147,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "230b416f2a9d9b49",
+      "rank": 13,
+      "total_bits": -10.178451,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "targeted",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "80d7effb58c5dfa3",
+      "rank": 14,
+      "total_bits": -10.228036,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "47d81c07f42ffd8e",
+      "rank": 15,
+      "total_bits": -10.273109,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "target_selection=insider_info",
+        "occupancy=closed_overnight",
+        "time_band=early_morning"
+      ],
+      "contributions": [
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "insider_info",
+          "u": 0.135327,
+          "bits": 1.941022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.204364,
+          "bits": 1.449072,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "a83cd8e3f25296db",
+      "rank": 16,
+      "total_bits": -10.483929,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "occupancy=closed_overnight",
+        "time_band=early_morning"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.204364,
+          "bits": 1.449072,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "roof",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "dfa691b298009244",
+      "rank": 17,
+      "total_bits": -10.602787,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "target_selection=insider_info",
+        "occupancy=closed_overnight",
+        "time_band=early_morning"
+      ],
+      "contributions": [
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "insider_info",
+          "u": 0.135327,
+          "bits": 1.941022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.204364,
+          "bits": 1.449072,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "23c8fa9095959b59",
+      "rank": 18,
+      "total_bits": -10.718431,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "exit_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "4a41a18628a4e894",
+      "rank": 19,
+      "total_bits": -10.746356,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "d114eadaa6478657",
+      "rank": 20,
+      "total_bits": -11.076033,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "ff295776787b412f",
+      "rank": 21,
+      "total_bits": -11.448513,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "d7300ba7cd572ace",
+      "rank": 22,
+      "total_bits": -11.68111,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_overnight",
+        "time_band=early_morning",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.204364,
+          "bits": 1.449072,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "bae64673313ecb4b",
+      "rank": 23,
+      "total_bits": -11.793941,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "target_selection disagrees",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c308724df43ce918",
+      "rank": 24,
+      "total_bits": -11.92403,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "mixed_use",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "fa05441c9c4dbd3d",
+      "rank": 25,
+      "total_bits": -12.44235,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "6cd5a720a17aaa53",
+      "rank": 26,
+      "total_bits": -12.44235,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "targeted",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c454ea333236a9ff",
+      "rank": 27,
+      "total_bits": -12.496963,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "property_taken:documents=True",
+        "occupancy=closed_overnight",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "8c1fe1ea92b2a163",
+      "rank": 28,
+      "total_bits": -12.679267,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 2.928052,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.216719,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.430481,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.451287,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.091482,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.312594,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.431701,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "4306dd13c9651020",
+      "rank": 29,
+      "total_bits": -13.052671,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "occupancy=closed_overnight",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "aa748846ffdd2e15",
+      "rank": 30,
+      "total_bits": -13.06002,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "target_selection=insider_info",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "insider_info",
+          "u": 0.135327,
+          "bits": 1.941022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.024689,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c761bc6ecdc587c1",
+      "rank": 31,
+      "total_bits": -13.459859,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_overnight",
+        "target_selection disagrees",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c7b7437be95daf36",
+      "rank": 32,
+      "total_bits": -13.509067,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "office",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "8ef4cb71125da6fa",
+      "rank": 33,
+      "total_bits": -13.567235,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "target_selection disagrees",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_extended",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "51cbd68fbdf6ed7f",
+      "rank": 34,
+      "total_bits": -13.755039,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "56fd12cab7acdb93",
+      "rank": 35,
+      "total_bits": -13.908057,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "property_taken:documents=True",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_extended",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "0a5cd18a7d6bc542",
+      "rank": 36,
+      "total_bits": -14.192092,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=warehouse",
+        "entry_point=shutter",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "warehouse",
+          "u": 0.05494,
+          "bits": 3.111896,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_extended",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b233d963440ddca4",
+      "rank": 37,
+      "total_bits": -14.357064,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "83b7dcfab0fa16e1",
+      "rank": 38,
+      "total_bits": -14.775187,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "property_taken:documents=True",
+        "occupancy=closed_overnight"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "bd87266c4715ca93",
+      "rank": 39,
+      "total_bits": -14.826176,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_overnight",
+        "target_selection disagrees",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "targeted",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "19c1bfd19370c3f1",
+      "rank": 40,
+      "total_bits": -14.875384,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e7528619c29905c2",
+      "rank": 41,
+      "total_bits": -14.890086,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "office",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "bfe565d78234c15c",
+      "rank": 42,
+      "total_bits": -15.205061,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "target_selection disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "opportunistic",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "office",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "27e2470651434cf5",
+      "rank": 43,
+      "total_bits": -15.389273,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "target_selection disagrees",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "mixed_use",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_extended",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.382752,
+          "bits": 0.779668,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "2e033bd01a595e83",
+      "rank": 44,
+      "total_bits": -15.718839,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "time_band=early_morning",
+        "target_selection disagrees",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.211716,
+          "bits": 1.281498,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.451287,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.091482,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.473997,
+          "bits": 0.512458,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.589387,
+          "bits": 0.342262,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "2704bd2516110813",
+      "rank": 45,
+      "total_bits": -15.723381,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "occupancy=closed_overnight",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "efc7325668954b92",
+      "rank": 46,
+      "total_bits": -15.867467,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_overnight",
+        "time_band=early_morning",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.204364,
+          "bits": 1.449072,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.372844,
+          "bits": 0.805369,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "63621f61094994f5",
+      "rank": 47,
+      "total_bits": -15.922969,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "target_selection disagrees",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_extended",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "ab086866c2c5d8f3",
+      "rank": 48,
+      "total_bits": -16.770966,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=shutter",
+        "property_taken:cash disagrees",
+        "exit_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "shutter",
+          "u": 0.0953,
+          "bits": 2.383826,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_extended",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "ransacked",
+          "u": 0.506934,
+          "bits": 0.518319,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "33764da152d1072b",
+      "rank": 49,
+      "total_bits": -18.107207,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_overnight",
+        "target_selection disagrees",
+        "exit_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.379493,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "45be1b413819c66f",
+      "rank": 50,
+      "total_bits": -20.336222,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_overnight",
+        "target_selection disagrees",
+        "exit_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_overnight",
+          "value_b": "closed_overnight",
+          "u": 0.184794,
+          "bits": 1.565905,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "insider_info",
+          "value_b": "scouted",
+          "u": 0.394668,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "warehouse",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "shutter",
+          "value_b": "roof",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "ransacked",
+          "value_b": "targeted",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    }
+  ]
+}

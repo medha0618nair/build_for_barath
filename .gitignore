@@ -5,3 +5,7 @@ __pycache__/
 .venv/
 .aws-sam/
 weights.json
+# linkage/link_batch.py output — a regenerable pipeline artifact, not part
+# of the committed corpus (DATASET.md's artifact table doesn't list it),
+# and too large (100MB+) to check in.
+data/final/links.parquet

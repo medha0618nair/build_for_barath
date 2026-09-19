@@ -1,0 +1,45 @@
+{
+  "case_id": "0fabe17b71f86407",
+  "state_code": "MH",
+  "district": "Kolhapur",
+  "crime_type": "BURGLARY_COMMERCIAL",
+  "occurred_from": "2021-01-01T02:54:00",
+  "occurred_to": "2021-01-01T09:30:00",
+  "registered_at": "2021-01-01T21:52:00",
+  "mo_core": {
+    "time_band": "early_morning",
+    "group_size_est": "2-3",
+    "tools": [],
+    "counter_forensic": "__MISSING__",
+    "target_selection": "insider_info",
+    "property_taken": [
+      "documents"
+    ],
+    "approach_mode": "two_wheeler",
+    "exit_mode": "two_wheeler"
+  },
+  "mo_ext": {
+    "entry_point": "shutter",
+    "entry_method": "__MISSING__",
+    "premise": "warehouse",
+    "occupancy": "closed_overnight",
+    "search_pattern": "ransacked"
+  },
+  "narrative_text": "Complainant reports that a break-in at commercial premises took place within MH-KOL-04 police station limits, Kolhapur, between 01/01/2021 02:54 and 01/01/2021 09:30. It is stated that the accused left no sign of tools, targeted a godown, appear to have had inside information, came on a two-wheeler, were two or three persons, got in by lifting the shutter, ransacked the place, struck early in the morning, fled on a two-wheeler and struck while the premises were closed for the night. A spot panchnama was drawn up in the presence of witnesses. It had been raining heavily that evening.",
+  "narrative_lang": "en",
+  "field_provenance": {
+    "group_size_est": "source",
+    "tools": "source",
+    "counter_forensic": null,
+    "target_selection": "source",
+    "property_taken": "source",
+    "approach_mode": "source",
+    "exit_mode": "source",
+    "entry_point": "source",
+    "entry_method": null,
+    "premise": "source",
+    "occupancy": "source",
+    "search_pattern": "source",
+    "time_band": "source"
+  }
+}

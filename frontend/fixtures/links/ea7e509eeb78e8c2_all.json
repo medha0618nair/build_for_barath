@@ -1,0 +1,7691 @@
+{
+  "case_id": "ea7e509eeb78e8c2",
+  "scope": "all",
+  "links": [
+    {
+      "partner_id": "8d6825f442bbdda5",
+      "rank": 1,
+      "total_bits": 1.993387,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "occupancy=closed_extended",
+        "entry_method=duplicate_key"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": 2.293777,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "7bd50622e08a5b38",
+      "rank": 2,
+      "total_bits": 0.52749,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "occupancy=closed_extended",
+        "entry_method=duplicate_key"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": 2.293777,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "5610f64b7e1a30f2",
+      "rank": 3,
+      "total_bits": -3.475958,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "property_taken:documents=True",
+        "tools:gas_cutter=True"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": 2.293777,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "grill_cut",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "727f55624e006e08",
+      "rank": 4,
+      "total_bits": -5.991986,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "occupancy=closed_extended",
+        "entry_method=duplicate_key"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "cctv_disabled",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "3622d3c934c3392b",
+      "rank": 5,
+      "total_bits": -8.519566,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=gloves",
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "gloves",
+          "u": 0.131653,
+          "bits": 1.975059,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "40de8f41edd78342",
+      "rank": 6,
+      "total_bits": -8.876904,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "counter_forensic=gloves",
+        "search_pattern=targeted"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "gloves",
+          "u": 0.131653,
+          "bits": 1.975059,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "grill_cut",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "f84ec7b462585086",
+      "rank": 7,
+      "total_bits": -10.035002,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "entry_method=duplicate_key",
+        "tools:gas_cutter=True"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": 2.293777,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "warehouse",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "roof",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "50be707ef6b1c95e",
+      "rank": 8,
+      "total_bits": -10.235711,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=duplicate_key",
+        "tools:gas_cutter=True",
+        "search_pattern=targeted"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": 2.293777,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "cctv_disabled",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "mixed_use",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "roof",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "dd0ded7a42315e8d",
+      "rank": 9,
+      "total_bits": -10.946474,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=duplicate_key",
+        "property_taken:documents=True",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "warehouse",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "a2f1d5ebb6957a02",
+      "rank": 10,
+      "total_bits": -11.021214,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "property_taken:documents=True",
+        "search_pattern=targeted"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "on_foot",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "4a739fb8f6be81d8",
+      "rank": 11,
+      "total_bits": -11.217194,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:gas_cutter=True",
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": 2.293777,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "face_covered",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "7f6ac97563ba0799",
+      "rank": 12,
+      "total_bits": -11.798569,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "entry_method=duplicate_key",
+        "property_taken:documents=True"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "daf8a12702407872",
+      "rank": 13,
+      "total_bits": -11.946268,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "entry_method=duplicate_key",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "cctv_disabled",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b91e1e36e526c0d3",
+      "rank": 14,
+      "total_bits": -12.014935,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "grill_cut",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "977d1e817cb71367",
+      "rank": 15,
+      "total_bits": -12.023399,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "tools:gas_cutter=True",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": 2.293777,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "roof",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "f3e41307e0e65e0f",
+      "rank": 16,
+      "total_bits": -12.209628,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "occupancy=closed_extended",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b27ccc6e803ed761",
+      "rank": 17,
+      "total_bits": -12.259827,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e6086c6bd85a1e58",
+      "rank": 18,
+      "total_bits": -12.268112,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "entry_method=duplicate_key",
+        "exit_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "face_covered",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "fc096a9cf104aec7",
+      "rank": 19,
+      "total_bits": -12.29306,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=duplicate_key",
+        "tools:gas_cutter=True",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": 2.293777,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "face_covered",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "warehouse",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "wall_breach",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "d5f142fb4efcb6c6",
+      "rank": 20,
+      "total_bits": -12.520985,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "property_taken:documents=True",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "grill_cut",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "0a5cd18a7d6bc542",
+      "rank": 21,
+      "total_bits": -12.724182,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "entry_method=duplicate_key",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "warehouse",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "d7122ee4b4bb4854",
+      "rank": 22,
+      "total_bits": -12.87825,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "face_covered",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "af02db2649c36a3e",
+      "rank": 23,
+      "total_bits": -13.191062,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "entry_method=duplicate_key",
+        "search_pattern=targeted"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "cctv_disabled",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "on_foot",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "f354a85c4700be35",
+      "rank": 24,
+      "total_bits": -13.492488,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "no_force",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e23e11ef9413a399",
+      "rank": 25,
+      "total_bits": -13.829195,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "property_taken:documents=True",
+        "counter_forensic=gloves",
+        "search_pattern=targeted"
+      ],
+      "contributions": [
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "gloves",
+          "u": 0.131653,
+          "bits": 1.975059,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "ca0ebce1454d7d83",
+      "rank": 26,
+      "total_bits": -14.031307,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "property_taken:documents=True",
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "3df7422ea7f4d9ed",
+      "rank": 27,
+      "total_bits": -14.123683,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=duplicate_key",
+        "approach_mode=four_wheeler",
+        "exit_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.450013,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b7b0ecc575d8f251",
+      "rank": 28,
+      "total_bits": -14.127197,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "search_pattern=targeted",
+        "exit_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "grill_cut",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "1b47de82a0385d96",
+      "rank": 29,
+      "total_bits": -14.131505,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler",
+        "exit_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "mixed_use",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "f3d1b974b423842e",
+      "rank": 30,
+      "total_bits": -14.466489,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "entry_method=duplicate_key",
+        "approach_mode=four_wheeler",
+        "exit_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "duplicate_key",
+          "u": 0.090543,
+          "bits": 2.281023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.129745,
+          "bits": 1.839053,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.201927,
+          "bits": 1.332801,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.312594,
+          "bits": 0.883712,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.496487,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.346801,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "temporarily_away",
+          "u": 0.270611,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.064173,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.091482,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "row_house",
+          "u": 0.212186,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.550635,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "551155a7d0ccfc3c",
+      "rank": 31,
+      "total_bits": -14.641174,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "approach_mode=four_wheeler",
+        "exit_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "roof",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "953af3f085b915e7",
+      "rank": 32,
+      "total_bits": -14.700437,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=gloves",
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "gloves",
+          "u": 0.131653,
+          "bits": 1.975059,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b14a03e8de172c4e",
+      "rank": 33,
+      "total_bits": -15.03586,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "search_pattern=targeted",
+        "exit_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "bbfa85c76b52e102",
+      "rank": 34,
+      "total_bits": -15.41913,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=office",
+        "counter_forensic=gloves",
+        "approach_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "office",
+          "u": 0.039326,
+          "bits": 3.567672,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "gloves",
+          "u": 0.131653,
+          "bits": 1.975059,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "15fca4c9e85c60a5",
+      "rank": 35,
+      "total_bits": -15.47861,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "exit_mode=four_wheeler",
+        "counter_forensic disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "2704bd2516110813",
+      "rank": 36,
+      "total_bits": -15.534147,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=gloves",
+        "approach_mode=four_wheeler",
+        "exit_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "gloves",
+          "u": 0.131653,
+          "bits": 1.975059,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "grill_cut",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "01851c4786ffbb57",
+      "rank": 37,
+      "total_bits": -15.594797,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:gas_cutter=True",
+        "search_pattern=targeted",
+        "exit_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": 2.293777,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "007e81400dca13e7",
+      "rank": 38,
+      "total_bits": -15.659558,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "search_pattern=targeted",
+        "exit_mode=four_wheeler",
+        "entry_method disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "on_foot",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "7150add1047d7608",
+      "rank": 39,
+      "total_bits": -15.888165,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler",
+        "exit_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "warehouse",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "shutter",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "36bada3c782b0d91",
+      "rank": 40,
+      "total_bits": -16.169227,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "exit_mode=four_wheeler",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "384bf30b3ab1e432",
+      "rank": 41,
+      "total_bits": -16.198832,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "occupancy=closed_extended",
+        "search_pattern=targeted",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_extended",
+          "u": 0.065891,
+          "bits": 2.868032,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "5275f67ef81367fa",
+      "rank": 42,
+      "total_bits": -16.507555,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "search_pattern=targeted",
+        "exit_mode=four_wheeler",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "grill_cut",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "on_foot",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "43da6bdae01d8660",
+      "rank": 43,
+      "total_bits": -16.631095,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "property_taken:documents=True",
+        "approach_mode=four_wheeler",
+        "exit_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.099434,
+          "bits": 2.329213,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "face_covered",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "750eea986024031c",
+      "rank": 44,
+      "total_bits": -17.208517,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "search_pattern=targeted",
+        "approach_mode=four_wheeler",
+        "exit_mode=four_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.681707,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "grill_cut",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "mixed_use",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "6df8d4066c6a0f77",
+      "rank": 45,
+      "total_bits": -17.264314,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "approach_mode=four_wheeler",
+        "exit_mode=four_wheeler",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "af74a6c2657925b5",
+      "rank": 46,
+      "total_bits": -18.082896,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=gloves",
+        "exit_mode disagrees",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "gloves",
+          "u": 0.131653,
+          "bits": 1.975059,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "on_foot",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "grill_cut",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.374462,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.232281,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "d7d7149804942b98",
+      "rank": 47,
+      "total_bits": -18.397871,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "counter_forensic=gloves",
+        "exit_mode disagrees",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "gloves",
+          "u": 0.131653,
+          "bits": 1.975059,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.338583,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.217667,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "mixed_use",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.599094,
+          "bits": 0.375642,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "3e5c68a38e2cf4c4",
+      "rank": 48,
+      "total_bits": -18.439476,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:gas_cutter=True",
+        "exit_mode=four_wheeler",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.102222,
+          "bits": 2.293777,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.303392,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.337991,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "selective",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "door",
+          "u": 0.452643,
+          "bits": 0.620534,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "6cc891a6daafb7df",
+      "rank": 49,
+      "total_bits": -19.580841,
+      "prior_bits": -13.422158,
+      "pair_class": "same_type",
+      "driven_by": [
+        "approach_mode=four_wheeler",
+        "exit_mode=four_wheeler",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "approach_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.330919,
+          "bits": 0.924949,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.351712,
+          "bits": 0.863315,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.599094,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.4485,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.099434,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.39479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.372632,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.102222,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "shop",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "closed_overnight",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "wall_breach",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.498591,
+          "bits": 0.533022,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b5addbc15e3ba58b",
+      "rank": 50,
+      "total_bits": -24.011412,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "search_pattern=targeted",
+        "counter_forensic disagrees",
+        "property_taken:electronics disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "search_pattern",
+          "value_a": "targeted",
+          "value_b": "targeted",
+          "u": 0.167556,
+          "bits": 1.540687,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "counter_forensic",
+          "value_a": "gloves",
+          "value_b": "none",
+          "u": 0.496487,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.192539,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.346801,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "closed_extended",
+          "value_b": "vacant_extended",
+          "u": 0.270611,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.064173,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.252484,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.091482,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "duplicate_key",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "office",
+          "value_b": "apartment",
+          "u": 0.212186,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.312594,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "four_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.431701,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "door",
+          "value_b": "balcony",
+          "u": 0.276147,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    }
+  ]
+}

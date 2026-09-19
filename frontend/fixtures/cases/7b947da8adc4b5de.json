@@ -1,0 +1,48 @@
+{
+  "case_id": "7b947da8adc4b5de",
+  "state_code": "MH",
+  "district": "Nashik",
+  "crime_type": "BURGLARY_RESIDENTIAL",
+  "occurred_from": "2024-12-13T04:16:00",
+  "occurred_to": "2024-12-13T09:11:00",
+  "registered_at": "2024-12-13T23:48:00",
+  "mo_core": {
+    "time_band": "early_morning",
+    "group_size_est": "2-3",
+    "tools": [
+      "crowbar",
+      "cutter"
+    ],
+    "counter_forensic": "__MISSING__",
+    "target_selection": "scouted",
+    "property_taken": [
+      "vehicle"
+    ],
+    "approach_mode": "on_foot",
+    "exit_mode": "on_foot"
+  },
+  "mo_ext": {
+    "entry_point": "balcony",
+    "entry_method": "grill_cut",
+    "premise": "apartment",
+    "occupancy": "temporarily_away",
+    "search_pattern": "selective"
+  },
+  "narrative_text": "As per the complaint, unknown persons committed house burglary in Nashik (MH-NAS-04) sometime between 13/12/2024 04:16 and 13/12/2024 09:11. It is stated that the accused fled on foot, were two or three persons, took a vehicle, appear to have watched the place beforehand, targeted an apartment, struck early in the morning, struck while the occupants were out, took only selected valuables, climbed in via the balcony, cut the grill, used a crowbar and used a cutter. Fingerprint experts visited the scene. A relative of the complainant was the first to notice.",
+  "narrative_lang": "en",
+  "field_provenance": {
+    "group_size_est": "source",
+    "tools": "source",
+    "counter_forensic": null,
+    "target_selection": "source",
+    "property_taken": "source",
+    "approach_mode": "source",
+    "exit_mode": "source",
+    "entry_point": "source",
+    "entry_method": "source",
+    "premise": "source",
+    "occupancy": "source",
+    "search_pattern": "source",
+    "time_band": "source"
+  }
+}

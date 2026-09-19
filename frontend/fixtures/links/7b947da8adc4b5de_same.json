@@ -1,0 +1,7908 @@
+{
+  "case_id": "7b947da8adc4b5de",
+  "scope": "same",
+  "links": [
+    {
+      "partner_id": "32688455389c5679",
+      "rank": 1,
+      "total_bits": -9.414321,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "entry_point=balcony",
+        "time_band=early_morning"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.178152,
+          "bits": 1.608954,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "833c1820572a6a00",
+      "rank": 2,
+      "total_bits": -10.929543,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "entry_point=balcony",
+        "premise=apartment"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "occupied",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "1f675c0caa6ec75a",
+      "rank": 3,
+      "total_bits": -11.457572,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "property_taken:vehicle=True",
+        "entry_method=grill_cut",
+        "tools:cutter=True"
+      ],
+      "contributions": [
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.041065,
+          "bits": 3.508247,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.147582,
+          "bits": 1.834735,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "vacant_extended",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b629cc136b613097",
+      "rank": 4,
+      "total_bits": -11.945372,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "time_band=early_morning",
+        "premise=apartment"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.178152,
+          "bits": 1.608954,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "d4be4b300c0f962f",
+      "rank": 5,
+      "total_bits": -12.635594,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=balcony",
+        "time_band=early_morning",
+        "tools:crowbar=True"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.178152,
+          "bits": 1.608954,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "a3d47494e4d46e2c",
+      "rank": 6,
+      "total_bits": -13.170452,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "time_band=early_morning",
+        "tools:crowbar=True",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.178152,
+          "bits": 1.608954,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "624d1dadc262f23b",
+      "rank": 7,
+      "total_bits": -13.310678,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=balcony",
+        "tools:cutter=True",
+        "tools:crowbar=True"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.147582,
+          "bits": 1.834735,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "occupied",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "57c81394574d941e",
+      "rank": 8,
+      "total_bits": -13.32677,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=apartment",
+        "tools:crowbar=True",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "duplicate_key",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "0714b903f9311bd3",
+      "rank": 9,
+      "total_bits": -13.390152,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "entry_point=balcony",
+        "tools:crowbar=True"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "row_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "occupied",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "9cea46565a2bc70f",
+      "rank": 10,
+      "total_bits": -13.698961,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "time_band=early_morning",
+        "premise=apartment",
+        "tools:crowbar=True"
+      ],
+      "contributions": [
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.178152,
+          "bits": 1.608954,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "roof",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "1b6ab3f4f20a6fe5",
+      "rank": 11,
+      "total_bits": -13.736825,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "property_taken:vehicle=True",
+        "entry_method=grill_cut",
+        "premise=apartment"
+      ],
+      "contributions": [
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.041065,
+          "bits": 3.508247,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "8955f17a521e2435",
+      "rank": 12,
+      "total_bits": -14.134916,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=balcony",
+        "premise=apartment",
+        "tools:crowbar=True"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "targeted",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "ee2cbdb7872818cc",
+      "rank": 13,
+      "total_bits": -14.520786,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "entry_point=balcony",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "9bd60a48361469ae",
+      "rank": 14,
+      "total_bits": -14.646553,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "tools:cutter=True",
+        "tools:crowbar=True"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.147582,
+          "bits": 1.834735,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.080858,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "9ee20ef29ec1c3d4",
+      "rank": 15,
+      "total_bits": -14.683732,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "search_pattern=selective",
+        "entry_method disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.147582,
+          "bits": 1.834735,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "row_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "800d9f18053d27de",
+      "rank": 16,
+      "total_bits": -14.724122,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "premise=apartment",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e46dc958af516ca6",
+      "rank": 17,
+      "total_bits": -14.823341,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "time_band=early_morning",
+        "premise=apartment"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.178152,
+          "bits": 1.608954,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "4637eddafd3847ed",
+      "rank": 18,
+      "total_bits": -15.504938,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "search_pattern=selective",
+        "entry_method disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "8180ce6501a2b01d",
+      "rank": 19,
+      "total_bits": -15.504938,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "search_pattern=selective",
+        "entry_method disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "no_force",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "031eb5dacc3dfa43",
+      "rank": 20,
+      "total_bits": -15.630855,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "premise=apartment",
+        "time_band disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "53e82f87cc2b82fd",
+      "rank": 21,
+      "total_bits": -15.661811,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=balcony",
+        "tools:crowbar=True",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "a4d2967f615e7131",
+      "rank": 22,
+      "total_bits": -16.120838,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=apartment",
+        "tools:crowbar=True",
+        "entry_method disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c7b77dce1edb4aeb",
+      "rank": 23,
+      "total_bits": -16.156818,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=balcony",
+        "tools:crowbar=True",
+        "time_band disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "targeted",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "034a8003185a3f77",
+      "rank": 24,
+      "total_bits": -16.721974,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=balcony",
+        "premise=apartment",
+        "time_band disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.080858,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "9d72ae8617b0a3ea",
+      "rank": 25,
+      "total_bits": -16.798656,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "time_band=early_morning",
+        "premise=apartment",
+        "tools:crowbar=True"
+      ],
+      "contributions": [
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.178152,
+          "bits": 1.608954,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.080858,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "occupied",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "3d7cd7378d27abe9",
+      "rank": 26,
+      "total_bits": -16.997489,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=apartment",
+        "tools:crowbar=True",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.080858,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "af532c39a893f61f",
+      "rank": 27,
+      "total_bits": -17.110319,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "premise=apartment",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "62bb232baa6d3149",
+      "rank": 28,
+      "total_bits": -17.479364,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=apartment",
+        "tools:crowbar=True",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "no_force",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "f94b969006b266bc",
+      "rank": 29,
+      "total_bits": -17.489349,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "time_band disagrees",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "occupied",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "71ab2fb2dead444c",
+      "rank": 30,
+      "total_bits": -17.641245,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=apartment",
+        "tools:crowbar=True",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e07b9d82381178c8",
+      "rank": 31,
+      "total_bits": -17.68972,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "time_band=early_morning",
+        "premise=apartment",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.178152,
+          "bits": 1.608954,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "cc4c8e46a8715fc6",
+      "rank": 32,
+      "total_bits": -17.930805,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=balcony",
+        "time_band=early_morning",
+        "tools:crowbar=True"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "early_morning",
+          "u": 0.178152,
+          "bits": 1.608954,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "occupied",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "7f46e9548c1be6bf",
+      "rank": 33,
+      "total_bits": -18.030826,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "premise=apartment",
+        "tools:crowbar=True"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.147582,
+          "bits": 1.834735,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "occupied",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "0236e8dded43f0c1",
+      "rank": 34,
+      "total_bits": -18.030826,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "premise=apartment",
+        "tools:crowbar=True"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.147582,
+          "bits": 1.834735,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "occupied",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "roof",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "26cf704d30db85b1",
+      "rank": 35,
+      "total_bits": -18.083472,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "tools:crowbar=True",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "f3e127b1b87c0e6f",
+      "rank": 36,
+      "total_bits": -18.457818,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=apartment",
+        "search_pattern=selective",
+        "time_band disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e64834fb934ed2c7",
+      "rank": 37,
+      "total_bits": -18.489329,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "tools:crowbar=True",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "d22883ca27f11633",
+      "rank": 38,
+      "total_bits": -18.528133,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "search_pattern=selective",
+        "property_taken:gold disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.147582,
+          "bits": 1.834735,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "374c92cfb5cdd731",
+      "rank": 39,
+      "total_bits": -18.740659,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "search_pattern=selective",
+        "time_band disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "duplicate_key",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "547265f00e2fcc57",
+      "rank": 40,
+      "total_bits": -18.842462,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method disagrees",
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "abaa4ad433dd4627",
+      "rank": 41,
+      "total_bits": -19.030757,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_point=balcony",
+        "tools:crowbar=True",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "balcony",
+          "u": 0.118312,
+          "bits": 2.108387,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.080858,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "row_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "6ff9b235feee2df6",
+      "rank": 42,
+      "total_bits": -19.142407,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=apartment",
+        "search_pattern=selective",
+        "entry_method disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "vacant_extended",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "cd363a985bc60a4e",
+      "rank": 43,
+      "total_bits": -19.147744,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "entry_method=grill_cut",
+        "tools:crowbar=True",
+        "time_band disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "grill_cut",
+          "u": 0.10087,
+          "bits": 2.31082,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "row_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "targeted",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "607849949b76bf28",
+      "rank": 44,
+      "total_bits": -19.345097,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "tools:crowbar=True",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.147582,
+          "bits": 1.834735,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "41f6ce305741fe21",
+      "rank": 45,
+      "total_bits": -19.711973,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "search_pattern=selective",
+        "property_taken:gold disagrees",
+        "entry_method disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.345053,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "scouted",
+          "u": 0.404793,
+          "bits": 0.725532,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "af82ae25f8bbc2cd",
+      "rank": 46,
+      "total_bits": -19.756957,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "property_taken:cash disagrees",
+        "property_taken:gold disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "forced_open",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "door",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.478818,
+          "bits": 0.569265,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "93f28d6cf17b721b",
+      "rank": 47,
+      "total_bits": -19.906503,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "premise=apartment",
+        "tools:crowbar=True",
+        "search_pattern=selective"
+      ],
+      "contributions": [
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "apartment",
+          "u": 0.291416,
+          "bits": 1.057054,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.315848,
+          "bits": 0.97284,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "selective",
+          "u": 0.32551,
+          "bits": 0.941807,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "no_force",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "two_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "24255680e324ada0",
+      "rank": 49,
+      "total_bits": -21.380838,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "time_band disagrees",
+        "property_taken:cash disagrees",
+        "property_taken:gold disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "day",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_method",
+          "value_a": "grill_cut",
+          "value_b": "lock_broken",
+          "u": 0.287538,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "mixed_use",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "targeted",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.388076,
+          "bits": 0.76622,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "on_foot",
+          "u": 0.40243,
+          "bits": 0.731146,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "temporarily_away",
+          "u": 0.422601,
+          "bits": 0.684589,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "7c5e3108ea58c8e7",
+      "rank": 50,
+      "total_bits": -28.650775,
+      "prior_bits": -15.082825,
+      "pair_class": "same_type",
+      "driven_by": [
+        "time_band disagrees",
+        "property_taken:cash disagrees",
+        "property_taken:documents disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "time_band",
+          "value_a": "early_morning",
+          "value_b": "night",
+          "u": 0.37305,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.535932,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:documents",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.080858,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.601708,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.315848,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.147582,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.333923,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "target_selection",
+          "value_a": "scouted",
+          "value_b": "opportunistic",
+          "u": 0.427274,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.041065,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.380055,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "exit_mode",
+          "value_a": "on_foot",
+          "value_b": "four_wheeler",
+          "u": 0.37994,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "premise",
+          "value_a": "apartment",
+          "value_b": "independent_house",
+          "u": 0.212186,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "occupancy",
+          "value_a": "temporarily_away",
+          "value_b": "occupied",
+          "u": 0.270611,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "entry_point",
+          "value_a": "balcony",
+          "value_b": "window",
+          "u": 0.276147,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "search_pattern",
+          "value_a": "selective",
+          "value_b": "ransacked",
+          "u": 0.391014,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.376403,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    }
+  ]
+}

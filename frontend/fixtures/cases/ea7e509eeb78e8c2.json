@@ -1,0 +1,48 @@
+{
+  "case_id": "ea7e509eeb78e8c2",
+  "state_code": "MH",
+  "district": "Nagpur",
+  "crime_type": "BURGLARY_COMMERCIAL",
+  "occurred_from": "2025-02-14T10:00:00",
+  "occurred_to": "2025-02-17T13:42:00",
+  "registered_at": "2025-02-17T16:37:00",
+  "mo_core": {
+    "time_band": "__UNKNOWABLE__",
+    "group_size_est": "2-3",
+    "tools": [
+      "gas_cutter"
+    ],
+    "counter_forensic": "gloves",
+    "target_selection": "__MISSING__",
+    "property_taken": [
+      "cash",
+      "documents"
+    ],
+    "approach_mode": "four_wheeler",
+    "exit_mode": "four_wheeler"
+  },
+  "mo_ext": {
+    "entry_point": "door",
+    "entry_method": "duplicate_key",
+    "premise": "office",
+    "occupancy": "closed_extended",
+    "search_pattern": "targeted"
+  },
+  "narrative_text": "Complainant reports that a break-in at commercial premises took place within MH-NAG-07 police station limits, Nagpur, between 14/02/2025 10:00 and 17/02/2025 13:42. It is stated that the accused opened it with a duplicate key, went straight to where the valuables were kept, were two or three persons, used a gas cutter, targeted an office, fled in a four-wheeler, got in through the door, wore gloves, came in a four-wheeler and struck while the premises were closed for a holiday. Enquiries with nearby residents are in progress. The dog squad was summoned to the spot.",
+  "narrative_lang": "en",
+  "field_provenance": {
+    "group_size_est": "source",
+    "tools": "source",
+    "counter_forensic": "source",
+    "target_selection": null,
+    "property_taken": "source",
+    "approach_mode": "source",
+    "exit_mode": "source",
+    "entry_point": "source",
+    "entry_method": "source",
+    "premise": "source",
+    "occupancy": "source",
+    "search_pattern": "source",
+    "time_band": null
+  }
+}

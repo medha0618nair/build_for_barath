@@ -1,0 +1,4643 @@
+{
+  "case_id": "d3e0576250beab99",
+  "scope": "all",
+  "links": [
+    {
+      "partner_id": "8a2d79cbcb3667e5",
+      "rank": 1,
+      "total_bits": -7.203971,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "tools:cutter=True",
+        "property_taken:electronics disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.18151,
+          "bits": 1.586955,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.023817,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "419a03f59269cee7",
+      "rank": 2,
+      "total_bits": -8.598705,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "tools:cutter disagrees",
+        "approach_mode=two_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.18151,
+          "bits": 1.586955,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "bc8d64d91e90449a",
+      "rank": 3,
+      "total_bits": -9.098842,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "tools:crowbar disagrees",
+        "approach_mode=two_wheeler"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "4d9eb6e1f3884b72",
+      "rank": 4,
+      "total_bits": -9.36406,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "tools:cutter=True",
+        "machine_type disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.18151,
+          "bits": 1.586955,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.455808,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e45109a09807646f",
+      "rank": 5,
+      "total_bits": -10.401398,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "machine_type disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "6c6e4ccc87f01d40",
+      "rank": 6,
+      "total_bits": -11.390692,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "machine_type disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "97880e75bacd0365",
+      "rank": 7,
+      "total_bits": -11.433249,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "approach_mode=two_wheeler",
+        "group_size_est=2-3"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "4d9c76c68e248f05",
+      "rank": 8,
+      "total_bits": -11.641329,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "machine_type disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "f8cb796671b3ebf9",
+      "rank": 9,
+      "total_bits": -11.738551,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "tools:cutter disagrees",
+        "approach_mode disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.18151,
+          "bits": 1.586955,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.906715,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e7d607826c422a91",
+      "rank": 10,
+      "total_bits": -11.80567,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "approach_mode=two_wheeler",
+        "group_size_est=2-3"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c105bbfe14b75c39",
+      "rank": 11,
+      "total_bits": -11.881653,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees",
+        "property_taken:cash disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.906715,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "fe4144e6e35ac522",
+      "rank": 12,
+      "total_bits": -11.881653,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees",
+        "tools:screwdriver disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "llm_extracted"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "38eeb78aa5085212",
+      "rank": 13,
+      "total_bits": -12.273588,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar disagrees",
+        "group_size_est disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "d2eb118f35b2063a",
+      "rank": 14,
+      "total_bits": -12.345015,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "group_size_est disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.18151,
+          "bits": 1.586955,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "a8ca7bc81a312e0f",
+      "rank": 15,
+      "total_bits": -12.388714,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "alarm_defeated disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "defeated",
+          "u": 0.545802,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "3646a913a864a40f",
+      "rank": 16,
+      "total_bits": -12.700072,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "alarm_defeated=not_defeated"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "bbfbb98cd2daffe8",
+      "rank": 17,
+      "total_bits": -12.797243,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "machine_type disagrees",
+        "alarm_defeated disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "defeated",
+          "u": 0.545802,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "69934d8f10879b3e",
+      "rank": 18,
+      "total_bits": -12.823038,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "13426ffd9731abdc",
+      "rank": 19,
+      "total_bits": -13.086686,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "machine_type disagrees",
+        "alarm_defeated disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "defeated",
+          "u": 0.545802,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "f1cd92097f22d245",
+      "rank": 20,
+      "total_bits": -13.235207,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "machine_type disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "4d7321a102a634a3",
+      "rank": 21,
+      "total_bits": -13.235207,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "machine_type disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "7b2b232415e85ff0",
+      "rank": 22,
+      "total_bits": -13.39289,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "machine_type disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.455808,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "9c539c1732fa855c",
+      "rank": 23,
+      "total_bits": -13.429502,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "alarm_defeated disagrees",
+        "tools:crowbar disagrees",
+        "group_size_est disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "defeated",
+          "u": 0.545802,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "748d5b6b4b477f37",
+      "rank": 24,
+      "total_bits": -13.543124,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "alarm_defeated disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "defeated",
+          "u": 0.545802,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "33ffbd912b2bf2a8",
+      "rank": 25,
+      "total_bits": -13.700807,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:cutter=True",
+        "machine_type disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.226888,
+          "bits": 1.33023,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.455808,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c7dc54bee9b5b8fc",
+      "rank": 26,
+      "total_bits": -13.82648,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "machine_type disagrees",
+        "group_size_est disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.18151,
+          "bits": 1.586955,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "52a28df7fd93c02f",
+      "rank": 27,
+      "total_bits": -13.867466,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar disagrees",
+        "group_size_est disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "620ae009b3e2ecd4",
+      "rank": 28,
+      "total_bits": -14.565438,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "tools:crowbar disagrees",
+        "group_size_est disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "0b66ab2485e309c8",
+      "rank": 29,
+      "total_bits": -14.629942,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar disagrees",
+        "group_size_est disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "b2f4800912dcf6d2",
+      "rank": 30,
+      "total_bits": -14.825236,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.455808,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "64dcb1302afded54",
+      "rank": 31,
+      "total_bits": -14.947644,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "tools:gas_cutter=True",
+        "property_taken:cash=True",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.064173,
+          "bits": 2.723432,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.312594,
+          "bits": 0.883712,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.16586,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.252484,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "e00fffc16c0cef85",
+      "rank": 32,
+      "total_bits": -14.978822,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "tools:gas_cutter=True",
+        "tools:crowbar=True",
+        "property_taken:vehicle disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.064173,
+          "bits": 2.723432,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.16586,
+          "bits": 1.552266,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.3616,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.398527,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.312594,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "d34b347d5d9e828c",
+      "rank": 33,
+      "total_bits": -15.264913,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "alarm_defeated disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "defeated",
+          "u": 0.545802,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "0bdfb7a9d496d517",
+      "rank": 34,
+      "total_bits": -15.353102,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "machine_type disagrees",
+        "group_size_est disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.18151,
+          "bits": 1.586955,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.455808,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "6282538c496077b4",
+      "rank": 35,
+      "total_bits": -15.571117,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.455808,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "569aec94d272786e",
+      "rank": 36,
+      "total_bits": -15.607224,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "tools:gas_cutter=True",
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.064173,
+          "bits": 2.723432,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.16586,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "65089eb8fbdf4a2d",
+      "rank": 37,
+      "total_bits": -15.739617,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "alarm_defeated disagrees",
+        "tools:crowbar disagrees",
+        "group_size_est disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "defeated",
+          "u": 0.545802,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.455808,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "onsite_branch",
+          "u": 0.416667,
+          "bits": 0.697971,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "707d55128b01aef8",
+      "rank": 38,
+      "total_bits": -16.325935,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "tools:crowbar disagrees",
+        "group_size_est disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:electronics",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.023817,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.906715,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "34aa4961763b14b4",
+      "rank": 39,
+      "total_bits": -16.437589,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "alarm_defeated disagrees",
+        "tools:crowbar disagrees",
+        "group_size_est disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "defeated",
+          "u": 0.545802,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.455808,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.396315,
+          "bits": 0.745881,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "9b3506e3837a4ca6",
+      "rank": 40,
+      "total_bits": -16.569348,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "alarm_defeated disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "defeated",
+          "u": 0.545802,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "4+",
+          "u": 0.406307,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.455808,
+          "bits": 0.614122,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "34757a338b2b2693",
+      "rank": 41,
+      "total_bits": -16.875553,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "white_label",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.455808,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "not_defeated",
+          "u": 0.651331,
+          "bits": 0.307917,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.906715,
+          "bits": 0.064504,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "1c9c32c696ed8592",
+      "rank": 42,
+      "total_bits": -17.639532,
+      "prior_bits": -12.159992,
+      "pair_class": "same_type",
+      "driven_by": [
+        "machine_type disagrees",
+        "alarm_defeated disagrees",
+        "tools:crowbar disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "machine_type",
+          "value_a": "onsite_branch",
+          "value_b": "offsite_kiosk",
+          "u": 0.367479,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "alarm_defeated",
+          "value_a": "not_defeated",
+          "value_b": "defeated",
+          "u": 0.545802,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.18151,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.226888,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.455808,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.287166,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "four_wheeler",
+          "u": 0.356631,
+          "bits": -0.847997,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.544266,
+          "bits": 0.456439,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "bba00720069d0401",
+      "rank": 43,
+      "total_bits": -18.04233,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees",
+        "tools:gas_cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.16586,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.064173,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.473997,
+          "bits": 0.512458,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "943c89474bdb2291",
+      "rank": 44,
+      "total_bits": -19.101716,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "tools:crowbar=True",
+        "property_taken:vehicle disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "True",
+          "u": 0.16586,
+          "bits": 1.552266,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.3616,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.064173,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.252484,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.398527,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.312594,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "922be48820337a0a",
+      "rank": 45,
+      "total_bits": -19.21766,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees",
+        "tools:gas_cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.16586,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.064173,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.252484,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.473997,
+          "bits": 0.512458,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c0171982354e9122",
+      "rank": 46,
+      "total_bits": -19.25452,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees",
+        "tools:gas_cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.16586,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.064173,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.398527,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "39a1eaf8cc0364b6",
+      "rank": 47,
+      "total_bits": -20.141523,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "property_taken:gold disagrees",
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "property_taken:gold",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.346801,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.16586,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.064173,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.252484,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.312594,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.473997,
+          "bits": 0.512458,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "c565255866e82860",
+      "rank": 48,
+      "total_bits": -20.141523,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "property_taken:vehicle disagrees",
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.3616,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.16586,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.064173,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.252484,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.312594,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "two_wheeler",
+          "u": 0.473997,
+          "bits": 0.512458,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "2-3",
+          "u": 0.49601,
+          "bits": 0.475599,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "806b3591126c07b7",
+      "rank": 49,
+      "total_bits": -21.129581,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees",
+        "tools:gas_cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.16586,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.064173,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:screwdriver",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.252484,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "approach_mode",
+          "value_a": "two_wheeler",
+          "value_b": "on_foot",
+          "u": 0.398527,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.405146,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    },
+    {
+      "partner_id": "98d3c4a28e89d8fb",
+      "rank": 50,
+      "total_bits": -21.129581,
+      "prior_bits": -16.931194,
+      "pair_class": "cross_type",
+      "driven_by": [
+        "property_taken:vehicle disagrees",
+        "tools:crowbar disagrees",
+        "tools:cutter disagrees"
+      ],
+      "contributions": [
+        {
+          "field": "property_taken:vehicle",
+          "value_a": "False",
+          "value_b": "True",
+          "u": 0.3616,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:crowbar",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.16586,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.128398,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "tools:gas_cutter",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.064173,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "group_size_est",
+          "value_a": "2-3",
+          "value_b": "1",
+          "u": 0.405146,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        },
+        {
+          "field": "property_taken:cash",
+          "value_a": "True",
+          "value_b": "False",
+          "u": 0.312594,
+          "bits": -0.699731,
+          "provenance": {
+            "a": "source",
+            "b": "source"
+          }
+        }
+      ]
+    }
+  ]
+}

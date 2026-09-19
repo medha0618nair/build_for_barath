@@ -1,0 +1,9 @@
+{
+  "case_id_a": "ea7e509eeb78e8c2",
+  "case_id_b": "8d6825f442bbdda5",
+  "status": "confirmed",
+  "reason": "entry method and counter-forensic evidence match; analyst confirmed via FIR review.",
+  "actor_id": "officer.demo@example.gov.in",
+  "pair_id": "ea7e509eeb78e8c2#confirmed-demo",
+  "submitted_at": "2026-01-15T10:30:00+05:30"
+}
